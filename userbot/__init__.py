@@ -8,13 +8,13 @@ from .core.session import jmthon
 from .sql_helper.globals import addgvar, delgvar, gvarstatus
 
 __version__ = "4.0.0"
-__license__ = "كـتابة وتـعديل فريـق جـمثون"
-__author__ = "جـمثون <https://T.ME/JMTHON>"
+__license__ = "كـتابة وتـعديل فريـق ماتركـس"
+__author__ = "ماتركـس <https://T.ME/JMTHON>"
 __copyright__ = "JMTHON TEAM (C) 2020 - 2021  " + __author__
 
 jmthon.version = __version__
 jmthon.tgbot.version = __version__
-LOGS = logging.getLogger("جـمثون")
+LOGS = logging.getLogger("ماتركـس")
 bot = jmthon
 
 StartTime = time.time()

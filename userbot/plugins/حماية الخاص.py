@@ -905,6 +905,6 @@ async def approve_p_m(event):
     await edit_or_reply(
         event,
         APPROVED_PMs,
-        file_name="قائـمة الحـماية جـمثون.txt",
-        caption="قائـمة الـمسموح لـهم الـحالية\n سـورس جـمثون الـعربي \n @JMTHON",
+        file_name="قائـمة الحـماية ماتركـس.txt",
+        caption="قائـمة الـمسموح لـهم الـحالية\n سـورس ماتركـس الـعربي \n @JMTHON",
     )#ترجمه وكتابة فريق جمثون
