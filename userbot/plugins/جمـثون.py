@@ -4,7 +4,7 @@ from userbot.utils import admin_cmd
 import asyncio 
 
 # Wespr File by  @RR7PP
-# Copyright (C) 2021 JMTHON TEAM
+# Copyright (C) 2021 FFIIX TEAM
 @borg.on(
     admin_cmd(pattern="همسة ?(.*)")
 )
@@ -22,7 +22,7 @@ async def wspr(event):
 @borg.on(admin_cmd("م27"))
 async def _(event):
      if not event.text[0].isalpha() and event.text[0] not in ("/", "#", "@", "!"):
-        await event.edit("⌯︙اوامر الهمسه واكس او \n\n⌔︙الامر  • `.همسة`\n⌔︙الاستخدام  • لكتابة همسه سرية لشخص في المجموعه \n\n⌯︙الامر • `.الهمسة`\n⌯︙استخدامه • لعرض كيفية كتابة همسة سرية\n\n⌯︙الامر • `.اكس او `\n ⌯︙استخدامه • ففط ارسل الامر لبدء لعبة اكس او\n\n⌯︙CH  - @JMTHON")
+        await event.edit("⌯︙اوامر الهمسه واكس او \n\n⌔︙الامر  • `.همسة`\n⌔︙الاستخدام  • لكتابة همسه سرية لشخص في المجموعه \n\n⌯︙الامر • `.الهمسة`\n⌯︙استخدامه • لعرض كيفية كتابة همسة سرية\n\n⌯︙الامر • `.اكس او `\n ⌯︙استخدامه • ففط ارسل الامر لبدء لعبة اكس او\n\n⌯︙CH  - @FFIIX")
         
 @borg.on(admin_cmd("الهمسة"))
 async def _(event):

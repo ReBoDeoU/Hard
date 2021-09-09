@@ -9,8 +9,8 @@ from .sql_helper.globals import addgvar, delgvar, gvarstatus
 
 __version__ = "4.0.0"
 __license__ = "كـتابة وتـعديل فريـق ماتركـس"
-__author__ = "ماتركـس <https://T.ME/JMTHON>"
-__copyright__ = "JMTHON TEAM (C) 2020 - 2021  " + __author__
+__author__ = "ماتركـس <https://T.ME/FFIIX>"
+__copyright__ = "FFIIX TEAM (C) 2020 - 2021  " + __author__
 
 jmthon.version = __version__
 jmthon.tgbot.version = __version__
@@ -25,7 +25,7 @@ RAZAN = "1657933680"
 JASEM = "1694386561"
 
 if Config.UPSTREAM_REPO == "Jmthon-iq":
-    UPSTREAM_REPO_URL = "https://github.com/JMTHON-AR/JM-THON"
+    UPSTREAM_REPO_URL = "https://github.com/FFIIX-AR/JM-THON"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 

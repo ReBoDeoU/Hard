@@ -1,4 +1,4 @@
-#(c) Copyright JMTHON 2020-21
+#(c) Copyright FFIIX 2020-21
 #جميع الحقوق محفودظة لسورس ماتركـس 
 #By ~  @RR9R7
 import asyncio
