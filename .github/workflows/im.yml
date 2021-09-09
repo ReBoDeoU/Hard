@@ -18,9 +18,9 @@ jobs:
 
         with:
 
-          find: "كروب المساعدة"
+          find: "GroupJmthon"
 
-          replace: "مطـور السورس"
+          replace: "FFIIX"
 
       - name: Create Pull Request
 
