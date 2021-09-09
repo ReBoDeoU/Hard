@@ -226,7 +226,7 @@ async def rm_deletedacc(show):
     "To check deleted accounts and clean"
     con = show.pattern_match.group(1).lower()
     del_u = 0
-    del_status = "⌯︙ لم يتم العثور على حسابات متروكه او حسابات محذوفة المطـور نظيف"
+    del_status = "⌯︙ لم يتم العثور على حسابات متروكه او حسابات محذوفة الكروب نظيف"
     if con != "اطردهم":
         event = await edit_or_reply(
             show, "⌯︙ يتم البحث عن حسابات محذوفة او حسابات متروكة انتظر"

@@ -149,7 +149,7 @@ async def set_group_photo(event):  # sourcery no-metrics
     require_admin=True,
 )#admin plugin for  jmthon
 async def promote(event):
-    "⌯︙لـرفع مستـخدم مشـرف في الـمطـور"
+    "⌯︙لـرفع مستـخدم مشـرف في الـكروب"
     new_rights = ChatAdminRights(
         add_admins=False,
         invite_users=True,
@@ -224,7 +224,7 @@ async def demote(event):
     pattern="طرد(?:\s|$)([\s\S]*)",
     command=("طرد", plugin_category),
     info={
-        "⌯︙الأسـتخدام": "لـطرد شـخض من الـمطـور",
+        "⌯︙الأسـتخدام": "لـطرد شـخض من الـكروب",
         "⌯︙الشـرح": "لـطرد شخص من المـجموعة يستطيع الأنضـمام مرة اخـرى.\
         \n⌯︙تـحتاج الصلاحـيات لـهذا الأمـر.",
         "⌯︙الأمـر": [
@@ -236,7 +236,7 @@ async def demote(event):
     require_admin=True,
 )
 async def endmute(event):
-    "لـطرد شـخض من الـمطـور"
+    "لـطرد شـخض من الـكروب"
     user, reason = await get_user_from_event(event)
     if not user:
         return
@@ -255,7 +255,7 @@ async def endmute(event):
     pattern="حظر(?:\s|$)([\s\S]*)",
     command=("حظر", plugin_category),
     info={
-        "⌯︙الاستخدام": "يقـوم بـحظر شخـص في الـمطـور الءي اسـتخدمت فيـه الامر.",
+        "⌯︙الاستخدام": "يقـوم بـحظر شخـص في الـكروب الءي اسـتخدمت فيـه الامر.",
         "⌯︙الشرح": "لحـظر شخـص من الكـروب ومـنعه من الأنـضمام مجـددا\
             \n⌯︙تـحتاج الصلاحـيات لـهذا الأمـر.",
         "⌯︙الامر": [
@@ -272,11 +272,11 @@ async def _ban_person(event):
     if not user:
         return
     if user.id == 1715051616:
-        return await edit_delete(event, "**- لا يمڪنني حظر مطـوري دي لك**")
+        return await edit_delete(event, "**- لا يمڪنني حظر كروبي دي لك**")
     if user.id == 1694386561:
-        return await edit_delete(event, "**- لا يمڪنني حظر مطـوري دي لك**")
+        return await edit_delete(event, "**- لا يمڪنني حظر كروبي دي لك**")
     if user.id == 1657933680:
-        return await edit_delete(event, "**- لا يمڪنني حظر مطـوري دي لك**")
+        return await edit_delete(event, "**- لا يمڪنني حظر كروبي دي لك**")
     catevent = await edit_or_reply(event, "⌯︙تـم حـظره بـنجاح")
     try:
         await event.client(EditBannedRequest(event.chat_id, user.id, BANNED_RIGHTS))
@@ -305,7 +305,7 @@ async def _ban_person(event):
                 f"⌯︙الحـظر\
                 \nالمسـتخدم: [{user.first_name}](tg://user?id={user.id})\
                 \nالـدردشـة: {event.chat.title}\
-                \nايدي المطـور(`{event.chat_id}`)\
+                \nايدي الكروب(`{event.chat_id}`)\
                 \nالسبـب : {reason}",
             )
         else:
@@ -322,7 +322,7 @@ async def _ban_person(event):
     pattern="الغاء حظر(?:\s|$)([\s\S]*)",
     command=("الغاء حظر", plugin_category),
     info={
-        "⌯︙الأسـتخدام": "يقـوم بـالغاء حـظر الشـخص في الـمطـور الذي اسـتخدمت فيـه الامر.",
+        "⌯︙الأسـتخدام": "يقـوم بـالغاء حـظر الشـخص في الـكروب الذي اسـتخدمت فيـه الامر.",
         "⌯︙الشرح": "لألـغاء حـظر شخـص من الكـروب والسـماح له من الأنـضمام مجـددا\
             \n⌯︙تـحتاج الصلاحـيات لـهذا الأمـر.",
         "⌯︙الأمـر": [
