@@ -256,7 +256,7 @@ async def upstream(event):
     if changelog == "" and not force_update:
         await event.edit(
             "**⌯︙سورس ماتركـس محدث الى اخر اصدار **\n"
-            f"**قـنـاة سـورس جـمـثـون** : @FFIIX"
+            f"**قـنـاة سـورس جـمـثـون** : @VV399"
         )
         return repo.__del__()
     if conf == "" and not force_update:

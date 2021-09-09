@@ -1,4 +1,4 @@
-#@RR7PP  - @UNZZ  - @FFIIX
+#@RR7PP  - @UNZZ  - @VV399
 # Copyright (C) 2021 FFIIX TEAM
 # FILES WRITTEN BY  @RR7PP
 import asyncio
@@ -367,7 +367,7 @@ async def kakashi(event):
         end = datetime.now()
         ms = (end - start).seconds
         await cat.edit(
-            f"꙳ ¦ تم تنزيل بواسطة  : @FFIIX ",
+            f"꙳ ¦ تم تنزيل بواسطة  : @VV399 ",
             parse_mode="html",
         )
     await event.client.delete_messages(
