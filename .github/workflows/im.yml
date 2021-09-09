@@ -18,9 +18,9 @@ jobs:
 
         with:
 
-          find: "كروب"
+          find: "مطـور"
 
-          replace: "مطـور"
+          replace: "كروب"
 
       - name: Create Pull Request
 
