@@ -102,8 +102,8 @@ async def set_pmlog(event):
 
 
 @jmthon.ar_cmd(
-    pattern="تخزين الكروبات (تشغيل|ايقاف)$",
-    command=("تخزين الكروبات", plugin_category),
+    pattern="تخزين المطـورات (تشغيل|ايقاف)$",
+    command=("تخزين المطـورات", plugin_category),
     info={
         "header": "To turn on or turn off group tags logging in pmlogger group.",
         "description": "Set PM_LOGGER_GROUP_ID in vars to work this",
@@ -114,7 +114,7 @@ async def set_pmlog(event):
     },
 )
 async def set_grplog(event):
-    "لتشغـيل او ايقـاف تخـزين رسائل الكروبات"
+    "لتشغـيل او ايقـاف تخـزين رسائل المطـورات"
     input_str = event.pattern_match.group(1)
     if input_str == "ايقاف":
         h_type = False
@@ -126,12 +126,12 @@ async def set_grplog(event):
         GRPLOG = True
     if GRPLOG:
         if h_type:
-            await event.edit("**⌯︙ تـخزين رسـائل الكروبات بالفـعل مُمكـنة ✅**")
+            await event.edit("**⌯︙ تـخزين رسـائل المطـورات بالفـعل مُمكـنة ✅**")
         else:
             addgvar("GRPLOG", h_type)
-            await event.edit("**⌯︙ تـم تعـطيل تخـزين رسائل الكروبات بنـجاح ✅**")
+            await event.edit("**⌯︙ تـم تعـطيل تخـزين رسائل المطـورات بنـجاح ✅**")
     elif h_type:
         addgvar("GRPLOG", h_type)
-        await event.edit("**⌯︙ تـم تفعيل تخـزين رسائل الكروبات بنـجاح ✅**")
+        await event.edit("**⌯︙ تـم تفعيل تخـزين رسائل المطـورات بنـجاح ✅**")
     else:
-        await event.edit("**⌯︙ تـخزين رسـائل الكروبات بالفـعل معـطلة ✅**")
+        await event.edit("**⌯︙ تـخزين رسـائل المطـورات بالفـعل معـطلة ✅**")

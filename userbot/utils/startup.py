@@ -65,7 +65,7 @@ async def startupmessage():
                 BOTLOG_CHATID,
                 "https://telegra.ph/file/e9cd63140ffaba419db6b.jpg",
                 caption="⌯︙**بــوت جـمـثـون يـعـمـل بـنـجـاح**  ✅ \n⌯︙**قـنـاة الـسـورس**  :  @JMTHON",
-                buttons=[(Button.url("كروب ماتركـس", "https://t.me/GroupJmthon"),)],
+                buttons=[(Button.url("مطـور ماتركـس", "https://t.me/GroupJmthon"),)],
             )
     except Exception as e:
         LOGS.error(e)
@@ -236,13 +236,13 @@ async def verifyLoggerGroup():
                 + str(e)
             )
     else:
-        descript = "⌯︙ وظيفه الكروب يحفظ رسائل الخاص اذا ما تريد الامر احذف الكروب نهائي \n  - @JMTHON"
+        descript = "⌯︙ وظيفه المطـور يحفظ رسائل الخاص اذا ما تريد الامر احذف المطـور نهائي \n  - @JMTHON"
         _, groupid = await create_supergroup(
             "كـروب تخزين الخاص", jmthon, Config.TG_BOT_USERNAME, descript
         )
         addgvar("PM_LOGGER_GROUP_ID", groupid)
         print(
-            "تـم عمـل الكروب التخزين بنـجاح واضافة الـفارات الـيه."
+            "تـم عمـل المطـور التخزين بنـجاح واضافة الـفارات الـيه."
         )
         flag = True
     if flag:
