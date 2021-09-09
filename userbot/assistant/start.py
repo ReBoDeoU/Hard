@@ -52,7 +52,7 @@ async def start(event):
             message=starttext,
             link_preview=False,
             buttons=[
-                [custom.Button.inline("تنـصيب جمثـون  🐍", data="deploy")],
+                [custom.Button.inline("تنـصيب ماتركـس  🐍", data="deploy")],
                 [Button.url("تحتاج مسـاعدة ❓", "https://t.me/GroupJmthon")],
             ],
         )
