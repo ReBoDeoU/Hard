@@ -18,9 +18,9 @@ jobs:
 
         with:
 
-          find: "ماتريـكس"
+          find: "@FYFYFF"
 
-          replace: "ماتركـس"
+          replace: "@VVMAT"
 
       - name: Create Pull Request
 
