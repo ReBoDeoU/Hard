@@ -18,9 +18,9 @@ jobs:
 
         with:
 
-          find: "جـمثـون"
+          find: "ماتريـكس"
 
-          replace: "ماتريـكس"
+          replace: "ماتركـس"
 
       - name: Create Pull Request
 
