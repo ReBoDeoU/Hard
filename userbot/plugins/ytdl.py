@@ -25,7 +25,7 @@ from . import hmention, progress, ytsearch
 @bot.on(admin_cmd(pattern="yt(a|v)(?: |$)(.*)", outgoing=True))
 @bot.on(sudo_cmd(pattern="yt(a|v)(?: |$)(.*)", allow_sudo=True))
 async def download_video(v_url):
-    """ For .ytdl command, download media from YouTube and many other sites. """
+    """For .ytdl command, download media from YouTube and many other sites."""
     url = v_url.pattern_match.group(2)
     if not url:
         rmsg = await v_url.get_reply_message()
@@ -137,7 +137,12 @@ async def download_video(v_url):
             ],
             progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
                 progress(
-                    d, t, v_url, c_time, "𖠕 جــاري تحميـل ..", f"{ytdl_data['title']}.mp3"
+                    d,
+                    t,
+                    v_url,
+                    c_time,
+                    "𖠕 جــاري تحميـل ..",
+                    f"{ytdl_data['title']}.mp3",
                 )
             ),
         )
@@ -156,7 +161,12 @@ async def download_video(v_url):
             caption=ytdl_data["title"],
             progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
                 progress(
-                    d, t, v_url, c_time, "𖠕 ... جـاري تحميل ..", f"{ytdl_data['title']}.mp4"
+                    d,
+                    t,
+                    v_url,
+                    c_time,
+                    "𖠕 ... جـاري تحميل ..",
+                    f"{ytdl_data['title']}.mp4",
                 )
             ),
         )
