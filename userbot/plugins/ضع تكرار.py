@@ -5,7 +5,7 @@ from telethon.tl.types import ChatBannedRights
 
 from ..sql_helper import antiflood_sql as sql
 from ..utils import is_admin
-from . import jmthon, edit_or_reply
+from . import edit_or_reply, jmthon
 
 plugin_category = "admin"
 CHAT_FLOOD = sql.__load_flood_settings()
@@ -39,7 +39,7 @@ async def _(event):
             message=f"**بـوت مـانع الـتكرار**\x1f@admin [المستخدم](tg://user?id={event.message.sender_id}) قـام بالتكرار في هذه الدردشه.\x1f`{e}`",
             reply_to=event.message.id,
         )
-        
+
         await asyncio.sleep(4)
         await no_admin_privilege_message.edit(
             "** هذا التكرار ما يفيدك اخي استمتع بالدردشة مثل الناس 🧸💞** "
@@ -80,5 +80,7 @@ async def _(event):
         await event.edit(f"تم تحديث عدد الـتكرار لـ {input_str} في الدردشه الحالية")
     except Exception as e:
         await event.edit(str(e))
+
+
 # For Catuserbot
 # Arabic Translate By  :  @RRRD7
