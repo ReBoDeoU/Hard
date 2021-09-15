@@ -18,9 +18,9 @@ jobs:
 
         with:
 
-          find: "@FYFYFF"
+          find: "GROUPJMTHON"
 
-          replace: "@VVMAT"
+          replace: "VV_Rk"
 
       - name: Create Pull Request
 
