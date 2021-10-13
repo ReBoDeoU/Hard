@@ -36,13 +36,13 @@ async def fetch_info(replied_user, event):
     try:
         dc_id, location = get_input_location(replied_user.profile_photo)
     except Exception:
-        dc_id = "تعـذر جلـب ايدي الـديسي"
+        pass
     common_chat = replied_user.common_chats_count
     username = replied_user.user.username
     user_bio = replied_user.about
-    is_bot = replied_user.user.bot
-    restricted = replied_user.user.restricted
-    verified = replied_user.user.verified
+    replied_user.user.bot
+    replied_user.user.restricted
+    replied_user.user.verified
     photo = await event.client.download_profile_photo(
         user_id,
         Config.TMP_DOWNLOAD_DIRECTORY + str(user_id) + ".jpg",
@@ -160,7 +160,9 @@ async def who(event):
     try:
         photo, caption = await fetch_info(replied_user, event)
     except AttributeError:
-        return await edit_or_reply(cat, "**⌯︙لم يتم العثور على معلومات لهذا المستخدم **")
+        return await edit_or_reply(
+            cat, "**⌯︙لم يتم العثور على معلومات لهذا المستخدم **"
+        )
     message_id_to_reply = await reply_id(event)
     try:
         await event.client.send_file(
@@ -177,8 +179,10 @@ async def who(event):
         await cat.delete()
     except TypeError:
         await cat.edit(caption, parse_mode="html")
-#كـتابة  @RR7PP
-#تعديل وترتيب  @SBB_B
+
+
+# كـتابة  @RR7PP
+# تعديل وترتيب  @SBB_B
 @jmthon.ar_cmd(
     pattern="رابط الحساب(?:\s|$)([\s\S]*)",
     command=("رابط الحساب", plugin_category),

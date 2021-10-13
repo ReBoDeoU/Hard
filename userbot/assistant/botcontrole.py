@@ -28,9 +28,6 @@ botusername = Config.TG_BOT_USERNAME
 cmhd = Config.COMMAND_HAND_LER
 
 
-
-
-
 @jmthon.bot_cmd(
     pattern="^/broadcast$",
     from_users=Config.OWNER_ID,

@@ -32,6 +32,7 @@ LOGS = logging.getLogger(__name__)
 plugin_category = "bot"
 botusername = Config.TG_BOT_USERNAME
 
+
 class FloodConfig:
     BANNED_USERS = set()
     USERS = defaultdict(list)
@@ -63,12 +64,8 @@ async def check_bot_started_users(user, event):
         await event.client.send_message(BOTLOG_CHATID, notification)
 
 
-
-
-
-
 @jmthon.bot_cmd(incoming=True, func=lambda e: e.is_private)
-async def bot_pms(event): 
+async def bot_pms(event):
     chat = await event.get_chat()
     if check_is_black_list(chat.id):
         return

@@ -1,9 +1,9 @@
-#FFIIX USERBOT
-#- - - - - - - - - - - - -
-#L 2 O : @GGGNE
-#MUHAMMED : @RR9R7
-#@VV399
-#- - - - - - - - - - - - -
+# FFIIX USERBOT
+# - - - - - - - - - - - - -
+# L 2 O : @GGGNE
+# MUHAMMED : @RR9R7
+# @VV399
+# - - - - - - - - - - - - -
 
 
 import os
