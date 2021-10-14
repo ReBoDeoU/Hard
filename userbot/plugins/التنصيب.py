@@ -5,5 +5,5 @@ from userbot.utils import admin_cmd
 async def _(event):
     if not event.text[0].isalpha() and event.text[0] not in ("/", "#", "@", "!"):
         await event.edit(
-            "⌯︙**مـرحبا بـك عزيـزي** \n⌯︙رابط التنصيب - [اضغط هنا](https://dashboard.heroku.com/new?template=https://github.com/FFIIX-AR/FFIIX-PACK/)\n⌯︙قناة السورس - @VV399"
+            "⌯︙**مـرحبا بـك عزيـزي** \n⌯︙رابط التنصيب - [اضغط هنا](https://dashboard.heroku.com/new?template=https://github.com/MPMMPP/DEOOU/)\n⌯︙قناة السورس - @DEOOUS"
         )
