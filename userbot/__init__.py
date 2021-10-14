@@ -8,24 +8,24 @@ from .core.session import jmthon
 from .sql_helper.globals import addgvar, delgvar, gvarstatus
 
 __version__ = "4.0.0"
-__license__ = "كـتابة وتـعديل فريـق ماتركـس"
-__author__ = "ماتركـس <https://T.ME/FFIIX>"
-__copyright__ = "FFIIX TEAM (C) 2020 - 2021  " + __author__
+__license__ = "كـتابة وتـعديل فريـق ديـو"
+__author__ = "ديـو <https://T.ME/REKHSO>"
+__copyright__ = "DEOOUS TEAM (C) 2020 - 2021  " + __author__
 
 jmthon.version = __version__
 jmthon.tgbot.version = __version__
-LOGS = logging.getLogger("ماتركـس")
+LOGS = logging.getLogger("ديـو")
 bot = jmthon
 
 StartTime = time.time()
 JMVERSION = "4.0.0"
 
-LEO = "1715051616"
-RAZAN = "1657933680"
-JASEM = "1694386561"
+LEO = "668571162"
+RAZAN = "1397042354"
+JASEM = "1450865400"
 
 if Config.UPSTREAM_REPO == "Jmthon-iq":
-    UPSTREAM_REPO_URL = "https://github.com/FFIIX-AR/JM-THON"
+    UPSTREAM_REPO_URL = "https://github.com/MPMMPP/DEOOU"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 
