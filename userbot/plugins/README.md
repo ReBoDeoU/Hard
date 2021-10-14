@@ -16,11 +16,11 @@ from ..core.managers import edit_delete, edit_or_reply
 plugin_category="extra"
 
 @jmthon.ar_cmd(
-    pattern="ماتركـس(?:\s|$)([\s\S]*)",
-    command=("ماتركـس", plugin_category),
+    pattern="ديـو(?:\s|$)([\s\S]*)",
+    command=("ديـو", plugin_category),
     info={
-        "استخدام": "{tr}ماتركـس",
-        "مثال":  "{tr}ماتركـس هلا",
+        "استخدام": "{tr}ديـو",
+        "مثال":  "{tr}ديـو هلا",
     },
 )
 async def hi_buddy(event):
@@ -33,4 +33,4 @@ async def hi_buddy(event):
     await edit_or_reply(event,outputtext)
 ```
 
-For more information refer this [Docs](https://t.me/jmthon)
+For more information refer this [Docs](https://t.me/DEOOUS)
