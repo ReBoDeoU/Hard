@@ -1,6 +1,8 @@
-اهلا في سورس ديـو 懶懶.
+اهلا في سورس ديـو .
 
 
+
+تنصيب عبر هيروكو
 [![Deploy heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MPMMPP/DEOOU)
 
 ## الـقـناة ##
