@@ -57,13 +57,14 @@ async def fetch_info(replied_user, event):
     username = "@{}".format(username) if username else ("⌯︙هـذا الشخص ليس لديـه معـرف ")
     user_bio = "♰︙هذا المستخدم ليس لديه اي نبـذة" if not user_bio else user_bio
     caption = "✛━━━━━━━━━━━━━✛ \n\n"
-    caption += f"<b>- الاسـم ›♰</b> {first_name} {last_name}\n"
-    caption += f"<b>- المـعـرف ›♰</b> {username}\n"
-    caption += f"<b>- الايـدي  ›♰</b> <code>{user_id}</code>\n"
-    caption += f"<b>- عـدد الصـورة ›♰</b> {replied_user_profile_photos_count}\n"
-    caption += f"<b>-️ الـنبـذه ›♰</b> \n<code>{user_bio}</code>\n\n"
-    caption += f"<b>- الـمجموعات المشتـركة ›♰</b> {common_chat}\n"
-    caption += f"<b>- رابط حسـابه ›♰</b> "
+    caption += f"<b>- 𝘯𝘢𝘮𝘦 ♰:</b> {first_name} {last_name}\n"
+    caption += f"<b>- 𝘪𝘥 ♰:</b> {username}\n"
+    caption += f"<b>- 𝘩𝘢𝘯𝘥𝘴 ♰:</b> <code>{user_id}</code>\n"
+    caption += f"<b>- 𝘯𝘶𝘮𝘣𝘦𝘳 𝘰𝘧 𝘪𝘮𝘢𝘨𝘦𝘴 ♰:</b> {replied_user_profile_photos_count}\n"
+    caption += f"<b>-️ 𝘴𝘰𝘭𝘥 ♰:</b> \n<code>{user_bio}</code>\n\n"
+    caption += f"<b>- 𝘴𝘶𝘣𝘴𝘤𝘳𝘪𝘣𝘦𝘳 𝘨𝘳𝘰𝘶𝘱𝘴 ♰:</b> {common_chat}\n"
+    caption += f"<b>- 𝘤𝘰𝘯𝘯𝘦𝘤𝘵𝘰𝘳 ♰:</b> "
+    caption += f"<b>- 𝘴𝘰𝘶𝘳𝘤𝘦 𝘥𝘦𝘰𝘶 ♰:</b> @DEOOUS"
     caption += f'<a href="tg://user?id={user_id}">{first_name}</a>\n'
     caption += f"✛━━━━━━━━━━━━━✛"
     return photo, caption
