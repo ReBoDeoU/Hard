@@ -7,7 +7,7 @@ from userbot import jmthon
 
 plugin_category = "extra"
 
-    @jmthon.ar_cmd(
+ @jmthon.ar_cmd(
     pattern="الاوامر$",
     command=("الاوامر", plugin_category),
 )
