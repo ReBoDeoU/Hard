@@ -61,7 +61,7 @@ async def fetch_info(replied_user, event):
     caption += f"<b>- 𝘪𝘥 ♰:</b> {user_id}\n"
     caption += f"<b>- 𝘩𝘢𝘯𝘥𝘴 ♰:</b> <code>{username}</code>\n"
     caption += f"<b>- 𝘯𝘶𝘮𝘣𝘦𝘳 𝘰𝘧 𝘪𝘮𝘢𝘨𝘦𝘴 ♰:</b> {replied_user_profile_photos_count}\n"
-    caption += f"<b>-️ 𝘴𝘰𝘭𝘥 ♰:</b> \n<code>{user_bio}</code>\n\n"
+    caption += f"<b>-️ 𝘴𝘰𝘭𝘥 ♰:</b> <code>{user_bio}</code>\n"
     caption += f"<b>- 𝘴𝘶𝘣𝘴𝘤𝘳𝘪𝘣𝘦𝘳 𝘨𝘳𝘰𝘶𝘱𝘴 ♰:</b> {common_chat}\n"
     caption += f"<b>- 𝘤𝘰𝘯𝘯𝘦𝘤𝘵𝘰𝘳 ♰:</b> "
     caption += f'<a href="tg://user?id={user_id}">{first_name}</a>\n'
