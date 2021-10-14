@@ -190,5 +190,5 @@ async def _(event):
 async def _(event):
     if not event.text[0].isalpha() and event.text[0] not in ("/", "#", "@", "!"):
         await event.edit(
-            "شرح التنصيب : \n\n https://t.me/DEOOUS/10 "
+            "قائمة اوامر المتـحركات :\n➖➖➖➖➖➖➖➖➖➖➖➖➖\n ⌯︙اختر احدى هذه القوائم\n\n- ( `.متحركات كيوت` ) \n- ( `.متحركات ساد` )\n➖➖➖➖➖➖➖➖➖➖➖➖➖\n- شࢪح تنصيبہَ :  https://t.me/DEOOUS/10\n➖➖➖➖➖➖➖➖➖➖➖➖➖\n⌔︙CH : @DEOOUS"
         )
