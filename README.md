@@ -1,3 +1,6 @@
+اهلا في سورس ديـو 懶懶.
+
+
 [![Deploy heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MPMMPP/DEOOU)
 
 ## الـقـناة ##
