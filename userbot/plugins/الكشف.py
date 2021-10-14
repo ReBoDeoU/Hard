@@ -58,8 +58,8 @@ async def fetch_info(replied_user, event):
     user_bio = "♰︙هذا المستخدم ليس لديه اي نبـذة" if not user_bio else user_bio
     caption = "✛━━━━━━━━━━━━━✛ \n"
     caption += f"<b>- 𝘯𝘢𝘮𝘦 ♰:</b> {first_name} {last_name}\n"
-    caption += f"<b>- 𝘪𝘥 ♰:</b> {user_id}\n"
-    caption += f"<b>- 𝘩𝘢𝘯𝘥𝘴 ♰:</b> <code>{username}</code>\n"
+    caption += f"<b>- 𝘪𝘥 ♰:</b> <code>{user_id}</code>\n"
+    caption += f"<b>- 𝘩𝘢𝘯𝘥𝘴 ♰:</b> {username}\n"
     caption += f"<b>- 𝘯𝘶𝘮𝘣𝘦𝘳 𝘰𝘧 𝘪𝘮𝘢𝘨𝘦𝘴 ♰:</b> {replied_user_profile_photos_count}\n"
     caption += f"<b>-️ 𝘴𝘰𝘭𝘥 ♰:</b> <code>{user_bio}</code>\n"
     caption += f"<b>- 𝘴𝘶𝘣𝘴𝘤𝘳𝘪𝘣𝘦𝘳 𝘨𝘳𝘰𝘶𝘱𝘴 ♰:</b> {common_chat}\n"
