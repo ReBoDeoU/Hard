@@ -60,6 +60,23 @@ async def _(event):
         await event.edit("".join(deq))
         deq.rotate(1)
 
+@jmthon.ar_cmd(
+    pattern="السورس$",
+    command=("السورس", plugin_category),
+    info={
+        "الامر": "**امر تسليه قم بالتجربه بنفسك**",
+        "الاستخدام": "{tr}السورس",
+    },
+)
+async def _(event):
+    "animation command"
+    event = await edit_or_reply(event, "**جارِ جلب معلومات السورس . . .**")
+    deq = deque(list("︎ ︎ ︎︎ ︎ ︎︎ ︎ ︎︎ ︎ ︎**سورس ديو الرسمي**\n\nقناه السورس :♰ @DEOOUS\nقناه ديو الرسمية :♰ @DEOOU\n\n-  أصـدار ديـو :♰ 4.0.0"))
+    for _ in range(999):
+        await asyncio.sleep(100)
+        await event.edit("".join(deq))
+        deq.rotate(1)
+
 
 @jmthon.ar_cmd(
     pattern="مطر$",
