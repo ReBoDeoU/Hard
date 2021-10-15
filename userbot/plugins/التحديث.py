@@ -107,7 +107,7 @@ async def update(event, repo, ups_rem, ac_br):
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
     jasme = await event.edit(
-        "** ♰︙جـاري التحديـث سورس ديـو بنجاح انتظر قليلا سوف نخبرك بعد اعادة التشغيل !**"
+        "** ♰︙جـاري تحديـث سورس ديـو انتظر قليلا سوف نخبرك بعد اعادة التشغيل !**"
     )
     await event.client.reload(jasme)
 
