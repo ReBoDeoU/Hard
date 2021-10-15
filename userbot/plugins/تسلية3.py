@@ -73,7 +73,7 @@ async def _(event):
     event = await edit_or_reply(event, "**جارِ جلب معلومات السورس . . .**")
     deq = deque(list("︎ ︎ ︎︎ ︎ ︎︎ ︎ ︎︎ ︎ ︎**سورس ديو الرسمي**\n\nقناه السورس :♰ @DEOOUS\nقناه ديو الرسمية :♰ @DEOOU\n\n-  أصـدار ديـو :♰ 4.0.0"))
     for _ in range(999):
-        await asyncio.sleep(100)
+        await asyncio.sleep(1)
         await event.edit("".join(deq))
         deq.rotate(1)
 
