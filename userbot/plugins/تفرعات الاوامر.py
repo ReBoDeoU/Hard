@@ -481,18 +481,6 @@ async def _(event):
 
 # @GGGNE  -  @RR9R7
 @jmthon.ar_cmd(
-    pattern="اوامر اللستة$",
-    command=("اوامر اللستة", plugin_category),
-)
-async def _(event):
-    if not event.text[0].isalpha() and event.text[0] not in ("/", "#", "@", "!"):
-        await event.edit(
-            "شرح اوامر اللستة :\n➖➖➖➖➖➖➖➖➖➖➖➖➖\n⌯︙اختر احدى هذه الاوامر\n\n- ( `.لستة` )\nيقوم بصنع لستة شفافة لمنشور معين\nشـرح الامـر  : \n https://t.me/JJMTO/202\n\n➖➖➖➖➖➖➖➖➖➖➖➖➖\n⌔︙CH : @DEOOUS"
-        )
-
-
-# @GGGNE  -  @RR9R7
-@jmthon.ar_cmd(
     pattern="اوامر الملكية$",
     command=("اوامر الملكية", plugin_category),
 )
