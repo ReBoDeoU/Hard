@@ -95,8 +95,8 @@ async def permalink(mention):
 
 
 @jmthon.ar_cmd(
-    pattern="رفع بكلبي(?:\s|$)([\s\S]*)",
-    command=("رفع بكلبي", plugin_category),
+    pattern="رفع نسيم(?:\s|$)([\s\S]*)",
+    command=("رفع نسيم", plugin_category),
 )
 async def permalink(mention):
     """Generates a link to the user's PM with a custom text."""
@@ -107,7 +107,7 @@ async def permalink(mention):
         return await edit_or_reply(mention, f"[{custom}](tg://user?id={user.id})")
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
-        mention, f"⌯︙المستخدم [{tag}](tg://user?id={user.id}) \n⌯︙ تـم رفعـه بڪلبك 🖤 "
+        mention, f"⌯︙المستخدم [{tag}](tg://user?id={user.id}) \n⌯︙ تـم رفعـه ليصبح نسيم 🖤 "
     )
 
 
