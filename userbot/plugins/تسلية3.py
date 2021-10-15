@@ -43,7 +43,7 @@ async def _(event):
         deq.rotate(1)
 
 
- @jmthon.ar_cmd(
+@jmthon.ar_cmd(
     pattern="مطورين$",
     command=("مطورين", plugin_category),
     info={
