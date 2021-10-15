@@ -26,7 +26,6 @@ plugin_category = "utils"
 @jmthon.ar_cmd(
     pattern="فحص$",
     command=("فحص", plugin_category),
-    command=("السورس", plugin_category),
 )
 async def amireallyalive(event):
     "للتـأكد من ان البـوت يعـمـل"
