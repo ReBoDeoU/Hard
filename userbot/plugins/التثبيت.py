@@ -53,8 +53,8 @@ plugin_category = "admin"
     pattern="تثبيت( بالاشعار|$)",
     command=("تثبيت", plugin_category),
     info={
-        "⌯︙الأسـتخدام": "For pining messages in chat",
-        "⌯︙الشـرح": "reply to a message to pin it in that in chat\
+        "♰︙الأسـتخدام": "For pining messages in chat",
+        "♰︙الشـرح": "reply to a message to pin it in that in chat\
         \n⌯︙تـحتاج الصلاحـيات لـهذا الأمـر if you want to use in group.",
         "options": {"loud": "To notify everyone without this.it will pin silently"},
         "⌯︙الأمـر": [
@@ -78,12 +78,12 @@ async def pin(event):
         return await edit_delete(event, NO_PERM, 5)
     except Exception as e:
         return await edit_delete(event, f"`{str(e)}`", 5)
-    await edit_delete(event, "⌯︙تـم تـثبيـت الـرسالة بـنجـاح ✅", 3)
+    await edit_delete(event, "♰︙تـم تـثبيـت الـرسالة بـنجـاح ✅", 3)
     if BOTLOG and not event.is_private:
         await event.client.send_message(
             BOTLOG_CHATID,
             f"⌯︙الـتثبيت\
-                \n **⌯︙تـم بـنجـاح الـتثبيت فـي الدردشـة**\
+                \n **♰︙تـم بـنجـاح الـتثبيت فـي الدردشـة**\
                 \nالـدردشـة: {event.chat.title}(`{event.chat_id}`)\
                 \nالـتثبيت: {is_silent}",
         )
@@ -133,8 +133,8 @@ async def pin(event):
     if BOTLOG and not event.is_private:
         await event.client.send_message(
             BOTLOG_CHATID,
-            f"**⌯︙الـغاء التثبيت  ❗️ \
-                \n** ⌯︙تم بنجاح الغاء التثبيـت في الدردشة  ✅ \
+            f"**♰︙الـغاء التثبيت  ❗️ \
+                \n** ♰︙تم بنجاح الغاء التثبيـت في الدردشة  ✅ \
                 \n⌔︙الدردشـه  🔖 : {event.chat.title}(`{event.chat_id}`)",
         )
 
