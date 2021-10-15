@@ -71,6 +71,7 @@ async def _(event):
 async def _(event):
     "animation command"
     event = await edit_or_reply(event, "**جارِ جلب معلومات السورس . . .**")
+    RR7_IMG = gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/734639485f00e79f5e6e9.mp4"
     deq = deque(list("︎ ︎ ︎︎ ︎ ︎︎ ︎ ︎︎ ︎ ︎**سورس ديو الرسمي**\n\nقناه السورس :♰ @DEOOUS\nقناه ديو الرسمية :♰ @DEOOU\n\n-  أصـدار ديـو :♰ 4.0.0"))
     RR7_IMG = gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/734639485f00e79f5e6e9.mp4"
     for _ in range(999):
