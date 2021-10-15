@@ -73,7 +73,7 @@ async def _(event):
     event = await edit_or_reply(event, "**ببالي كلمه بس**")
     deq = deque(list("︎🗿فشلة من نسيم🗿"))
     for _ in range(999):
-        await asyncio.sleep(2.3)
+        await asyncio.sleep(0.5)
         await event.edit("".join(deq))
         deq.rotate(1)
 
