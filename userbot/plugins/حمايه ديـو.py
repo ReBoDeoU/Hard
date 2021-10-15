@@ -488,7 +488,7 @@ async def you_dm_other(event):
 @jmthon.tgbot.on(CallbackQuery(data=re.compile(rb"show_pmpermit_options")))
 async def on_plug_in_callback_query_handler(event):
     if event.query.user_id == event.client.uid:
-        text = "⌯︙- عذرا هذه الخيارات ليست لك انها للمستخدمين الذين يراسلوك 😐⚕️"
+        text = "♰︙- عذرا هذه الخيارات ليست لك انها للمستخدمين الذين يراسلوك ♰"
         return await event.answer(text, cache_time=0, alert=True)
     text = f"""حسنا الان بإمكانك اختيار احد الخيارات في الاسفل للتواصل مع , {mention}.
 ♰︙اختر بهدوء خيار واحد فقط لنعرف سبب قدومك هنا 
@@ -622,8 +622,8 @@ async def on_plug_in_callback_query_handler(event):
 
 
 @jmthon.ar_cmd(
-    pattern="الحماية (تشغيل|تعطيل)$",
-    command=("الحماية", plugin_category),
+    pattern="ت (تح|تع)$",
+    command=("تع", plugin_category),
     info={
         "header": "To turn on or turn off pmpermit.",
         "usage": "{tr}pmguard on/off",
@@ -632,7 +632,7 @@ async def on_plug_in_callback_query_handler(event):
 async def pmpermit_on(event):
     "Turn on/off pmpermit."
     input_str = event.pattern_match.group(1)
-    if input_str == "تشغيل":
+    if input_str == "تح":
         if gvarstatus("pmpermit") is None:
             addgvar("pmpermit", "true")
             await edit_delete(event, "♰︙ تم تفعيل امر الحماية لحسابك بنجاح ♰")
@@ -646,8 +646,8 @@ async def pmpermit_on(event):
 
 
 @jmthon.ar_cmd(
-    pattern="الحماية (تشغيل|تعطيل)$",
-    command=("الحماية", plugin_category),
+    pattern="ت (تح|تع)$",
+    command=("تح", plugin_category),
     info={
         "header": "To turn on or turn off pmmenu.",
         "usage": "{tr}pmmenu on/off",
@@ -656,7 +656,7 @@ async def pmpermit_on(event):
 async def pmpermit_on(event):
     "Turn on/off pmmenu."
     input_str = event.pattern_match.group(1)
-    if input_str == "تعطيل":
+    if input_str == "تع":
         if gvarstatus("pmmenu") is None:  # ترجمه وكتابة فريق ماتركـس
             addgvar("pmmenu", "false")
             await edit_delete(
@@ -688,7 +688,7 @@ async def approve_p_m(event):  # sourcery no-metrics
     if gvarstatus("pmpermit") is None:
         return await edit_delete(
             event,
-            f"♰︙يـجب تفعيـل امـر الحـماية اولا بأرسـال `{cmdhd}الحماية تشغيل` لـيشتغل هذا الأمـر",
+            f"♰︙يـجب تفعيـل امـر الحـماية اولا بأرسـال `{cmdhd}الحماية تح` لـيشتغل هذا الأمـر",
         )
     if event.is_private:
         user = await event.get_chat()
@@ -816,7 +816,7 @@ async def block_p_m(event):
     if gvarstatus("pmpermit") is None:
         return await edit_delete(
             event,
-            f"♰︙يـجب تفعيـل امـر الحـماية اولا بأرسـال `{cmdhd}الـحماية تغيل` لـيشتغل هذا الأمـر",
+            f"♰︙يـجب تفعيـل امـر الحـماية اولا بأرسـال `{cmdhd}تح` لـيشتغل هذا الأمـ ",
         )  # ترجمه وكتابة فريق ماتركـس
     if event.is_private:
         user = await event.get_chat()
