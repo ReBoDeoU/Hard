@@ -110,6 +110,7 @@ async def permalink(mention):
         mention, f"⌯︙المستخدم [{tag}](tg://user?id={user.id}) \n⌯︙ تـم رفعـه ليصبح نسيم 🖤 "
     )
 
+    
 @jmthon.ar_cmd(
     pattern="رفع صاحب(?:\s|$)([\s\S]*)",
     command=("رفع صاحب", plugin_category),
@@ -127,7 +128,7 @@ async def permalink(mention):
     )
 
     
-    @jmthon.ar_cmd(
+@jmthon.ar_cmd(
     pattern="رفع ريكو(?:\s|$)([\s\S]*)",
     command=("رفع ريكو", plugin_category),
 )
