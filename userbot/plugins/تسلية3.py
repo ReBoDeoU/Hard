@@ -61,21 +61,19 @@ async def _(event):
         deq.rotate(1)
 
 @jmthon.ar_cmd(
-    pattern="السورس$",
-    command=("السورس", plugin_category),
+    pattern="جسمه$",
+    command=("جسمه", plugin_category),
     info={
         "الامر": "**امر تسليه قم بالتجربه بنفسك**",
-        "الاستخدام": "{tr}السورس",
+        "الاستخدام": "{tr}.جسمه",
     },
 )
 async def _(event):
     "animation command"
-    event = await edit_or_reply(event, "**جارِ جلب معلومات السورس . . .**")
-    RR7_IMG = gvarstatus"https://telegra.ph/file/734639485f00e79f5e6e9.mp4"
-    deq = deque(list("︎ ︎ ︎︎ ︎ ︎︎ ︎ ︎︎ ︎ ︎**سورس ديو الرسمي**\n\nقناه السورس :♰ @DEOOUS\nقناه ديو الرسمية :♰ @DEOOU\n\n-  أصـدار ديـو :♰ 4.0.0"))
-    RR7_IMG = gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/734639485f00e79f5e6e9.mp4"
+    event = await edit_or_reply(event, "**ببالي كلمه بس**")
+    deq = deque(list("︎🗿فشلة من نسيم🗿"))
     for _ in range(999):
-        await asyncio.sleep(1)
+        await asyncio.sleep(2.3)
         await event.edit("".join(deq))
         deq.rotate(1)
 
