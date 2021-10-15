@@ -622,7 +622,7 @@ async def on_plug_in_callback_query_handler(event):
 
 
 @jmthon.ar_cmd(
-    pattern="ت (تح|تع)$",
+    pattern="ت (تش|تع)$",
     command=("تع", plugin_category),
     info={
         "header": "To turn on or turn off pmpermit.",
@@ -632,7 +632,7 @@ async def on_plug_in_callback_query_handler(event):
 async def pmpermit_on(event):
     "Turn on/off pmpermit."
     input_str = event.pattern_match.group(1)
-    if input_str == "تح":
+    if input_str == "تش":
         if gvarstatus("pmpermit") is None:
             addgvar("pmpermit", "true")
             await edit_delete(event, "♰︙ تم تفعيل امر الحماية لحسابك بنجاح ♰")
@@ -646,8 +646,8 @@ async def pmpermit_on(event):
 
 
 @jmthon.ar_cmd(
-    pattern="ت (تح|تع)$",
-    command=("تح", plugin_category),
+    pattern="ت (تش|تع)$",
+    command=("تش", plugin_category),
     info={
         "header": "To turn on or turn off pmmenu.",
         "usage": "{tr}pmmenu on/off",
