@@ -22,7 +22,7 @@ from . import AUTONAME, DEFAULT_BIO, edit_delete, jmthon, logging
 plugin_category = "tools"
 
 DEFAULTUSERBIO = DEFAULT_BIO or " قلوبنا مليئة برسائل ، لم تكتب "
-DEFAULTUSER = AUTONAME or Confing.♰ALIVE_NAME
+DEFAULTUSER = AUTONAME or Confing.ALIVE_NAME
 LOGS = logging.getLogger(__name__)
 
 FONT_FILE_TO_USE = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
