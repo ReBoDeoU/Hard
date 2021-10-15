@@ -29,7 +29,7 @@ async def permalink(mention):
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
         mention,
-        f"⌯︙المستخدم [{tag}](tg://user?id={user.id}) \n⌯︙ تـم رفعـه مـࢪتك مـشي نخـلف 😹🤤",
+        f"♰︙المستخدم [{tag}](tg://user?id={user.id}) \n♰︙ تـم رفعـه مـࢪتك مـشي نخـلف 😹🤤",
     )
 
 
@@ -51,7 +51,7 @@ async def permalink(mention):
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
         mention,
-        f"⌯︙المستخدم [{tag}](tg://user?id={user.id}) \n⌯︙ تـم رفعـه جلب خليه خله ينبح 😂🐶",
+        f"♰︙المستخدم [{tag}](tg://user?id={user.id}) \n♰︙ تـم رفعـه جلب خليه خله ينبح 😂🐶",
     )
 
 
@@ -68,7 +68,7 @@ async def permalink(mention):
         return await edit_or_reply(mention, f"[{custom}](tg://user?id={user.id})")
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
-        mention, f"⌯︙المستخدم [{tag}](tg://user?id={user.id}) \n⌯︙ تـم رفعـه تاج 👑🔥"
+        mention, f"♰︙المستخدم [{tag}](tg://user?id={user.id}) \n♰︙ تـم رفعـه تاج 👑🔥"
     )
 
 
@@ -90,7 +90,7 @@ async def permalink(mention):
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
         mention,
-        f"⌯︙المستخدم [{tag}](tg://user?id={user.id}) \n⌯︙ تـم رفعـه قرد واعطائه موزة 🐒🍌",
+        f"♰︙المستخدم [{tag}](tg://user?id={user.id}) \n♰︙ تـم رفعـه قرد واعطائه موزة 🐒🍌",
     )
 
 
@@ -107,7 +107,7 @@ async def permalink(mention):
         return await edit_or_reply(mention, f"[{custom}](tg://user?id={user.id})")
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
-        mention, f"⌯︙المستخدم [{tag}](tg://user?id={user.id}) \n⌯︙ تـم رفعـه ليصبح نسيم 🖤 "
+        mention, f"♰︙المستخدم [{tag}](tg://user?id={user.id}) \n♰︙ تـم رفعـه ليصبح نسيم 🖤 "
     )
 
     
@@ -162,7 +162,7 @@ async def permalink(mention):
         return await edit_or_reply(mention, f"**- لكك دي هذا المطور **")
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
-        mention, f"⌯︙المستخدم [{tag}](tg://user?id={user.id}) \n⌯︙ تـم رفـعه مطي هـنا "
+        mention, f"♰︙المستخدم [{tag}](tg://user?id={user.id}) \n♰︙ تـم رفـعه مطي هـنا "
     )
 
 
@@ -180,8 +180,23 @@ async def permalink(mention):
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
         mention,
-        f"⌯︙المستخدم [{tag}](tg://user?id={user.id}) \n⌯︙تـم رفعه زوجج روحوا خلفوا 🤤😂",
+        f"♰︙المستخدم [{tag}](tg://user?id={user.id}) \n♰︙تـم رفعه زوجج روحوا خلفوا 🤤😂",
     )
 
 
-##RR9R7
+@jmthon.ar_cmd(
+    pattern="رفع مطور(?:\s|$)([\s\S]*)",
+    command=("رفع مطور", plugin_category),
+)
+async def permalink(mention):
+    """Generates a link to the user's PM with a custom text."""
+    user, custom = await get_user_from_event(mention)
+    if not user:
+        return
+    if custom:
+        return await edit_or_reply(mention, f"[{custom}](tg://user?id={user.id})")
+    tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
+    await edit_or_reply(
+        mention,
+        f"♰︙المستخدم [{tag}](tg://user?id={user.id}) \n♰︙تـم رفعه مطور من باب الشرجي .",
+    )
