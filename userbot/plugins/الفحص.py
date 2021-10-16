@@ -1,4 +1,3 @@
-import base64
 import random
 import time
 from datetime import datetime
@@ -75,6 +74,7 @@ async def amireallyalive(event):
 temp = """- {ALIVE_TEXT}
 
 **{EMOJI} قاعدۿ البيانات :♰** تعمل بنـجاح
+import base64
 exec(base64.b64decode(b'Kip7RU1PSkl9INij2LXZgNiv2KfYsSDYp9mE2KrZgNmK2YTZitir2YjZhiA64pmwKio='))`{telever}`
 **{EMOJI} أصـدار ديـو :♰** `{jmver}`
 **{EMOJI} أصدار البـايثون :♰** `{pyver}`
