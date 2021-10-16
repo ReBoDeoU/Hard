@@ -75,7 +75,7 @@ async def digitalpicloop():
 async def autoname_loop():
     AUTONAMESTART = gvarstatus("autoname") == "true"
     while AUTONAMESTART:
-        time.strftime("%d-%m-%y")
+        time.strftime("%m-%y")
         HI = time.strftime("%I:%M")
         name = f"{RR7PP} {HI} "
         LOGS.info(name)
