@@ -1,2 +1,81 @@
-import base64
-exec(base64.b64decode(b'aW1wb3J0IHJhbmRvbQoKaW1wb3J0IHRpbWUKCmZyb20gZGF0ZXRpbWUgaW1wb3J0IGRhdGV0aW1lCgpmcm9tIHBsYXRmb3JtIGltcG9ydCBweXRob25fdmVyc2lvbgoKCgoKZnJvbSB0ZWxldGhvbiBpbXBvcnQgdmVyc2lvbgoKZnJvbSB0ZWxldGhvbi5lcnJvcnMucnBjZXJyb3JsaXN0IGltcG9ydCAoCgogICAgTWVkaWFFbXB0eUVycm9yLAoKICAgIFdlYnBhZ2VDdXJsRmFpbGVkRXJyb3IsCgogICAgV2VicGFnZU1lZGlhRW1wdHlFcnJvciwKCikKCgoKCmZyb20gdXNlcmJvdCBpbXBvcnQgSk1WRVJTSU9OLCBTdGFydFRpbWUsIGptdGhvbgoKCgoKZnJvbSAuLmNvcmUubWFuYWdlcnMgaW1wb3J0IGVkaXRfb3JfcmVwbHkKCmZyb20gLi5oZWxwZXJzLmZ1bmN0aW9ucyBpbXBvcnQgY2hlY2tfZGF0YV9iYXNlX2hlYWxfdGgsIGdldF9yZWFkYWJsZV90aW1lCgpmcm9tIC4uaGVscGVycy51dGlscyBpbXBvcnQgcmVwbHlfaWQKCmZyb20gLi5zcWxfaGVscGVyLmdsb2JhbHMgaW1wb3J0IGd2YXJzdGF0dXMKCmZyb20gLiBpbXBvcnQgbWVudGlvbgoKCgoKcGx1Z2luX2NhdGVnb3J5ID0gInV0aWxzIgoKCgoKIyDZg9iq2YDYp9io2Kkg2YjYqti52YDYr9mK2YQ6ICBAUlI5UjcKCgoKCgoKCkBqbXRob24uYXJfY21kKAoKICAgIHBhdHRlcm49ItmB2K3YtSQiLAoKICAgIGNvbW1hbmQ9KCLZgdit2LUiLCBwbHVnaW5fY2F0ZWdvcnkpLAoKKQoKYXN5bmMgZGVmIGFtaXJlYWxseWFsaXZlKGV2ZW50KToKCiAgICAi2YTZhNiq2YDYo9mD2K8g2YXZhiDYp9mGINin2YTYqNmA2YjYqiDZiti52YDZhdmA2YQiCgogICAgcmVwbHlfdG9faWQgPSBhd2FpdCByZXBseV9pZChldmVudCkKCiAgICB1cHRpbWUgPSBhd2FpdCBnZXRfcmVhZGFibGVfdGltZSgodGltZS50aW1lKCkgLSBTdGFydFRpbWUpKQoKICAgIHN0YXJ0ID0gZGF0ZXRpbWUubm93KCkKCiAgICBhd2FpdCBlZGl0X29yX3JlcGx5KGV2ZW50LCAiKiog4oyv77iZ2YrYqtmA2YUg2KfZhNiq2YDYo9mD2YDYryDYp9mG2KrZgNi42LEg2YLZhNmK2YTYpyDYsdis2KfYodinKioiKQoKICAgIGVuZCA9IGRhdGV0aW1lLm5vdygpCgogICAgbXMgPSAoZW5kIC0gc3RhcnQpLm1pY3Jvc2Vjb25kcyAvIDEwMDAKCiAgICBfLCBjaGVja19zZ25pcnRzID0gY2hlY2tfZGF0YV9iYXNlX2hlYWxfdGgoKQoKICAgIEVNT0pJID0gZ3ZhcnN0YXR1cygiQUxJVkVfRU1PSkkiKSBvciAiICAtICIKCiAgICBBTElWRV9URVhUID0gZ3ZhcnN0YXR1cygiQUxJVkVfVEVYVCIpIG9yICIqKiDYqNmA2YjYqiDYr9mK2YDZiCDZiti52YDZhdmEINio2YbZgNis2YDYp9itICoqIgoKICAgIFJSN19JTUcgPSBndmFyc3RhdHVzKCJBTElWRV9QSUMiKSBvciAiaHR0cHM6Ly90ZWxlZ3JhLnBoL2ZpbGUvNzM0NjM5NDg1ZjAwZTc5ZjVlNmU5Lm1wNCIKCiAgICBqbXRob25fY2FwdGlvbiA9IGd2YXJzdGF0dXMoIkFMSVZFX1RFTVBMQVRFIikgb3IgdGVtcAoKICAgIGNhcHRpb24gPSBqbXRob25fY2FwdGlvbi5mb3JtYXQoCgogICAgICAgIEFMSVZFX1RFWFQ9QUxJVkVfVEVYVCwKCiAgICAgICAgRU1PSkk9RU1PSkksCgogICAgICAgIG1lbnRpb249bWVudGlvbiwKCiAgICAgICAgdXB0aW1lPXVwdGltZSwKCiAgICAgICAgdGVsZXZlcj12ZXJzaW9uLl9fdmVyc2lvbl9fLAoKICAgICAgICBqbXZlcj1KTVZFUlNJT04sCgogICAgICAgIHB5dmVyPXB5dGhvbl92ZXJzaW9uKCksCgogICAgICAgIGRiaGVhbHRoPWNoZWNrX3NnbmlydHMsCgogICAgICAgIHBpbmc9bXMsCgogICAgKQoKICAgIGlmIFJSN19JTUc6CgogICAgICAgIFJSNyA9IFt4IGZvciB4IGluIFJSN19JTUcuc3BsaXQoKV0KCiAgICAgICAgUElDID0gcmFuZG9tLmNob2ljZShSUjcpCgogICAgICAgIHRyeToKCiAgICAgICAgICAgIGF3YWl0IGV2ZW50LmNsaWVudC5zZW5kX2ZpbGUoCgogICAgICAgICAgICAgICAgZXZlbnQuY2hhdF9pZCwgUElDLCBjYXB0aW9uPWNhcHRpb24sIHJlcGx5X3RvPXJlcGx5X3RvX2lkCgogICAgICAgICAgICApCgogICAgICAgICAgICBhd2FpdCBldmVudC5kZWxldGUoKQoKICAgICAgICBleGNlcHQgKFdlYnBhZ2VNZWRpYUVtcHR5RXJyb3IsIE1lZGlhRW1wdHlFcnJvciwgV2VicGFnZUN1cmxGYWlsZWRFcnJvcik6CgogICAgICAgICAgICByZXR1cm4gYXdhaXQgZWRpdF9vcl9yZXBseSgKCiAgICAgICAgICAgICAgICBldmVudCwKCiAgICAgICAgICAgICAgICBmIioq2KfZhNmF2YrZgNiv2YrYpyDYrtmA2LfYoyBcbti62YDZitixINin2YTYsdin2KjZgNi3INio2KPYs9iq2YDYrtiv2KfZhSDYp9mE2KPZhdmA2LEgIFxuIGAu2KfYttmBX9mB2KfYsSBBTElWRV9QSUMg2LHYp9io2Lcg2LXZiNix2KrZg2BcblxuKirZhNinINmK2YXZgNmD2YYg2KfZhNit2YDYtdmI2YQg2LnZgNmE2Ykg2LXZgNmI2LHYqSDZhdmGINin2YTZgNix2KfYqNmA2LcgOi0gYHtQSUN9YCIsCgogICAgICAgICAgICApCgogICAgZWxzZToKCiAgICAgICAgYXdhaXQgZWRpdF9vcl9yZXBseSgKCiAgICAgICAgICAgIGV2ZW50LAoKICAgICAgICAgICAgY2FwdGlvbiwKCiAgICAgICAgKQoKCgoKCgoKdGVtcCA9ICIiIi0ge0FMSVZFX1RFWFR9CgoKCntFTU9KSX0g2YLYp9i52K/bvyDYp9mE2KjZitin2YbYp9iqIDrimbAg2KrYudmF2YQg2KjZhtmA2KzYp9itCgp7RU1PSkl9INij2LXZgNiv2KfYsSDYp9mE2KrZgNmK2YTZitir2YjZhiA64pmwIHt0ZWxldmVyfQoKe0VNT0pJfSDYo9i12YDYr9in2LEg2K/ZitmA2YggOuKZsCB7am12ZXJ9Cgp7RU1PSkl9INij2LXYr9in2LEg2KfZhNio2YDYp9mK2KvZiNmGIDrimbAge3B5dmVyfQoKe0VNT0pJfSDYp9mE2YjZgtmA2KogOuKZsCB7dXB0aW1lfQoKe0VNT0pJfSDYp9mE2YXYs9mA2KrYrtiv2YU64pmwIHttZW50aW9ufSIiIg=='))
+import random
+import time
+from datetime import datetime
+from platform import python_version
+
+from telethon import version
+from telethon.errors.rpcerrorlist import (
+    MediaEmptyError,
+    WebpageCurlFailedError,
+    WebpageMediaEmptyError,
+)
+
+from userbot import JMVERSION, StartTime, jmthon
+
+from ..core.managers import edit_or_reply
+from ..helpers.functions import check_data_base_heal_th, get_readable_time
+from ..helpers.utils import reply_id
+from ..sql_helper.globals import gvarstatus
+from . import mention
+
+plugin_category = "utils"
+
+# كتـابة وتعـديل:  @RR9R7
+
+
+@jmthon.ar_cmd(
+    pattern="فحص$",
+    command=("فحص", plugin_category),
+)
+async def amireallyalive(event):
+    "للتـأكد من ان البـوت يعـمـل"
+    reply_to_id = await reply_id(event)
+    uptime = await get_readable_time((time.time() - StartTime))
+    start = datetime.now()
+    await edit_or_reply(event, "** ⌯︙يتـم التـأكـد انتـظر قليلا رجاءا**")
+    end = datetime.now()
+    ms = (end - start).microseconds / 1000
+    _, check_sgnirts = check_data_base_heal_th()
+    EMOJI = gvarstatus("ALIVE_EMOJI") or "  - "
+    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "** بـوت ديـو يعـمل بنـجـاح **"
+    RR7_IMG = gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/734639485f00e79f5e6e9.mp4"
+    jmthon_caption = gvarstatus("ALIVE_TEMPLATE") or temp
+    caption = jmthon_caption.format(
+        ALIVE_TEXT=ALIVE_TEXT,
+        EMOJI=EMOJI,
+        mention=mention,
+        uptime=uptime,
+        telever=version.__version__,
+        jmver=JMVERSION,
+        pyver=python_version(),
+        dbhealth=check_sgnirts,
+        ping=ms,
+    )
+    if RR7_IMG:
+        RR7 = [x for x in RR7_IMG.split()]
+        PIC = random.choice(RR7)
+        try:
+            await event.client.send_file(
+                event.chat_id, PIC, caption=caption, reply_to=reply_to_id
+            )
+            await event.delete()
+        except (WebpageMediaEmptyError, MediaEmptyError, WebpageCurlFailedError):
+            return await edit_or_reply(
+                event,
+                f"**الميـديا خـطأ **\nغـير الرابـط بأستـخدام الأمـر  \n `.اضف_فار ALIVE_PIC رابط صورتك`\n\n**لا يمـكن الحـصول عـلى صـورة من الـرابـط :-** `{PIC}`",
+            )
+    else:
+        await edit_or_reply(
+            event,
+            caption,
+        )
+
+
+temp = """- {ALIVE_TEXT}
+
+**{EMOJI} قاعدۿ البيانات :♰** تعمل بنـجاح
+**{EMOJI} أصـدار التـيليثون :♰** `{telever}`
+**{EMOJI} أصـدار ديـو :♰** `{jmver}`
+**{EMOJI} أصدار البـايثون :♰** `{pyver}`
+**{EMOJI} الوقـت :♰** `{uptime}`
+**{EMOJI} المسـتخدم:♰** {mention}"""
