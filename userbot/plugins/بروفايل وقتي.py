@@ -1,6 +1,6 @@
 # اذا تخمط اذكر الحقوق رجـاءا  -
-# كتابة وتعديل وترتيب  ~ @RR9R7
-# For ~ @Jmthon
+# كتابة وتعديل وترتيب  ~ @REKHSO
+# For ~ @DEOOU
 
 import asyncio
 import base64
@@ -22,7 +22,7 @@ from . import AUTONAME, DEFAULT_BIO, edit_delete, jmthon, logging
 plugin_category = "tools"
 
 DEFAULTUSERBIO = DEFAULT_BIO or " قلوبنا مليئة برسائل ، لم تكتب "
-DEFAULTUSER = AUTONAME or Confing.ALIVE_NAME
+DEFAULTUSER = AUTONAME or Config.ALIVE_NAME
 LOGS = logging.getLogger(__name__)
 
 FONT_FILE_TO_USE = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
@@ -115,9 +115,9 @@ async def _(event):
     while not downloader.isFinished():
         pass
     if gvarstatus("digitalpic") is not None and gvarstatus("digitalpic") == "true":
-        return await edit_delete(event, "الصـورة الـوقتية شغـالة بالأصـل ♰")
+        return await edit_delete(event, "**الصـورة الـوقتية شغـالة بالأصـل ♰**")
     addgvar("digitalpic", True)
-    await edit_delete(event, "**تم تفـعيل الصـورة الـوقتية بنجـاح ♰")
+    await edit_delete(event, "**تم تفـعيل الصـورة الـوقتية بنجـاح ♰**")
     await digitalpicloop()
 
 
@@ -128,9 +128,9 @@ async def _(event):
 async def _(event):
     "To set your display name along with time"
     if gvarstatus("autoname") is not None and gvarstatus("autoname") == "true":
-        return await edit_delete(event, "**الاسـم الـوقتي شغـال بالأصـل ♰")
+        return await edit_delete(event, "**الاسـم الـوقتي شغـال بالأصـل ♰**")
     addgvar("autoname", True)
-    await edit_delete(event, "**تم تفـعيل الاسـم الـوقتي بنجـاح ♰")
+    await edit_delete(event, "**تم تفـعيل الاسـم الـوقتي بنجـاح ♰**")
     await autoname_loop()
 
 
@@ -141,9 +141,9 @@ async def _(event):
 async def _(event):
     "To update your bio along with time"
     if gvarstatus("autobio") is not None and gvarstatus("autobio") == "true":
-        return await edit_delete(event, "**الـبايو الـوقتي شغـال بالأصـل ♰")
+        return await edit_delete(event, "**الـبايو الـوقتي شغـال بالأصـل ♰**")
     addgvar("autobio", True)
-    await edit_delete(event, "**تم تفـعيل البـايو الـوقتي بنجـاح ♰")
+    await edit_delete(event, "**تم تفـعيل البـايو الـوقتي بنجـاح ♰**")
     await autobio_loop()
 
 
@@ -162,24 +162,24 @@ async def _(event):  # sourcery no-metrics
                     await event.client.get_profile_photos("me", limit=1)
                 )
             )
-            return await edit_delete(event, "**تم ايقاف الصورة الوقتية بنـجاح ♰")
-        return await edit_delete(event, "**لم يتم تفعيل الصورة الوقتية بالأصل ♰")
+            return await edit_delete(event, "**تم ايقاف الصورة الوقتية بنـجاح ♰**")
+        return await edit_delete(event, "**لم يتم تفعيل الصورة الوقتية بالأصل ♰**")
     if input_str == "اسم وقتي":
         if gvarstatus("autoname") is not None and gvarstatus("autoname") == "true":
             delgvar("autoname")
             await event.client(
                 functions.account.UpdateProfileRequest(first_name=DEFAULTUSER)
             )
-            return await edit_delete(event, "**تم ايقاف  الاسم الوقتي بنـجاح ♰")
-        return await edit_delete(event, "**لم يتم تفعيل الاسم الوقتي بالأصل ♰")
+            return await edit_delete(event, "**تم ايقاف  الاسم الوقتي بنـجاح ♰**")
+        return await edit_delete(event, "**لم يتم تفعيل الاسم الوقتي بالأصل ♰**")
     if input_str == "بايو وقتي":
         if gvarstatus("autobio") is not None and gvarstatus("autobio") == "true":
             delgvar("autobio")
             await event.client(
                 functions.account.UpdateProfileRequest(about=DEFAULTUSERBIO)
             )
-            return await edit_delete(event, "**  تم ايقاف البايو الوقـتي بنـجاح ♰")
-        return await edit_delete(event, "**لم يتم تفعيل البايو الوقتي ♰")
+            return await edit_delete(event, "**  تم ايقاف البايو الوقـتي بنـجاح ♰**")
+        return await edit_delete(event, "**لم يتم تفعيل البايو الوقتي ♰**")
     END_CMDS = [
         "الصورة الوقتية",
         "اسم وقتي",
