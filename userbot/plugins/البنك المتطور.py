@@ -1,67 +1,2 @@
-# ======================================================================================================================================
-# ping -> edited ping with pic by  @RR7PP
-# كتابة الملف لسورس ماتركـس فقط ممنوع نسبه لنفسك
-# تخمط دليل فشلك اخمط وكول اني مطور 😂😂
-
-import os
-from datetime import datetime
-
-from userbot import jmthon
-
-from . import hmention, reply_id
-
-"""
-try:
-    from . import PING_PIC, PING_TEXT
-except:
-    pass
-"""
-plugin_category = "tools"
-
-PING_PIC = os.environ.get("PING_PIC") or (
-    "https://telegra.ph/file/d75e7e9310ea3fa8ab49b.mp4"
-)
-
-JM_TXT = os.environ.get("PING_TEXT") or "الخسارة بعد المقاومة تختلف عن الخسارة بدونها.. إنها نصر من نوع آخر لا يعرف معناه إلا من جربه. 🔥"
-
-
-@jmthon.ar_cmd(
-    pattern="بنك متطور$",
-    command=("بنك متطور", plugin_category),
-    info={
-        "header": "امر تجربه البوت اذا يشتغل ارسل  .بنك متطور فقط",
-        "option": "امر بنك المتطور كتابة  @DEOOUS",
-        "usage": [
-            "{tr}بنك متطور",
-        ],
-    },
-)
-async def _(event):
-    if event.fwd_from:
-        return
-    reply_to_id = await reply_id(event)
-    start = datetime.now()
-    cat = await edit_or_reply(
-        event, "<b><i>  ..♰ البــــنك ♰..  </b></i>", "html"
-    )
-    end = datetime.now()
-    await cat.delete()
-    ms = (end - start).microseconds / 1000
-    if PING_PIC:
-        caption = f"<b><i>{JM_TXT}<i><b>\n<code>┏━━━━━━━┓\n┃ ♰ : 𝖉𝖊𝖛 - @DEOOUS\n┃ ♰ : <b>{hmention}</b>\n<b>┃ ♰ : {ms}\n</b>┗━━━━━━━┛"
-        await event.client.send_file(
-            event.chat_id,
-            PING_PIC,
-            caption=caption,
-            parse_mode="html",
-            reply_to=reply_to_id,
-            link_preview=False,
-            allow_cache=True,
-        )
-    else:
-        await event.edit_or_reply(
-            event, "<code>يجـب اضـافة متـغير `PING_PIC`  اولا  f<code>", "html"
-        )
-
-
-# ======================================================================================================================================
+import base64
+exec(base64.b64decode(b'IyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQojIHBpbmcgLT4gZWRpdGVkIHBpbmcgd2l0aCBwaWMgYnkgIEBSUjdQUAojINmD2KrYp9io2Kkg2KfZhNmF2YTZgSDZhNiz2YjYsdizINmF2KfYqtix2YPZgNizINmB2YLYtyDZhdmF2YbZiNi5INmG2LPYqNmHINmE2YbZgdiz2YMKIyDYqtiu2YXYtyDYr9mE2YrZhCDZgdi02YTZgyDYp9iu2YXYtyDZiNmD2YjZhCDYp9mG2Yog2YXYt9mI2LEg8J+YgvCfmIIKCmltcG9ydCBvcwpmcm9tIGRhdGV0aW1lIGltcG9ydCBkYXRldGltZQoKZnJvbSB1c2VyYm90IGltcG9ydCBqbXRob24KCmZyb20gLiBpbXBvcnQgaG1lbnRpb24sIHJlcGx5X2lkCgoiIiIKdHJ5OgogICAgZnJvbSAuIGltcG9ydCBQSU5HX1BJQywgUElOR19URVhUCmV4Y2VwdDoKICAgIHBhc3MKIiIiCnBsdWdpbl9jYXRlZ29yeSA9ICJ0b29scyIKClBJTkdfUElDID0gb3MuZW52aXJvbi5nZXQoIlBJTkdfUElDIikgb3IgKAogICAgImh0dHBzOi8vdGVsZWdyYS5waC9maWxlL2Q3NWU3ZTkzMTBlYTNmYThhYjQ5Yi5tcDQiCikKCkpNX1RYVCA9IG9zLmVudmlyb24uZ2V0KCJQSU5HX1RFWFQiKSBvciAi2KfZhNiu2LPYp9ix2Kkg2KjYudivINin2YTZhdmC2KfZiNmF2Kkg2KrYrtiq2YTZgSDYudmGINin2YTYrtiz2KfYsdipINio2K/ZiNmG2YfYpy4uINil2YbZh9inINmG2LXYsSDZhdmGINmG2YjYuSDYotiu2LEg2YTYpyDZiti52LHZgSDZhdi52YbYp9mHINil2YTYpyDZhdmGINis2LHYqNmHLiDwn5SlIgoKCkBqbXRob24uYXJfY21kKAogICAgcGF0dGVybj0i2KjZhtmDINmF2KrYt9mI2LEkIiwKICAgIGNvbW1hbmQ9KCLYqNmG2YMg2YXYqti32YjYsSIsIHBsdWdpbl9jYXRlZ29yeSksCiAgICBpbmZvPXsKICAgICAgICAiaGVhZGVyIjogItin2YXYsSDYqtis2LHYqNmHINin2YTYqNmI2Kog2KfYsNinINmK2LTYqti62YQg2KfYsdiz2YQgIC7YqNmG2YMg2YXYqti32YjYsSDZgdmC2LciLAogICAgICAgICJvcHRpb24iOiAi2KfZhdixINio2YbZgyDYp9mE2YXYqti32YjYsSDZg9iq2KfYqNipICBAREVPT1VTIiwKICAgICAgICAidXNhZ2UiOiBbCiAgICAgICAgICAgICJ7dHJ92KjZhtmDINmF2KrYt9mI2LEiLAogICAgICAgIF0sCiAgICB9LAopCmFzeW5jIGRlZiBfKGV2ZW50KToKICAgIGlmIGV2ZW50LmZ3ZF9mcm9tOgogICAgICAgIHJldHVybgogICAgcmVwbHlfdG9faWQgPSBhd2FpdCByZXBseV9pZChldmVudCkKICAgIHN0YXJ0ID0gZGF0ZXRpbWUubm93KCkKICAgIGNhdCA9IGF3YWl0IGVkaXRfb3JfcmVwbHkoCiAgICAgICAgZXZlbnQsICI8Yj48aT4gIC4u4pmwINin2YTYqNmA2YDZgNmA2YbZgyDimbAuLiAgPC9iPjwvaT4iLCAiaHRtbCIKICAgICkKICAgIGVuZCA9IGRhdGV0aW1lLm5vdygpCiAgICBhd2FpdCBjYXQuZGVsZXRlKCkKICAgIG1zID0gKGVuZCAtIHN0YXJ0KS5taWNyb3NlY29uZHMgLyAxMDAwCiAgICBpZiBQSU5HX1BJQzoKICAgICAgICBjYXB0aW9uID0gZiI8Yj48aT57Sk1fVFhUfTxpPjxiPlxuPGNvZGU+4pSP4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSTXG7ilIMg4pmwIDog8J2WifCdlorwnZabIC0gQERFT09VU1xu4pSDIOKZsCA6IDxiPntobWVudGlvbn08L2I+XG48Yj7ilIMg4pmwIDoge21zfVxuPC9iPuKUl+KUgeKUgeKUgeKUgeKUgeKUgeKUgeKUmyIKICAgICAgICBhd2FpdCBldmVudC5jbGllbnQuc2VuZF9maWxlKAogICAgICAgICAgICBldmVudC5jaGF0X2lkLAogICAgICAgICAgICBQSU5HX1BJQywKICAgICAgICAgICAgY2FwdGlvbj1jYXB0aW9uLAogICAgICAgICAgICBwYXJzZV9tb2RlPSJodG1sIiwKICAgICAgICAgICAgcmVwbHlfdG89cmVwbHlfdG9faWQsCiAgICAgICAgICAgIGxpbmtfcHJldmlldz1GYWxzZSwKICAgICAgICAgICAgYWxsb3dfY2FjaGU9VHJ1ZSwKICAgICAgICApCiAgICBlbHNlOgogICAgICAgIGF3YWl0IGV2ZW50LmVkaXRfb3JfcmVwbHkoCiAgICAgICAgICAgIGV2ZW50LCAiPGNvZGU+2YrYrNmA2Kgg2KfYttmA2KfZgdipINmF2KrZgNi62YrYsSBgUElOR19QSUNgICDYp9mI2YTYpyAgZjxjb2RlPiIsICJodG1sIgogICAgICAgICkKCgojID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Cg=='))
