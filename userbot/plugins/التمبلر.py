@@ -26,7 +26,7 @@ async def _(event):
 async def _(event):
     if not event.text[0].isalpha() and event.text[0] not in ("/", "#", "@", "!"):
         await event.edit(
-            "˛ 𝗠𝗔𝗧𝗥𝗜𝗫 𝗕𝗢𝗧\n"
+            "˛ DEOOU 𝗕𝗢𝗧\n"
             "•━═━═━═━═━━═━═━═━═━•\n"
             "**قائـمة اوامر الزغرفة :**\n"
             " `.زغرفة0`\n"
