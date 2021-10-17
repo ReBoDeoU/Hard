@@ -26,13 +26,13 @@ JM_TXT = os.environ.get("PING_TEXT") or "الخسارة بعد المقاومة 
 
 
 @jmthon.ar_cmd(
-    pattern="بنك$",
-    command=("بنك", plugin_category),
+    pattern="بنك متطور$",
+    command=("بنك متطور", plugin_category),
     info={
-        "header": "امر تجربه البوت اذا يشتغل ارسل  .بنك فقط",
+        "header": "امر تجربه البوت اذا يشتغل ارسل  .بنك متطور فقط",
         "option": "امر بنك المتطور كتابة  @DEOOUS",
         "usage": [
-            "{tr}بنك",
+            "{tr}بنك متطور",
         ],
     },
 )
@@ -42,7 +42,7 @@ async def _(event):
     reply_to_id = await reply_id(event)
     start = datetime.now()
     cat = await edit_or_reply(
-        event, "<b><i>  ❤️⃝⃝⃝⃝⃝⃝⃝⃝⃝⃝⃝⃝⃝⃝⃟✨ البــــنك... 🍀⃝⃝⃟🍂 </b></i>", "html"
+        event, "<b><i>  ..♰ البــــنك ♰..  </b></i>", "html"
     )
     end = datetime.now()
     await cat.delete()
