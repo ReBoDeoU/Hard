@@ -19,7 +19,7 @@ except:
 plugin_category = "tools"
 
 PING_PIC = os.environ.get("PING_PIC") or (
-    "https://telegra.ph/file/502a2c9751c3c06222c51.jpg"
+    "https://telegra.ph/file/d75e7e9310ea3fa8ab49b.mp4"
 )
 
 JM_TXT = os.environ.get("PING_TEXT") or "الخسارة بعد المقاومة تختلف عن الخسارة بدونها.. إنها نصر من نوع آخر لا يعرف معناه إلا من جربه. 🔥"
