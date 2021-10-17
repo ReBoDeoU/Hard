@@ -22,7 +22,7 @@ PING_PIC = os.environ.get("PING_PIC") or (
     "https://telegra.ph/file/502a2c9751c3c06222c51.jpg"
 )
 
-JM_TXT = os.environ.get("PING_TEXT") or "مـن لا يتعلم من الماضي لا يرحمه المستقبل  . 🖤"
+JM_TXT = os.environ.get("PING_TEXT") or "الخسارة بعد المقاومة تختلف عن الخسارة بدونها.. إنها نصر من نوع آخر لا يعرف معناه إلا من جربه. 🔥"
 
 
 @jmthon.ar_cmd(
@@ -30,7 +30,7 @@ JM_TXT = os.environ.get("PING_TEXT") or "مـن لا يتعلم من الماض�
     command=("بنك", plugin_category),
     info={
         "header": "امر تجربه البوت اذا يشتغل ارسل  .بنك فقط",
-        "option": "امر بنك المتطور كتابة  @RR7PP",
+        "option": "امر بنك المتطور كتابة  @DEOOUS",
         "usage": [
             "{tr}بنك",
         ],
@@ -48,7 +48,7 @@ async def _(event):
     await cat.delete()
     ms = (end - start).microseconds / 1000
     if PING_PIC:
-        caption = f"<b><i>{JM_TXT}<i><b>\n<code>┏━━━━━━━┓\n┃ ✦ {ms}\n┃ ✦ <b>{hmention}</b>\n┗━━━━━━━┛"
+        caption = f"<b><i>{JM_TXT}<i><b>\n<code>┏━━━━━━━┓\n┃ ♰ : 𝖉𝖊𝖛 - @DEOOUS\n┃ ♰ : <b>{hmention}</b>\n┗━━━━━━━┛"
         await event.client.send_file(
             event.chat_id,
             PING_PIC,
