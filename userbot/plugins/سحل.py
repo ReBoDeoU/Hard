@@ -44,7 +44,7 @@ async def startgmute(event):
     if is_muted(userid, "gmute"):
         return await edit_or_reply(
             event,
-            f"*♰... هـذا الشـخص مسحول بـنجاح ..♰**",
+            f"**♰... هـذا الشـخص مسحول بـنجاح ..♰**",
         )
     try:
         mute(userid, "gmute")
@@ -110,11 +110,11 @@ async def endgmute(event):
         user = (await event.client(GetFullUserRequest(userid))).user
     except Exception:
         return await edit_or_reply(
-            event, "**𖡛... غيـࢪ قـادࢪ عـلى جـلب مـعلومات الـشخص ...𖡛**"
+            event, "**♰... غيـࢪ قـادࢪ عـلى جـلب مـعلومات الـشخص ..♰**"
         )
     if not is_muted(userid, "gmute"):
         return await edit_or_reply(
-            event, f"**♰... هـذا الشـخص ليـس عنـده نعالك اصلا  ..♰**"
+            event, f"**♰... هـذا الشـخص ماعـنده نعالك اصلا  ..♰**"
         )
     try:
         unmute(userid, "gmute")
