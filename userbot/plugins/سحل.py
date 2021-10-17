@@ -124,12 +124,12 @@ async def endgmute(event):
         if reason:
             await edit_or_reply(
                 event,
-                f"** تـم ترجيع نعالك من الـمستخـدم بـنجاح ♰، **",
+                f"** تـم ترجيع نعالك من الـمستخـدم بـنجاح ♰ **",
             )
         else:
             await edit_or_reply(
                 event,
-                f"** تـم ترجيع نعالك من الـمستخـدم بـنجاح ♰، **",
+                f"** تـم ترجيع نعالك من الـمستخـدم بـنجاح ♰ **",
             )
     if BOTLOG:
         if reason:
