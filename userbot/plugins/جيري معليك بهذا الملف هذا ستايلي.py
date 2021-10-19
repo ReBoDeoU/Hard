@@ -22,7 +22,7 @@ PING_PIC = os.environ.get("PING_PIC") or (
     "https://telegra.ph/file/cd155138970c2710f5678.mp4"
 )
 
-JM_TXT = os.environ.get("PING_TEXT") or "🔥"
+JM_TXT = os.environ.get("PING_TEXT") or "︎ ︎"
 
 
 @jmthon.ar_cmd(
