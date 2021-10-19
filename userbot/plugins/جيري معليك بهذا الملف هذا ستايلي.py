@@ -1,8 +1,4 @@
 # ======================================================================================================================================
-# ping -> edited ping with pic by  @RR7PP
-# كتابة الملف لسورس ماتركـس فقط ممنوع نسبه لنفسك
-# تخمط دليل فشلك اخمط وكول اني مطور 😂😂
-
 import os
 from datetime import datetime
 
@@ -48,7 +44,7 @@ async def _(event):
     await cat.delete()
     ms = (end - start).microseconds / 1000
     if PING_PIC:
-        caption = f"<b><i>{JM_TXT}<i><b>\n︎ ︎ ︎<b>{hmention}</b>︎ ︎ ︎<b>\n</b>︎ ︎ ︎"
+        caption = f"<b><i>{JM_TXT}<i><b>\n︎𝗡𝗘𝗪 𝗦𝗧𝗬𝗟𝗘 🔥<b>{hmention}</b>︎ ︎ ︎<b>\n</b>︎ ︎ ︎"
         await event.client.send_file(
             event.chat_id,
             PING_PIC,
