@@ -24,8 +24,8 @@ LEO = "668571162"
 RAZAN = "1397042354"
 JASEM = "1450865400"
 
-if Config.UPSTREAM_REPO == "Jmthon-iq":
-    UPSTREAM_REPO_URL = "https://github.com/MPMMPP/DEOOU"
+if Config.UPSTREAM_REPO == "Deoou
+    UPSTREAM_REPO_URL = "https://github.com/nnnuu-hasoni-la-nnuuun-deoou/kkkkkkkkjamjuzhsb"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 
