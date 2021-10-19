@@ -22,7 +22,7 @@ PING_PIC = os.environ.get("PING_PIC") or (
     "https://telegra.ph/file/cd155138970c2710f5678.mp4"
 )
 
-JM_TXT = os.environ.get("PING_TEXT") or "الخسارة بعد المقاومة تختلف عن الخسارة بدونها.. إنها نصر من نوع آخر لا يعرف معناه إلا من جربه. 🔥"
+JM_TXT = os.environ.get("PING_TEXT") or "🔥"
 
 
 @jmthon.ar_cmd(
@@ -48,7 +48,7 @@ async def _(event):
     await cat.delete()
     ms = (end - start).microseconds / 1000
     if PING_PIC:
-        caption = f"<b><i>{JM_TXT}<i><b>\n<code>ْ\nْ<b>{hmention}</b>\n<b>ْ\n</b>ْ"
+        caption = f"<b><i>{JM_TXT}<i><b>\n︎ ︎ ︎<b>{hmention}</b>︎ ︎ ︎<b>\n</b>︎ ︎ ︎"
         await event.client.send_file(
             event.chat_id,
             PING_PIC,
