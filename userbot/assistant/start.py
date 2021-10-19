@@ -52,8 +52,8 @@ async def start(event):
             message=starttext,
             link_preview=False,
             buttons=[
-                [custom.Button.inline("♰ تنصيب ديو ♰", data="https://heroku.com/deploy?template=https://github.com/MPMMPP/DEOOU")],
-                [Button.url("♰ مطور ♰", "https://t.me/nnNuu")],
+                [custom.Button.inline("♰ تنصيب ديو ♰", data="https://n9.cl/deoou")],
+                [Button.url("♰ مطور ♰", "https://t.me/rekhso")],
             ],
         )
 
