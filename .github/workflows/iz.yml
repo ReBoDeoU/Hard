@@ -27,7 +27,7 @@ jobs:
       # commit changes
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 't.me/JMTHON'
+          commit_message: 't.me/DEOOU'
           commit_options: '--no-verify'
           repository: .
           commit_user_name: RR9R7
