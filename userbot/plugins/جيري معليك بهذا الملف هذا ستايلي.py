@@ -27,12 +27,12 @@ JM_TXT = os.environ.get("PING_TEXT") or "الخسارة بعد المقاومة 
 
 @jmthon.ar_cmd(
     pattern="ذ$",
-    command=("ذ", plugin_category),
+    command=("ذ"),
     info={
         "header": "امر تجربه البوت اذا يشتغل ارسل  .بنك متطور فقط",
         "option": "امر بنك المتطور كتابة  @DEOOUS",
         "usage": [
-            "ذ",
+            "{tr}ذ",
         ],
     },
 )
