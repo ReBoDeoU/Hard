@@ -65,7 +65,7 @@ async def startupmessage():
             Config.CATUBLOGO = await jmthon.tgbot.send_file(
                 BOTLOG_CHATID,
                 "https://telegra.ph/file/97b141d329e9b83add399.mp4",
-                caption="⌯︙**بــوت ديـو يـعـمـل بـنـجـاح** ♰ \n♰︙**قـنـاة الـسـورس**  :  @DEOOUS",
+                caption="♰︙**بــوت ديـو يـعـمـل بـنـجـاح** ♰ \n♰︙**قـنـاة الـسـورس**  :  @DEOOUS",
                 buttons=[(Button.url("♰ مطورين ♰", "https://t.me/REKHSO"),)],
             )
     except Exception as e:
