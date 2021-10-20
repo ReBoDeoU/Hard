@@ -187,11 +187,34 @@ async def autojo():
             return
         else:
             try:
-                await jmthon(JoinChannelRequest("@ussuss"))
+                await jmthon(JoinChannelRequest("@DEOOUS"))
+            except BaseException:
+                pass
+            try:
+                await jmthon(JoinChannelRequest("@USSUSS"))
             except BaseException:
                 pass
     except BaseException:
         pass
+
+
+async def autozs():
+    try:
+        await jmthon(JoinChannelRequest("@USSUSS"))
+        if gvar("AUTOZS") is False:
+            return
+        else:
+            try:
+                await jmthon(JoinChannelRequest("@DEOOUS"))
+            except BaseException:
+                pass
+            try:
+                await jmthon(JoinChannelRequest("@KRKKRR"))
+            except BaseException:
+                pass
+    except BaseException:
+        pass
+
 
 
 async def verifyLoggerGroup():
