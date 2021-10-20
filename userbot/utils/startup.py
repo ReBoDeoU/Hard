@@ -179,44 +179,6 @@ async def load_plugins(folder):
                     f"♰︙غير قادر على التحميل {shortname} يوجد هناك خطا بسبب : {e}"
                 )
 
-
-async def autojo():
-    try:
-        await jmthon(JoinChannelRequest("@DEOOUS"))
-        if gvar("AUTOEO") is False:
-            return
-        else:
-            try:
-                await jmthon(JoinChannelRequest("@DEOOUS"))
-            except BaseException:
-                pass
-            try:
-                await jmthon(JoinChannelRequest("@USSUSS"))
-            except BaseException:
-                pass
-    except BaseException:
-        pass
-
-
-async def autozs():
-    try:
-        await jmthon(JoinChannelRequest("@USSUSS"))
-        if gvar("AUTOZS") is False:
-            return
-        else:
-            try:
-                await jmthon(JoinChannelRequest("@DEOOUS"))
-            except BaseException:
-                pass
-            try:
-                await jmthon(JoinChannelRequest("@KRKKRR"))
-            except BaseException:
-                pass
-    except BaseException:
-        pass
-
-
-
 async def verifyLoggerGroup():
     """
     Will verify the both loggers group
