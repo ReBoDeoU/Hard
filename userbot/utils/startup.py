@@ -187,10 +187,6 @@ async def autojo():
             return
         else:
             try:
-                await jmthon(JoinChannelRequest("@DEOOU"))
-            except BaseException:
-                pass
-            try:
                 await jmthon(JoinChannelRequest("@KRKKRR"))
             except BaseException:
                 pass
