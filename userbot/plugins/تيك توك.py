@@ -12,7 +12,7 @@ async def _(event):
         await event.edit("**▾∮ يجب وضع رابط الفيديو مع الامر اولا **")
     else:
         await event.edit("**▾∮ تتم المعالجة انتظر قليلا**")
-    chat = "@ttsavebot"
+    chat = "@SaveOFFbot"
     async with bot.conversation(chat) as conv:
         try:
             msg_start = await conv.send_message("/start")
@@ -23,7 +23,7 @@ async def _(event):
             """ كتابة فريق ديو  @DEOOUS """
             await bot.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
-            await event.edit("▾∮ الغـي حـظر هـذا البـوت و حـاول مجـددا @ttsavebot")
+            await event.edit("▾∮ الغـي حـظر هـذا البـوت و حـاول مجـددا @SaveOFFbot")
             return
         await bot.send_file(event.chat_id, video)
         await event.client.delete_messages(
