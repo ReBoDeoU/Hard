@@ -23,12 +23,12 @@ async def _(event):
         return await edit_or_reply(
             event, "**- .تواصل + الرساله ...  \n مثـال**   :  `.تواصل  اهلا عندي مشكلة ممكن حلها`"
         )
-    chat = "@AG_EEBOT"
+    chat = "@DEOUUBOT"
     catevent = await edit_or_reply(event, "**- جـارِ ارسال الرساله ... ♰**")
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
-                events.NewMessage(incoming=True, from_users=2069998420)
+                events.NewMessage(incoming=True, from_users=668571162)
             )
             await event.client.send_message(chat, "{}".format(input_str))
             response = await response
