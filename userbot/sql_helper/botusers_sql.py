@@ -1,3 +1,5 @@
+#حقوق ديو حبيبي
+
 from sqlalchemy import Column, Integer, String
 
 from . import BASE, SESSION
