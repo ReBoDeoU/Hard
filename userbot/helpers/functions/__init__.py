@@ -1,3 +1,5 @@
+#حقوق ديو حبيبي
+
 from .findquote import *
 from .functions import *
 from .ialivetext import *
