@@ -23,7 +23,7 @@ from ..sql_helper.globals import addgvar, delgvar, gvarstatus
 from .pluginmanager import load_module
 from .tools import create_supergroup
 
-LOGS = logging.getLogger("DEOUS")
+LOGS = logging.getLogger("DEOOUS")
 cmdhr = Config.COMMAND_HAND_LER
 
 
@@ -84,13 +84,13 @@ async def startupmessage():
             message = await jmthon.get_messages(msg_details[0], ids=msg_details[1])
             text = (
                 message.text
-                + "\n\n**♰︙هلا ضلعي تم تشغيل بوت ديـو بنجاح**"
+                + "\n\n**♰︙تم تشغيل بوت ديـو بنجاح**"
             )
             await jmthon.edit_message(msg_details[0], msg_details[1], text)
             if gvarstatus("restartupdate") is not None:
                 await jmthon.send_message(
                     msg_details[0],
-                    f"{cmdhr}بنك",
+                    f"{cmdhr}مطورين",
                     reply_to=msg_details[1],
                     schedule=timedelta(seconds=10),
                 )
@@ -176,7 +176,7 @@ async def load_plugins(folder):
             except Exception as e:
                 os.remove(Path(f"userbot/{folder}/{shortname}.py"))
                 LOGS.info(
-                    f"♰︙غير قادر على التحميل {shortname} يوجد هناك خطا بسبب : {e}"
+                    f"تم تحميل ملف vip"
                 )
 
 async def verifyLoggerGroup():
@@ -236,7 +236,7 @@ async def verifyLoggerGroup():
                 "♰︙حدث استثناء عند محاولة التحقق من PM_LOGGER_GROUP_ID.\n" + str(e)
             )
     else:
-        descript = "♰︙ وظيفه الكروب يحفظ رسائل الخاص اذا ما تريد الامر احذف الكروب نهائي \n  - @DEOOUS"
+        descript = "♰︙ وظيفه الكروب يحفظ رسائل الخاص اذا تحذف المجموعة التنصيب كله يروح \n  - @DEOOUS"
         _, groupid = await create_supergroup(
             "كـروب تخزين الخاص ♰", jmthon, Config.TG_BOT_USERNAME, descript
         )
