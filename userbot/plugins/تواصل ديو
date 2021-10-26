@@ -24,7 +24,7 @@ async def _(event):
             event, "**- .تواصل + الرساله ...  \n مثـال**   :  `.تواصل  اهلا عندي مشكلة ممكن حلها`"
         )
     chat = "@DEOUUBOT"
-    catevent = await edit_or_reply(event, "**- جـارِ ارسال الرساله ... ♰**")
+    catevent = await edit_or_reply(event, "**- تــم ارسال الرســالة انتظر ليــتم الرد عليك ... ♰**")
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
