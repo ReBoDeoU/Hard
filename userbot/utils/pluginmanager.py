@@ -20,13 +20,13 @@ def load_module(shortname, plugin_path=None):
     if shortname.startswith("__"):
         pass
     elif shortname.endswith("_"):
-        path = Path(f"userbot/plugins/{shortname}.py")
+        path = Path(f"userbot/{shortname}.py")
         checkplugins(path)
-        name = "userbot.plugins.{}".format(shortname)
+        name = "userbot.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        LOGS.info("⌯︙تم بنجاح تحميل ملف " + shortname)
+        LOGS.info(" حدث خطأ اثناء المحاولة . " + shortname)
     else:
         if plugin_path is None:
             path = Path(f"userbot/plugins/{shortname}.py")
@@ -58,7 +58,7 @@ def load_module(shortname, plugin_path=None):
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["userbot.plugins." + shortname] = mod
-        LOGS.info("♰︙تم بنجاح تحميل ملف " + shortname)
+        LOGS.info("حدث خطأ اثناء المحاولة ." + shortname)
 
 
 def remove_plugin(shortname):
