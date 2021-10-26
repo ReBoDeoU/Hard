@@ -30,7 +30,7 @@ from .logger import logging
 LOGS = logging.getLogger(__name__)
 
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>)")
-CATLOGO = "https://telegra.ph/file/88f00e9c84c0a01207adb.jpg"
+CATLOGO = "https://telegra.ph/file/40032cce2fa970df0c2e4.mp4"
 tr = Config.COMMAND_HAND_LER
 
 
@@ -558,10 +558,10 @@ async def inline_handler(event):
     else:
         buttons = [
             (
-                Button.url("قناة السورس", "t.me/VV399"),
+                Button.url("قناة السورس", "t.me/DEOOUS"),
                 Button.url(
-                    "المطور",
-                    "t.me/FFIIX",
+                    "المطورين",
+                    "t.me/REKHSO",
                 ),
             )
         ]
@@ -575,9 +575,9 @@ async def inline_handler(event):
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="(https://t.me/VV399)",
+            title="(t.me/DEOOUS/10)",
             description="لـتنصيبه لك",
-            url="t.me/VV399",
+            url="t.me/DEOOUS/10",
             thumb=photo,
             content=photo,
             send_message=types.InputBotInlineMessageMediaAuto(
