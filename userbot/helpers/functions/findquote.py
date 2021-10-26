@@ -1,3 +1,5 @@
+#حقوق ديو حبيبي
+
 import random
 
 import requests
