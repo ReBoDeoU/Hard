@@ -1,3 +1,5 @@
+#حقوق ديو حبيبي
+
 import asyncio
 from concurrent.futures import Future, ThreadPoolExecutor
 from functools import partial, wraps
