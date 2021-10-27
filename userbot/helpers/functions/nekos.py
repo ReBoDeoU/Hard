@@ -1,3 +1,5 @@
+#حقوق ديو حبيبي
+
 import requests
 from PIL import Image, ImageDraw, ImageFont
 from validators.url import url
