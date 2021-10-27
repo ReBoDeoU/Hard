@@ -1,3 +1,5 @@
+#حقوق ديو حبيبي
+
 from .utils.extdl import install_pip
 
 try:
