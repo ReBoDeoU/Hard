@@ -1,3 +1,5 @@
+#حقوق ديو حبيبي
+
 from Jmthon.razan.resources.assistant import *
 from userbot import BOTLOG, BOTLOG_CHATID, jmthon
 
