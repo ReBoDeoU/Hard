@@ -1,3 +1,5 @@
+#حقوق ديو حبيبي
+
 from .extdl import *
 from .paste import *
 
