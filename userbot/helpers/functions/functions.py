@@ -1,3 +1,5 @@
+#حقوق ديو حبيبي
+
 import os
 import zipfile
 from random import choice
