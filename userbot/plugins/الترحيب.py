@@ -1,5 +1,5 @@
 # Copyright (C) 2021 FFIIX TEAM
-# FILES WRITTEN BY  @RR7PP
+# FILES WRITTEN BY  @DEOOUS
 from telethon import events
 
 from userbot import jmthon
@@ -121,9 +121,9 @@ async def save_welcome(event):
         if BOTLOG_CHATID:
             await event.client.send_message(
                 BOTLOG_CHATID,
-                f"⌔︙رسالة الترحيب  :\
-                \n⌔︙ايدي الدردشة  : {event.chat_id}\
-                \n⌔︙يتم حفظ الرسالة التالية كملاحظة ترحيبية لـ 🔖 : {event.chat.title}, ",
+                f"♰︙رسالة الترحيب  :\
+                \n♰︙ايدي الدردشة  : {event.chat_id}\
+                \n♰︙يتم حفظ الرسالة التالية كملاحظة ترحيبية لـ 🔖 : {event.chat.title}, ",
             )
             msg_o = await event.client.forward_messages(
                 entity=BOTLOG_CHATID, messages=msg, from_peer=event.chat_id, silent=True
@@ -137,13 +137,13 @@ async def save_welcome(event):
     elif event.reply_to_msg_id and not string:
         rep_msg = await event.get_reply_message()
         string = rep_msg.text
-    success = "⌯︙الترحيب {} بنجاح ✅"
+    success = "♰︙الترحيب {} بنجاح ✅"
     if add_welcome_setting(event.chat_id, 0, string, msg_id) is True:
         return await edit_or_reply(event, success.format("تـم الحفـظ"))
     rm_welcome_setting(event.chat_id)
     if add_welcome_setting(event.chat_id, 0, string, msg_id) is True:
         return await edit_or_reply(event, success.format("تم الـتحديث"))
-    await edit_or_reply("⌯︙هـنالك خـطأ في وضـع الـترحيب هـنا")
+    await edit_or_reply("♰︙هـنالك خـطأ في وضـع الـترحيب هـنا")
 
 
 @jmthon.ar_cmd(
@@ -158,9 +158,9 @@ async def save_welcome(event):
 async def del_welcome(event):
     "To turn off welcome message"
     if rm_welcome_setting(event.chat_id) is True:
-        await edit_or_reply(event, "⌯︙تم حذف الترحيبات بنجاح ✅.")
+        await edit_or_reply(event, "♰︙تم حذف الترحيبات بنجاح ✅.")
     else:
-        await edit_or_reply(event, "⌯︙ليـس لـدي اي تـرحيبـات بالأصـل")
+        await edit_or_reply(event, "♰︙ليـس لـدي اي تـرحيبـات بالأصـل")
 
 
 @jmthon.ar_cmd(
@@ -175,18 +175,18 @@ async def show_welcome(event):
     "To show current welcome message in group"
     cws = get_current_welcome_settings(event.chat_id)
     if not cws:
-        return await edit_or_reply(event, "⌯︙لم يتم حفظ اي ترحيب هنا !")
+        return await edit_or_reply(event, "♰︙لم يتم حفظ اي ترحيب هنا !")
     if cws.f_mesg_id:
         msg_o = await event.client.get_messages(
             entity=BOTLOG_CHATID, ids=int(cws.f_mesg_id)
         )
         await edit_or_reply(
-            event, "⌯︙أنا الان اقوم بالترحيب بالمستخدمين الجدد مع هذه الرسالة"
+            event, "♰︙أنا الان اقوم بالترحيب بالمستخدمين الجدد مع هذه الرسالة"
         )
         await event.reply(msg_o.message, file=msg_o.media)
     elif cws.reply:
         await edit_or_reply(
-            event, "⌯︙أنا الان اقوم بالترحيب بالمستخدمين الجدد مع هذه الرسالة"
+            event, "♰︙أنا الان اقوم بالترحيب بالمستخدمين الجدد مع هذه الرسالة"
         )
         await event.reply(cws.reply)
 
@@ -195,8 +195,8 @@ async def show_welcome(event):
     pattern="الترحيب السابق (تشغيل|ايقاف)$",
     command=("الترحيب السابق", plugin_category),
     info={
-        "header": "⌔︙لإيقاف أو تشغيل حذف رسالة الترحيب السابقة .",
-        "description": "⌯︙إذا كنت ترغب في حذف رسالة الترحيب السابقة وإرسال رسالة ترحيب جديدة ، فقم بتشغيلها عن طريق  قم بإيقاف تشغيله إذا كنت بحاجة",
+        "header": "♰︙لإيقاف أو تشغيل حذف رسالة الترحيب السابقة .",
+        "description": "♰︙إذا كنت ترغب في حذف رسالة الترحيب السابقة وإرسال رسالة ترحيب جديدة ، فقم بتشغيلها عن طريق  قم بإيقاف تشغيله إذا كنت بحاجة",
         "usage": "{tr}<رساله الترحيب السابقه <تشغيل/ايقاف",
     },
 )
@@ -209,11 +209,11 @@ async def del_welcome(event):
         delgvar("clean_welcome")
         return await edit_delete(
             event,
-            "**⌯︙من الآن رسالة الترحيب السابقة سيتم حذفها وسيتم إرسال رسالة الترحيب الجديدة **",
+            "**♰︙من الآن رسالة الترحيب السابقة سيتم حذفها وسيتم إرسال رسالة الترحيب الجديدة **",
         )
     if gvarstatus("clean_welcome") is None:
         addgvar("clean_welcome", "false")
         return await edit_delete(
-            event, "**⌯︙من الآن لن يتم حذف رسالة الترحيب السابقة **"
+            event, "**♰︙من الآن لن يتم حذف رسالة الترحيب السابقة **"
         )
-    await edit_delete(event, "**⌯︙تم إيقافها بالفعل ✅")
+    await edit_delete(event, "**♰︙تم إيقافها بالفعل ✅")
