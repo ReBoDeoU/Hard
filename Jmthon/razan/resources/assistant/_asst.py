@@ -1,4 +1,4 @@
-# By @RR7PP
+# By @DEOOUS
 Girlan1 = (
     "- 𝑎𝑠𝑜 𐇲.\n"
     "- 𝑎𝑛𝑜 𐇲.\n"
@@ -52,7 +52,7 @@ Girlan1 = (
 )
 
 
-# By @RR7PP
+# By @DEOOUS
 Girlan2 = (
     "『𓆩 𝚃𝙱𝙾 𓆪』𐂂𓄹\n"
     "『𓆩 𝙷𝙽𝙾 𓆪』 𐂂𓄹\n"
@@ -173,7 +173,7 @@ Boyroz2 = (
     "𓂐 𝙅𝙊𝙅 𖠛 ."
 )
 
-# By @RR7PP
+# By @DEOOUS
 ROZPIO1 = (
     "𓋜┊𓆩 ➝  ˛⁽🇮🇶₎⇣ 𓆪\n"
     "𓋜┊𓆩  𓆪\n"
@@ -286,4 +286,4 @@ CHANLAN = (
     ":   ˹𝙍𝙄𝙏𝘼˼ 𓆪 .\n"
     ": ..................."
 )
-# By @RR7PP
+# By @DEOOUS
