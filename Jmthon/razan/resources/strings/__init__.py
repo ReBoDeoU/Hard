@@ -1,2 +1,2 @@
-from ._bio import *k
+from ._bio import *
 from ._fun import *
