@@ -21,7 +21,7 @@ plugin_category = "admin"
 async def startgmute(event):
     "To mute a person in all groups where you are admin."
     if event.is_private:
-        await event.edit("**𖡛... قـد تحـدث بعـض المـشاكـل أو الأخـطاء ...𖡛**")
+        await event.edit("**♰... قـد تحـدث بعـض المـشاكـل أو الأخـطاء ...♰**")
         await asyncio.sleep(2)
         userid = event.chat_id
         reason = event.pattern_match.group(1)
@@ -94,7 +94,7 @@ async def startgmute(event):
 async def endgmute(event):
     "To remove gmute on that person."
     if event.is_private:
-        await event.edit("**𖡛... قـد تحـدث بعـض المـشاكـل أو الأخـطاء ...𖡛**")
+        await event.edit("**♰... قـد تحـدث بعـض المـشاكـل أو الأخـطاء ...♰**")
         await asyncio.sleep(2)
         userid = event.chat_id
         reason = event.pattern_match.group(1)
@@ -103,17 +103,17 @@ async def endgmute(event):
         if not user:
             return
         if user.id == jmthon.uid:
-            return await edit_or_reply(event, "**𖡛... لمـاذا تࢪيـد كتم نفسـك؟ ...𖡛**")
+            return await edit_or_reply(event, "**♰... لمـاذا تࢪيـد كتم نفسـك؟ ...♰**")
         userid = user.id
     try:
         user = (await event.client(GetFullUserRequest(userid))).user
     except Exception:
         return await edit_or_reply(
-            event, "**𖡛... غيـࢪ قـادࢪ عـلى جـلب مـعلومات الـشخص ...𖡛**"
+            event, "**♰... غيـࢪ قـادࢪ عـلى جـلب مـعلومات الـشخص ...♰**"
         )
     if not is_muted(userid, "gmute"):
         return await edit_or_reply(
-            event, f"**𖡛... هـذا الشـخص غيـࢪ مكـتوم اصلا  ...𖡛**"
+            event, f"**♰... هـذا الشـخص غيـࢪ مكـتوم اصلا  ...♰**"
         )
     try:
         unmute(userid, "gmute")
