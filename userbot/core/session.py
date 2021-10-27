@@ -1,3 +1,5 @@
+#حقوق ديو حبيبي
+
 import sys
 
 from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
@@ -27,7 +29,7 @@ try:
         connection_retries=None,
     )
 except Exception as e:
-    print(f"⌯︙كـود تـيرمـكس - {str(e)}")
+    print(f"♰︙كـود تـيرمـكس - {str(e)}")
     sys.exit()
 
 
