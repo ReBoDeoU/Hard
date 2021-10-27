@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # In[ ]:
 #  coding: utf-8
+#حقوق ديو حبيبي
 
 ###### Searching and Downloading Google Images to the local disk ######
 
