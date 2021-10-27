@@ -1,3 +1,5 @@
+#حقوق ديو حبيبي
+
 from .decorators import check_owner
 
 CMD_INFO = {}
