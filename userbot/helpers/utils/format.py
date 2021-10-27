@@ -1,3 +1,5 @@
+#حقوق ديو حبيبي
+
 import datetime
 
 from bs4 import BeautifulSoup
@@ -33,8 +35,7 @@ def htmlmentionuser(name, userid):
     return f"<a href='tg://user?id={userid}'>{name}</a>"
 
 
-# kanged from uniborg @spechide
-# https://github.com/SpEcHiDe/UniBorg/blob/d8b852ee9c29315a53fb27055e54df90d0197f0b/uniborg/utils.py#L250
+#حقوق ديو حبيبي
 
 
 def reformattext(text):
