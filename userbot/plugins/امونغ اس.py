@@ -18,7 +18,7 @@ plugin_category = "extra"
 # كـتابة وتعـديل  @DEOOUS
 # FFIIX ™
 async def amongus_gen(text: str, clr: int) -> str:
-    url = "https://github.com/nnnuu-hasoni-la-nnuuun-deoou/kkkkkkkkjamjuzhsb/edit/master/userbot/plugins/%D8%A7%D9%85%D9%88%D9%86%D8%BA%20%D8%A7%D8%B3.py"
+    url = "https://github.com/nnnuu-hasoni-la-nnuuun-deoou/kkkkkkkkjamjuzhsb/blob/master/userbot/plugins/%D8%A7%D9%85%D9%88%D9%86%D8%BA%20%D8%A7%D8%B3.py"
     font = ImageFont.truetype(
         BytesIO(
             get(
@@ -89,7 +89,7 @@ async def _(event):
     USERNAME = f"tg://user?id={event.client.uid}"
     name = event.pattern_match.group(2)
     cmd = event.pattern_match.group(1).lower()
-    text1 = await edit_or_reply(event, "⌯︙هممم اكيـد اكو شـخص مات !!")
+    text1 = await edit_or_reply(event, "♰︙هممم اكيـد اكو شـخص مات !!")
     await asyncio.sleep(2)
     await text1.delete()
     stcr1 = await event.client.send_file(
@@ -128,7 +128,7 @@ async def _(event):
     stcr4 = await event.client.send_file(
         event.chat_id, "CAADAQADLwADnjOcH-wxu-ehy6NRAg"
     )
-    catevent = await event.reply(f"**⌯︙ {name} تـم استـبعاده .......**")
+    catevent = await event.reply(f"**♰︙ {name} تـم استـبعاده .......**")
     await asyncio.sleep(2)
     await catevent.edit("ඞㅤㅤㅤㅤ ㅤㅤㅤㅤ")
     await asyncio.sleep(0.5)
