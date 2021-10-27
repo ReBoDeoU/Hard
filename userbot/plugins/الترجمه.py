@@ -10,7 +10,7 @@ from . import deEmojify
 plugin_category = "utils"
 
 # Copyright (C) 2021 FFIIX TEAM
-# FILES WRITTEN BY  @RR7PP
+# FILES WRITTEN BY  @DEOOUS
 
 
 async def getTranslate(text, **kwargs):
@@ -49,7 +49,7 @@ async def _(event):
         lan, text = input_str.split(";")
     else:
         return await edit_delete(
-            event, "⌯︙للترجمه يجـب الـرد على الرساله واكتب .ترجمه ar", time=5
+            event, "♰︙للترجمه يجـب الـرد على الرساله واكتب .ترجمه ar", time=5
         )
     text = deEmojify(text.strip())
     lan = lan.strip()
@@ -57,7 +57,7 @@ async def _(event):
     try:
         translated = await getTranslate(text, dest=lan)
         after_tr_text = translated.text
-        output_str = f"⌯︙تمت الترجمه مـن  : {LANGUAGES[translated.src].title()}\n ⌯︙الـى {LANGUAGES[lan].title()} \
+        output_str = f"♰︙تمت الترجمه مـن  : {LANGUAGES[translated.src].title()}\n ⌯︙الـى {LANGUAGES[lan].title()} \
                 \n\n{after_tr_text}"
         await edit_or_reply(event, output_str)
     except Exception as exc:
