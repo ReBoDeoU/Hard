@@ -1,3 +1,5 @@
+#حقوق ديو حبيبي
+
 import datetime
 import inspect
 import re
