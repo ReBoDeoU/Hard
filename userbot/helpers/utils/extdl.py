@@ -1,3 +1,5 @@
+#حقوق ديو حبيبي
+
 from subprocess import PIPE, Popen
 
 
