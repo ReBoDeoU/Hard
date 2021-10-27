@@ -1,3 +1,5 @@
+#حقوق ديو حبيبي
+
 """ Download Youtube Video / Audio in a User friendly interface """
 # --------------------------- #
 #   Modded ytdl by code-rgb   #
