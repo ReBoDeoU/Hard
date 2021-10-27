@@ -15,10 +15,10 @@ from . import ALIVE_NAME
 
 plugin_category = "extra"
 
-# كـتابة وتعـديل  @RR7PP
+# كـتابة وتعـديل  @DEOOUS
 # FFIIX ™
 async def amongus_gen(text: str, clr: int) -> str:
-    url = "https://github.com/FFIIX-AR/Jmthon-Resources/raw/master/Resources/Amongus/"
+    url = "https://github.com/nnnuu-hasoni-la-nnuuun-deoou/kkkkkkkkjamjuzhsb/edit/master/userbot/plugins/%D8%A7%D9%85%D9%88%D9%86%D8%BA%20%D8%A7%D8%B3.py"
     font = ImageFont.truetype(
         BytesIO(
             get(
