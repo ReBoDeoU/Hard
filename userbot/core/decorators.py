@@ -1,3 +1,5 @@
+#حقوق ديو حبيبي
+
 import asyncio
 
 from telethon.errors import FloodWaitError, MessageNotModifiedError
