@@ -1,3 +1,5 @@
+#حقوق ديو حبيبي
+
 import re
 
 from telethon import Button
