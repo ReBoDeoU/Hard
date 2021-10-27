@@ -1,6 +1,6 @@
 # (c) Copyright FFIIX 2020-21
-# جميع الحقوق محفودظة لسورس ماتركـس
-# By ~  @RR9R7
+# جميع الحقوق محفودظة لسورس ديو
+# By ~  @DEOOUS
 import asyncio
 
 from telethon import events
