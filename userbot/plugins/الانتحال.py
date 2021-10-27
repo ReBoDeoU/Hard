@@ -1,5 +1,5 @@
 # Copyright (C) 2021 FFIIX TEAM
-# FILES WRITTEN BY  @RR7PP
+# FILES WRITTEN BY  @DEOOUS
 import html
 
 from telethon.tl import functions
