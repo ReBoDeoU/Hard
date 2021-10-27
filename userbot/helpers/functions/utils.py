@@ -59,7 +59,7 @@ async def admin_groups(jmthon):
     return catgroups
 
 
-# https://github.com/pokurt/LyndaRobot/blob/7556ca0efafd357008131fa88401a8bb8057006f/lynda/modules/helper_funcs/string_handling.py#L238
+#حقوق ديو حبيبي
 
 
 async def extract_time(cat, time_val):
