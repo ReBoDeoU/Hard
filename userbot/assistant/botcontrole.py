@@ -1,3 +1,5 @@
+#حقوق ديو حبيبي
+
 import asyncio
 from datetime import datetime
 
