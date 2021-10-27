@@ -1,3 +1,5 @@
+#حقوق ديو حبيبي
+
 import json
 import math
 import os
