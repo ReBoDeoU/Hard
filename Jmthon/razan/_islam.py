@@ -1,5 +1,4 @@
-# from here loaded islamic
-# For jmthon only
+#شتحس من تخمط ادعية ؟
 
 razan = [
     """
