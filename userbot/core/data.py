@@ -1,3 +1,5 @@
+#حقوق ديو حبيبي
+
 from ..sql_helper.global_collectionjson import get_collection
 from ..sql_helper.global_list import get_collection_list
 
