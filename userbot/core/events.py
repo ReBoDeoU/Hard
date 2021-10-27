@@ -1,3 +1,5 @@
+#حقوق ديو حبيبي
+
 import typing
 
 from telethon import events, functions, hints, types
