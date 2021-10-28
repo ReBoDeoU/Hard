@@ -1,6 +1,6 @@
 # اذا تخمط اذكر الحقوق رجـاءا  -
-# كتابة وتعديل وترتيب  ~ @REKHSO
-# For ~ @DEOOU
+# كتابة وتعديل وترتيب  ~ @DEOOUS
+# For ~ @REKHSO
 
 import asyncio
 import base64
@@ -31,8 +31,22 @@ autopic_path = os.path.join(os.getcwd(), "userbot", "original_pic.png")
 digitalpic_path = os.path.join(os.getcwd(), "userbot", "digital_pic.png")
 autophoto_path = os.path.join(os.getcwd(), "userbot", "photo_pfp.png")
 
-digitalpfp = Config.DIGITAL_PIC or "https://telegra.ph/file/63a826d5e5f0003e006a0.jpg"
+digitalpfp = Config.DIGITAL_PIC or "https://telegra.ph/file/3acfb2c07f8331fde4122.jpg"
 RR7PP = Config.TIME_JM or ""
+
+normzltext = "1234567890"
+namerzfont = [
+    "𝟙",
+    "𝟚",
+    "𝟛",
+    "𝟜",
+    "𝟝",
+    "𝟞",
+    "𝟟",
+    "𝟠",
+    "𝟡",
+    "𝟘",
+]
 
 
 async def digitalpicloop():
@@ -76,8 +90,12 @@ async def autoname_loop():
     AUTONAMESTART = gvarstatus("autoname") == "true"
     while AUTONAMESTART:
         time.strftime("%d-%m-%y")
-        HI = time.strftime("%I:%M")
-        name = f"{RR7PP} {HI} "
+        HM = time.strftime("%I:%M")
+        for normal in HM:
+            if normal in normzltext:
+                namefont = namerzfont[normzltext.index(normal)]
+                HM = HM.replace(normal, namefont)
+        name = f"{RR7PP} {HM}"
         LOGS.info(name)
         try:
             await jmthon(functions.account.UpdateProfileRequest(first_name=name))
@@ -120,7 +138,6 @@ async def _(event):
     await edit_delete(event, "**تم تفـعيل الصـورة الـوقتية بنجـاح ♰**")
     await digitalpicloop()
 
-#حلاوه للزعاطيط يلا علامة وحده
 
 @jmthon.ar_cmd(
     pattern="اسم وقتي$",
