@@ -26,7 +26,7 @@ JM_TXT = os.environ.get("PING_TEXT") or "︎ ︎"
     command=(".", plugin_category),
     info={
         "header": "امر تجربه البوت اذا يشتغل ارسل  .بنك متطور فقط",
-        "option": "امر بنك المتطور كتابة  @DEOOUS",
+        "option": "امر بنك المتطور كتابة  @rekhso",
         "usage": [
             "{tr}.",
         ],
