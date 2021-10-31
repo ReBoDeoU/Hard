@@ -1,4 +1,6 @@
-# Copyright (C) 2021 FFIIX TEAM
+#    جميع الحقوق لمطوري سورس ديو حصريا لهم فقط
+#    اذا تخمط الملف اذكر الحقوق وكاتبيه ومطوريه لا تحذف الحقوق وتصير فاشل 👍
+#    كتابة حسن وجيري
 
 import telethon.password as pwd_mod
 from telethon.tl import functions
@@ -19,7 +21,7 @@ plugin_category = "utils"
         "usage": "{tr}otransfer <username to whom you want to transfer>",
     },
 )
-# For FFIIX
+# For DEOOUS
 
 
 async def _(event):
@@ -36,4 +38,4 @@ async def _(event):
     except Exception as e:
         await event.edit(f"**خـطأ:**\n`{str(e)}`")
     else:
-        await event.edit("⌯︙تم نقل المـلكية بنـجاح ✅")
+        await event.edit("♰︙تم نقل المـلكية بنـجاح ✅")
