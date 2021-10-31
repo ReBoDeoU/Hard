@@ -22,13 +22,13 @@ JM_TXT = os.environ.get("PING_TEXT") or "︎ ︎"
 
 
 @jmthon.ar_cmd(
-    pattern=".د$",
-    command=(".د", plugin_category),
+    pattern="د$",
+    command=("د", plugin_category),
     info={
-        "header": "امر تجربه البوت اذا يشتغل ارسل  .بنك متطور فقط",
-        "option": "امر بنك المتطور كتابة  @rekhso",
+        "header": "ستايل حسن",
+        "option": "@HASONI_LQ",
         "usage": [
-            "{tr}.",
+            "{tr}د",
         ],
     },
 )
