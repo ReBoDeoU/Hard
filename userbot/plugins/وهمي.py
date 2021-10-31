@@ -1,3 +1,5 @@
+#DEOOUS
+
 import asyncio
 from random import choice, randint
 
