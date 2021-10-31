@@ -22,13 +22,13 @@ JM_TXT = os.environ.get("PING_TEXT") or "︎ ︎"
 
 
 @jmthon.ar_cmd(
-    pattern="د$",
-    command=("د", plugin_category),
+    pattern="..$",
+    command=("..", plugin_category),
     info={
         "header": "ستايل حسن",
         "option": "@HASONI_LQ",
         "usage": [
-            "{tr}د",
+            "{tr}..",
         ],
     },
 )
