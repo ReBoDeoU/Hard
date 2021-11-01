@@ -1,5 +1,3 @@
-#حقوق ديو حبيبي
-
 import datetime
 import inspect
 import re
@@ -9,6 +7,7 @@ from pathlib import Path
 from typing import Dict, List, Union
 
 from telethon import TelegramClient, events
+from telethon.errors import MessageIdInvalidError, MessageNotModifiedError
 
 from ..Config import Config
 from ..helpers.utils.events import checking
@@ -141,8 +140,8 @@ class CatUserBotClient(TelegramClient):
                         pastelink = await paste_message(
                             ftext, pastetype="s", markdown=False
                         )
-                        text = "**تقرير خطا ديو**\n\n"
-                        link = "[هنا](https://t.me/REKHSO)"
+                        text = "**تقرير خطا جمثون**\n\n"
+                        link = "[هنا](https://t.me/GroupJmthon)"
                         text += "إذا كنت تريد يمكنك الإبلاغ عن ذلك"
                         text += f"- فقط قم بإعادة توجيه هذه الرسالة {link}.\n"
                         text += "لا يتم تسجيل اي خطا فقط التاريخ والوقت\n\n"
@@ -256,8 +255,8 @@ class CatUserBotClient(TelegramClient):
                         pastelink = await paste_message(
                             ftext, pastetype="s", markdown=False
                         )
-                        text = "**تقرير خطا ديو**\n\n"
-                        link = "[هنا](https://t.me/REKHSO)"
+                        text = "**تقرير خطا جمثون**\n\n"
+                        link = "[هنا](https://t.me/GroupJmthon)"
                         text += "إذا كنت تريد يمكنك الإبلاغ عن ذلك"
                         text += f"- فقط قم بإعادة توجيه هذه الرسالة {link}.\n"
                         text += "لا يتم تسجيل اي خطا فقط التاريخ والوقت\n\n"
