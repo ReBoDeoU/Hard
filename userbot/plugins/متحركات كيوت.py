@@ -20,7 +20,7 @@ async def tmgif(event):
         return
     ROZ = await reply_id(event)
     if cute:
-        jmthon = f"**{ROZA}**\n"
+        jmthon = f"**ძᥱ᥆ᥳ**\n"
         jmthon += f"✛━━━━━━━━━━━━━✛\n"
         jmthon += f"**الـمتحـرڪـة الأولـى **"
         await event.client.send_file(event.chat_id, cute, caption=jmthon, reply_to=ROZ)
@@ -39,7 +39,7 @@ async def tmgif(event):
         return
     leo = await reply_id(event)
     if cute2:
-        RAZAN = f"**{ROZA}**\n"
+        RAZAN = f"**ძᥱ᥆ᥳ**\n"
         RAZAN += f"✛━━━━━━━━━━━━━✛\n"
         RAZAN += f"**الـمتحـرڪـة الـثـانيـة **\n"
         await event.client.send_file(event.chat_id, cute2, caption=RAZAN, reply_to=leo)
@@ -58,7 +58,7 @@ async def tmgif(event):
         return
     sic_id = await reply_id(event)
     if cute3:
-        RAZAN = f"**{ROZA}**\n"
+        RAZAN = f"**ძᥱ᥆ᥳ**\n"
         RAZAN += f"✛━━━━━━━━━━━━━✛\n"
         RAZAN += f"**الـمتحـرڪـة الـثـالثـة**\n"
         await event.client.send_file(
@@ -79,7 +79,7 @@ async def tmgif(event):
         return
     reply_to_id = await reply_id(event)
     if cute4:
-        RAZAN = f"**{ROZA}**\n"
+        RAZAN = f"**ძᥱ᥆ᥳ**\n"
         RAZAN += f"✛━━━━━━━━━━━━━✛\n"
         RAZAN += f"**الـمتحـرڪـة الـرابـعـة**\n"
         await event.client.send_file(
@@ -100,7 +100,7 @@ async def tmgif(event):
         return
     reply_to_id = await reply_id(event)
     if cute5:
-        RAZAN = f"**{ROZA}**\n"
+        RAZAN = f"**ძᥱ᥆ᥳ**\n"
         RAZAN += f"✛━━━━━━━━━━━━━✛\n"
         RAZAN += f"**الـمتحـرڪـة الـخامسـة**\n"
         await event.client.send_file(
@@ -121,7 +121,7 @@ async def tmgif(event):
         return
     reply_to_id = await reply_id(event)
     if cute6:
-        RAZAN = f"**{ROZA}**\n"
+        RAZAN = f"**ძᥱ᥆ᥳ**\n"
         RAZAN += f"✛━━━━━━━━━━━━━✛\n"
         RAZAN += f"**الـمتحـرڪـة الـسادسـة**\n"
         await event.client.send_file(
@@ -142,7 +142,7 @@ async def tmgif(event):
         return
     reply_to_id = await reply_id(event)
     if cute7:
-        RAZAN = f"**{ROZA}**\n"
+        RAZAN = f"**ძᥱ᥆ᥳ**\n"
         RAZAN += f"✛━━━━━━━━━━━━━✛\n"
         RAZAN += f"**الـمتحـرڪـة الـسـابعـة**"
         await event.client.send_file(
