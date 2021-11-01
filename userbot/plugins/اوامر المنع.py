@@ -101,8 +101,8 @@ async def _(event):
         "description": "Shows you the list of blacklist words in that specific chat",
         "usage": "{tr}listblacklist",
     },
-    groups_only=True,
-    require_admin=True,
+    groups_only=False,
+    require_admin=False,
 )
 async def _(event):
     "To show the blacklist words in that specific chat"
