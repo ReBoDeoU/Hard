@@ -28,7 +28,7 @@ JM_TXT = os.environ.get("PING_TEXT") or "︎ ︎"
         "header": "ستايل حسن",
         "option": "@HASONI_LQ",
         "usage": [
-            "{tr}..",
+            "{tr}1",
         ],
     },
 )
