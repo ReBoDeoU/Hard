@@ -19,7 +19,7 @@ async def tmgif(event):
         return
     RR9R7 = await reply_id(event)
     if sad:
-        jmthon = f"**{RR9R7}**\n"
+        jmthon = f"**ძᥱ᥆ᥳ**\n"
         jmthon += f"✛━━━━━━━━━━━━━✛\n"
         jmthon += f"**الـمتحـرڪـة الأولـى **"
         await event.client.send_file(event.chat_id, sad, caption=jmthon, reply_to=RR9R7)
@@ -38,7 +38,7 @@ async def tmgif(event):
         return
     leo = await reply_id(event)
     if sad2:
-        RAZAN = f"**{RR9R7}**\n"
+        RAZAN = f"**ძᥱ᥆ᥳ**\n"
         RAZAN += f"✛━━━━━━━━━━━━━✛\n"
         RAZAN += f"**الـمتحـرڪـة الـثـانيـة **"
         await event.client.send_file(event.chat_id, sad2, caption=RAZAN, reply_to=leo)
@@ -57,7 +57,7 @@ async def tmgif(event):
         return
     sic_id = await reply_id(event)
     if sad3:
-        RAZAN = f"**{RR9R7}**\n"
+        RAZAN = f"**ძᥱ᥆ᥳ**\n"
         RAZAN += f"✛━━━━━━━━━━━━━✛\n"
         RAZAN += f"**الـمتحـرڪـة الـثـالثـة**\n"
         await event.client.send_file(
@@ -78,7 +78,7 @@ async def tmgif(event):
         return
     reply_to_id = await reply_id(event)
     if sad4:
-        RAZAN = f"**{RR9R7}**\n"
+        RAZAN = f"**ძᥱ᥆ᥳ**\n"
         RAZAN += f"✛━━━━━━━━━━━━━✛\n"
         RAZAN += f"**الـمتحـرڪـة الـرابـعـة**\n"
         await event.client.send_file(
@@ -99,7 +99,7 @@ async def tmgif(event):
         return
     reply_to_id = await reply_id(event)
     if sad5:
-        RAZAN = f"**{RR9R7}**\n"
+        RAZAN = f"**ძᥱ᥆ᥳ**\n"
         RAZAN += f"✛━━━━━━━━━━━━━✛\n"
         RAZAN += f"**الـمتحـرڪـة الـخامسـة**\n"
         await event.client.send_file(
@@ -120,7 +120,7 @@ async def tmgif(event):
         return
     reply_to_id = await reply_id(event)
     if sad6:
-        RAZAN = f"**{RR9R7}**\n"
+        RAZAN = f"**ძᥱ᥆ᥳ**\n"
         RAZAN += f"✛━━━━━━━━━━━━━✛\n"
         RAZAN += f"**الـمتحـرڪـة الـسادسـة**\n"
         await event.client.send_file(
@@ -141,7 +141,7 @@ async def tmgif(event):
         return
     reply_to_id = await reply_id(event)
     if sad7:
-        RAZAN = f"**{RR9R7}**\n"
+        RAZAN = f"**ძᥱ᥆ᥳ**\n"
         RAZAN += f"✛━━━━━━━━━━━━━✛\n"
         RAZAN += f"**الـمتحـرڪـة الـسـابعـة**\n"
         await event.client.send_file(
@@ -158,7 +158,7 @@ async def tmgif(event):
         return
     reply_to_id = await reply_id(event)
     if sad8:
-        RAZAN = f"**{RR9R7}**\n"
+        RAZAN = f"**ძᥱ᥆ᥳ**\n"
         RAZAN += f"✛━━━━━━━━━━━━━✛\n"
         RAZAN += f"**الـمتحـرڪـة الثـامنـة**\n"
         await event.client.send_file(
@@ -175,7 +175,7 @@ async def tmgif(event):
         return
     reply_to_id = await reply_id(event)
     if sad9:
-        RAZAN = f"**{RR9R7}**\n"
+        RAZAN = f"**ძᥱ᥆ᥳ**\n"
         RAZAN += f"✛━━━━━━━━━━━━━✛\n"
         RAZAN += f"**الـمتحـرڪـة التـاسعـة**\n"
         await event.client.send_file(
