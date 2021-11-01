@@ -22,8 +22,8 @@ JM_TXT = os.environ.get("PING_TEXT") or "︎ ︎"
 
 
 @jmthon.ar_cmd(
-    pattern="..$",
-    command=("..", plugin_category),
+    pattern="1$",
+    command=("1", plugin_category),
     info={
         "header": "ستايل حسن",
         "option": "@HASONI_LQ",
