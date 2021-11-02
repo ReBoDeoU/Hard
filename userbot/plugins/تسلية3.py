@@ -1,2 +1,387 @@
-##import base64
-exec(base64.b64decode(b'aW1wb3J0IGFzeW5jaW8KZnJvbSBjb2xsZWN0aW9ucyBpbXBvcnQgZGVxdWUKCmZyb20gLiBpbXBvcnQgZWRpdF9kZWxldGUsIGVkaXRfb3JfcmVwbHksIGptdGhvbiwgbWVudGlvbgoKcGx1Z2luX2NhdGVnb3J5ID0gImZ1biIKCgpAam10aG9uLmFyX2NtZCgKICAgIHBhdHRlcm49ItmG2KzZhdmHJCIsCiAgICBjb21tYW5kPSgi2YbYrNmF2YciLCBwbHVnaW5fY2F0ZWdvcnkpLAogICAgaW5mbz17CiAgICAgICAgItin2YTYp9mF2LEiOiAiKirYp9mF2LEg2KrYs9mE2YrZhyDZgtmFINio2KfZhNiq2KzYsdio2Ycg2KjZhtmB2LPZgyoqIiwKICAgICAgICAi2KfZhNin2LPYqtiu2K/Yp9mFIjogInt0cn3Zhtis2YXZhyIsCiAgICB9LAopCmFzeW5jIGRlZiBfKGV2ZW50KToKICAgICJhbmltYXRpb24gY29tbWFuZCIKICAgIGV2ZW50ID0gYXdhaXQgZWRpdF9vcl9yZXBseShldmVudCwgImDZhtis2YXZhy4uLi4uYCIpCiAgICBkZXEgPSBkZXF1ZShsaXN0KCLwn6aL4pyo8J+mi+KcqPCfpovinKjwn6aL4pyoIikpCiAgICBmb3IgXyBpbiByYW5nZSg0OCk6CiAgICAgICAgYXdhaXQgYXN5bmNpby5zbGVlcCgwLjMpCiAgICAgICAgYXdhaXQgZXZlbnQuZWRpdCgiIi5qb2luKGRlcSkpCiAgICAgICAgZGVxLnJvdGF0ZSgxKQoKIAoKQGptdGhvbi5hcl9jbWQoCiAgICBwYXR0ZXJuPSLZhdmD2LnYqNin2KokIiwKICAgIGNvbW1hbmQ9KCLZhdmD2LnYqNin2KoiLCBwbHVnaW5fY2F0ZWdvcnkpLAogICAgaW5mbz17CiAgICAgICAgItin2YTYp9mF2LEiOiAiKirYp9mF2LEg2KrYs9mE2YrZhyDZgtmFINio2KfZhNiq2KzYsdio2Ycg2KjZhtmB2LPZgyoqIiwKICAgICAgICAi2KfZhNin2LPYqtiu2K/Yp9mFIjogInt0cn3ZhdmD2LnYqNin2KoiLAogICAgfSwKKQphc3luYyBkZWYgXyhldmVudCk6CiAgICAiYW5pbWF0aW9uIGNvbW1hbmQiCiAgICBldmVudCA9IGF3YWl0IGVkaXRfb3JfcmVwbHkoZXZlbnQsICJg2YXZg9i52KjYp9iqLi4uYCIpCiAgICBkZXEgPSBkZXF1ZShsaXN0KCLwn5+l8J+fp/Cfn6jwn5+p8J+fpvCfn6rwn5+r4qyb4qycIikpCiAgICBmb3IgXyBpbiByYW5nZSg5OTkpOgogICAgICAgIGF3YWl0IGFzeW5jaW8uc2xlZXAoMC4zKQogICAgICAgIGF3YWl0IGV2ZW50LmVkaXQoIiIuam9pbihkZXEpKQogICAgICAgIGRlcS5yb3RhdGUoMSkKCgpAam10aG9uLmFyX2NtZCgKICAgIHBhdHRlcm49ItmF2LfZiNix2YokIiwKICAgIGNvbW1hbmQ9KCLZhdi32YjYsdmKIiwgcGx1Z2luX2NhdGVnb3J5KSwKICAgIGluZm89ewogICAgICAgICLYp9mE2KfZhdixIjogIioq2KfZhdixINiq2LPZhNmK2Ycg2YLZhSDYqNin2YTYqtis2LHYqNmHINio2YbZgdiz2YMqKiIsCiAgICAgICAgItin2YTYp9iz2KrYrtiv2KfZhSI6ICJ7dHJ92YXYt9mI2LHZiiIsCiAgICB9LAopCmFzeW5jIGRlZiBfKGV2ZW50KToKICAgICJhbmltYXRpb24gY29tbWFuZCIKICAgIGV2ZW50ID0gYXdhaXQgZWRpdF9vcl9yZXBseShldmVudCwgImAuLi7Zhdi32YjYsdmKYCIpCiAgICBkZXEgPSBkZXF1ZShsaXN0KCLgvJLimbDgvJJAcmVraHNv4LyS4pmw4LyS4pmwIikpCiAgICBmb3IgXyBpbiByYW5nZSg5OTkpOgogICAgICAgIGF3YWl0IGFzeW5jaW8uc2xlZXAoMC4zKQogICAgICAgIGF3YWl0IGV2ZW50LmVkaXQoIiIuam9pbihkZXEpKQogICAgICAgIGRlcS5yb3RhdGUoMSkKCkBqbXRob24uYXJfY21kKAogICAgcGF0dGVybj0i2KzYs9mF2YckIiwKICAgIGNvbW1hbmQ9KCLYrNiz2YXZhyIsIHBsdWdpbl9jYXRlZ29yeSksCiAgICBpbmZvPXsKICAgICAgICAi2KfZhNin2YXYsSI6ICIqKtin2YXYsSDYqtiz2YTZitmHINmC2YUg2KjYp9mE2KrYrNix2KjZhyDYqNmG2YHYs9mDKioiLAogICAgICAgICLYp9mE2KfYs9iq2K7Yr9in2YUiOiAie3RyfS7YrNiz2YXZhyIsCiAgICB9LAopCmFzeW5jIGRlZiBfKGV2ZW50KToKICAgICJhbmltYXRpb24gY29tbWFuZCIKICAgIGV2ZW50ID0gYXdhaXQgZWRpdF9vcl9yZXBseShldmVudCwgIioq2KjYqNin2YTZiiDZg9mE2YXZhyDYqNizKioiKQogICAgZGVxID0gZGVxdWUobGlzdCgi8J+XvyDZgdi02YTYqSDZhdmGINi12KfYr9mCIPCfl78iKSkKICAgIGZvciBfIGluIHJhbmdlKDk5OSk6CiAgICAgICAgYXdhaXQgYXN5bmNpby5zbGVlcCgxLjgpCiAgICAgICAgYXdhaXQgZXZlbnQuZWRpdCgiIi5qb2luKGRlcSkpCiAgICAgICAgZGVxLnJvdGF0ZSgxKQoKCkBqbXRob24uYXJfY21kKAogICAgcGF0dGVybj0i2YXYt9ixJCIsCiAgICBjb21tYW5kPSgi2YXYt9ixIiwgcGx1Z2luX2NhdGVnb3J5KSwKICAgIGluZm89ewogICAgICAgICLYp9mE2KfZhdixIjogIioq2KfZhdixINiq2LPZhNmK2Ycg2YLZhSDYqNin2YTYqtis2LHYqNmHINio2YbZgdiz2YMqKiIsCiAgICAgICAgItin2YTYp9iz2KrYrtiv2KfZhSI6ICJ7dHJ92YXYt9ixIiwKICAgIH0sCikKYXN5bmMgZGVmIF8oZXZlbnQpOgogICAgImFuaW1hdGlvbiBjb21tYW5kIgogICAgZXZlbnQgPSBhd2FpdCBlZGl0X29yX3JlcGx5KGV2ZW50LCAiYNmF2LfYsS4uLi4uLi5gIikKICAgIGRlcSA9IGRlcXVlKGxpc3QoIvCfjKzimIHvuI/wn4yp8J+MqPCfjKfwn4ym8J+MpeKbhfCfjKQiKSkKICAgIGZvciBfIGluIHJhbmdlKDQ4KToKICAgICAgICBhd2FpdCBhc3luY2lvLnNsZWVwKDAuMykKICAgICAgICBhd2FpdCBldmVudC5lZGl0KCIiLmpvaW4oZGVxKSkKICAgICAgICBkZXEucm90YXRlKDEpCgoKQGptdGhvbi5hcl9jbWQoCiAgICBwYXR0ZXJuPSLYqtit2K/ZitirINin2YTYp9mGJCIsCiAgICBjb21tYW5kPSgi2KrYrdiv2YrYqyDYp9mE2KfZhiIsIHBsdWdpbl9jYXRlZ29yeSksCiAgICBpbmZvPXsKICAgICAgICAi2KfZhNin2YXYsSI6ICIqKtin2YXYsSDYqtiz2YTZitmHINmC2YUg2KjYp9mE2KrYrNix2KjZhyDYqNmG2YHYs9mDKioiLAogICAgICAgICLYp9mE2KfYs9iq2K7Yr9in2YUiOiAie3Ryfdiq2K3Yr9mK2Ksg2KfZhNin2YYiLAogICAgfSwKKQphc3luYyBkZWYgXyhldmVudCk6CiAgICAiYW5pbWF0aW9uIGNvbW1hbmQiCiAgICBhbmltYXRpb25faW50ZXJ2YWwgPSAzCiAgICBhbmltYXRpb25fdHRsID0gcmFuZ2UoMTIpCiAgICBldmVudCA9IGF3YWl0IGVkaXRfb3JfcmVwbHkoZXZlbnQsICJg2KzYp9ixINiq2K3Yr9mK2Ksg2LPZiNix2LMg2K/ZitmIINin2YbYqti42LEg2YLZhNmK2YTYp9mLYCIpCiAgICBhbmltYXRpb25fY2hhcnMgPSBbCiAgICAgICAgIioqSGVyb2t1IENvbm5lY3RpbmcgVG8gTGF0ZXN0IEdpdGh1YiBCdWlsZCAqKiIsCiAgICAgICAgZiIqKkJ1aWxkIHN0YXJ0ZWQgYnkgdXNlcioqIHttZW50aW9ufSIsCiAgICAgICAgZiIqKkRlcGxveSoqIGA1MzVhNzRmMGAgKipieSB1c2VyKioge21lbnRpb259IiwKICAgICAgICAiKipSZXN0YXJ0aW5nIEhlcm9rdSBTZXJ2ZXIuLi4qKiIsCiAgICAgICAgIioqU3RhdGUgY2hhbmdlZCBmcm9tIHVwIHRvIHN0YXJ0aW5nKioiLAogICAgICAgICIqKlN0b3BwaW5nIGFsbCBwcm9jZXNzZXMgd2l0aCBTSUdURVJNKioiLAogICAgICAgICIqKlByb2Nlc3MgZXhpdGVkIHdpdGgqKiBgc3RhdHVzIDE0M2AiLAogICAgICAgICIqKlN0YXJ0aW5nIHByb2Nlc3Mgd2l0aCBjb21tYW5kKiogYHB5dGhvbjMgLW0gdXNlcmJvdGAiLAogICAgICAgICIqKlN0YXRlIGNoYW5nZWQgZnJvbSBzdGFydGluZyB0byB1cCoqIiwKICAgICAgICAiX19JTkZPOlVzZXJib3Q6TG9nZ2VkIGluIGFzIDU1NzY2NzA2Ml9fIiwKICAgICAgICAiX19JTkZPOlVzZXJib3Q6U3VjY2Vzc2Z1bGx5IGxvYWRlZCBhbGwgcGx1Z2luc19fIiwKICAgICAgICAiKirYqtmFINiq2K3Yr9mK2Ksg2LPZiNix2LMg2K/ZitmIINio2YbYrNin2K1cbiDZgtmG2KfYqSDYp9mE2LPZiNix2LMgQERFT09VUyoqIiwKICAgIF0KICAgIGZvciBpIGluIGFuaW1hdGlvbl90dGw6CiAgICAgICAgYXdhaXQgYXN5bmNpby5zbGVlcChhbmltYXRpb25faW50ZXJ2YWwpCiAgICAgICAgYXdhaXQgZXZlbnQuZWRpdChhbmltYXRpb25fY2hhcnNbaSAlIDEyXSkKCgpAam10aG9uLmFyX2NtZCgKICAgIHBhdHRlcm49Itiq2YHYsdmK2LooPzogfCQpKC4qKSIsCiAgICBjb21tYW5kPSgi2KrZgdix2YrYuiIsIHBsdWdpbl9jYXRlZ29yeSksCiAgICBpbmZvPXsKICAgICAgICAi2KfZhNin2YXYsSI6ICIqKtin2YXYsSDYqtiz2YTZitmHINmC2YUg2KjYp9mE2KrYrNix2KjZhyDYqNmG2YHYs9mDKioiLAogICAgICAgICLYp9mE2KfYs9iq2K7Yr9in2YUiOiAie3Ryfdiq2YHYsdmK2LogPNir2YTYp9irINiz2YXYp9mK2YTYp9iqPiIsCiAgICAgICAgImV4YW1wbGVzIjogWyJ7dHJ92KrZgdix2YrYuiIsICJ7dHJ92KrZgdix2YrYuiDwn42w8J+NjvCfkJMiXSwKICAgIH0sCikKYXN5bmMgZGVmIF8oZXZlbnQpOgogICAgIkFuaW1hdGlvbiBDb21tYW5kIgogICAgdHJ5OgogICAgICAgIG9iaiA9IGV2ZW50LnBhdHRlcm5fbWF0Y2guZ3JvdXAoMSkKICAgICAgICBpZiBsZW4ob2JqKSAhPSAzOgogICAgICAgICAgICByZXR1cm4gYXdhaXQgZWRpdF9kZWxldGUoZXZlbnQsICJgSW5wdXQgbGVuZ3RoIG11c3QgYmUgMyBvciBlbXB0eWAiKQogICAgICAgIGlucCA9ICIgIi5qb2luKG9iaikKICAgIGV4Y2VwdCBJbmRleEVycm9yOgogICAgICAgIGlucCA9ICLwn6WeIPCfjoIg8J+NqyIKICAgIGV2ZW50ID0gYXdhaXQgZWRpdF9vcl9yZXBseShldmVudCwgImDYqtmB2LHZiti6Li4uLmAiKQogICAgdSwgdCwgZywgbywgcywgbiA9IGlucC5zcGxpdCgpLCAi8J+XkSIsICI8KF5fXiA8KSIsICIoPiBeX14pPiIsICLioIAgIiwgIlxuIgogICAgaCA9IFsodVswXSwgdVsxXSwgdVsyXSksICh1WzBdLCB1WzFdLCAiIiksICh1WzBdLCAiIiwgIiIpXQogICAgZm9yIHNvbWV0aGluZyBpbiByZXZlcnNlZCgKICAgICAgICBbCiAgICAgICAgICAgIHkKICAgICAgICAgICAgZm9yIHkgaW4gKAogICAgICAgICAgICAgICAgWwogICAgICAgICAgICAgICAgICAgICIiLmpvaW4oeCkKICAgICAgICAgICAgICAgICAgICBmb3IgeCBpbiAoCiAgICAgICAgICAgICAgICAgICAgICAgIGYgKyAocywgZywgcyArIHMgKiBmLmNvdW50KCIiKSwgdCksCiAgICAgICAgICAgICAgICAgICAgICAgIGYgKyAoZywgcyAqIDIgKyBzICogZi5jb3VudCgiIiksIHQpLAogICAgICAgICAgICAgICAgICAgICAgICBmWzppXSArIChvLCBmW2ldLCBzICogMiArIHMgKiBmLmNvdW50KCIiKSwgdCksCiAgICAgICAgICAgICAgICAgICAgICAgIGZbOmldICsgKHMgKyBzICogZi5jb3VudCgiIiksIG8sIGZbaV0sIHMsIHQpLAogICAgICAgICAgICAgICAgICAgICAgICBmWzppXSArIChzICogMiArIHMgKiBmLmNvdW50KCIiKSwgbywgZltpXSwgdCksCiAgICAgICAgICAgICAgICAgICAgICAgIGZbOmldICsgKHMgKiAzICsgcyAqIGYuY291bnQoIiIpLCBvLCB0KSwKICAgICAgICAgICAgICAgICAgICAgICAgZls6aV0gKyAocyAqIDMgKyBzICogZi5jb3VudCgiIiksIGcsIHQpLAogICAgICAgICAgICAgICAgICAgICkKICAgICAgICAgICAgICAgIF0KICAgICAgICAgICAgICAgIGZvciBpLCBmIGluIGVudW1lcmF0ZShyZXZlcnNlZChoKSkKICAgICAgICAgICAgKQogICAgICAgIF0KICAgICk6CiAgICAgICAgZm9yIHNvbWV0aGluZ19lbHNlIGluIHNvbWV0aGluZzoKICAgICAgICAgICAgYXdhaXQgYXN5bmNpby5zbGVlcCgwLjMpCiAgICAgICAgICAgIGF3YWl0IGV2ZW50LmVkaXQoc29tZXRoaW5nX2Vsc2UpCgoKQGptdGhvbi5hcl9jbWQoCiAgICBwYXR0ZXJuPSLZgdmE2YrZhSQiLAogICAgY29tbWFuZD0oItmB2YTZitmFIiwgcGx1Z2luX2NhdGVnb3J5KSwKICAgIGluZm89ewogICAgICAgICLYp9mE2KfZhdixIjogIioq2KfZhdixINiq2LPZhNmK2Ycg2YLZhSDYqNin2YTYqtis2LHYqNmHINio2YbZgdiz2YMqKiIsCiAgICAgICAgItin2YTYp9iz2KrYrtiv2KfZhSI6ICJ7dHJ92YHZhNmK2YUiLAogICAgfSwKKQphc3luYyBkZWYgXyhldmVudCk6CiAgICAiYW5pbWF0aW9uIGNvbW1hbmQiCiAgICBhbmltYXRpb25faW50ZXJ2YWwgPSAxCiAgICBhbmltYXRpb25fdHRsID0gcmFuZ2UoMTApCiAgICBhbmltYXRpb25fY2hhcnMgPSBbCiAgICAgICAgIuKsm+Ksm+Ksm1xu4qyb4qyb4qybXG7irJvirJvirJsiLAogICAgICAgICLirJvirJvirJtcbuKsm/CflITirJtcbuKsm+Ksm+KsmyIsCiAgICAgICAgIuKsm+Kshu+4j+Ksm1xu4qyb8J+UhOKsm1xu4qyb4qyb4qybIiwKICAgICAgICAi4qyb4qyG77iP4oaX77iPXG7irJvwn5SE4qybXG7irJvirJvirJsiLAogICAgICAgICLirJvirIbvuI/ihpfvuI9cbuKsm/CflITinqHvuI9cbuKsm+Ksm+KsmyIsCiAgICAgICAgIuKsm+Kshu+4j+KGl++4j1xu4qyb8J+UhOKeoe+4j1xu4qyb4qyb4oaY77iPIiwKICAgICAgICAi4qyb4qyG77iP4oaX77iPXG7irJvwn5SE4p6h77iPXG7irJvirIfvuI/ihpjvuI8iLAogICAgICAgICLirJvirIbvuI/ihpfvuI9cbuKsm/CflITinqHvuI9cbuKGme+4j+Ksh++4j+KGmO+4jyIsCiAgICAgICAgIuKsm+Kshu+4j+KGl++4j1xu4qyF77iP8J+UhOKeoe+4j1xu4oaZ77iP4qyH77iP4oaY77iPIiwKICAgICAgICAi4oaW77iP4qyG77iP4oaX77iPXG7irIXvuI/wn5SE4p6h77iPXG7ihpnvuI/irIfvuI/ihpjvuI8iLAogICAgXQogICAgZXZlbnQgPSBhd2FpdCBlZGl0X29yX3JlcGx5KGV2ZW50LCAi2YHZhNmK2YUuLi4uIikKICAgIGF3YWl0IGFzeW5jaW8uc2xlZXAoMikKICAgIGZvciBpIGluIGFuaW1hdGlvbl90dGw6CiAgICAgICAgYXdhaXQgYXN5bmNpby5zbGVlcChhbmltYXRpb25faW50ZXJ2YWwpCiAgICAgICAgYXdhaXQgZXZlbnQuZWRpdChhbmltYXRpb25fY2hhcnNbaSAlIDEwXSkKCgpAam10aG9uLmFyX2NtZCgKICAgIHBhdHRlcm49Itin2K3YqNmDJCIsCiAgICBjb21tYW5kPSgi2KfYrdio2YMiLCBwbHVnaW5fY2F0ZWdvcnkpLAogICAgaW5mbz17CiAgICAgICAgItin2YTYp9mF2LEiOiAiKirYp9mF2LEg2KrYs9mE2YrZhyDZgtmFINio2KfZhNiq2KzYsdio2Ycg2KjZhtmB2LPZgyoqIiwKICAgICAgICAi2KfZhNin2LPYqtiu2K/Yp9mFIjogInt0cn3Yp9it2KjZgyIsCiAgICB9LAopCmFzeW5jIGRlZiBfKGV2ZW50KToKICAgICJhbmltYXRpb24gY29tbWFuZCIKICAgIGFuaW1hdGlvbl9pbnRlcnZhbCA9IDAuNQogICAgYW5pbWF0aW9uX3R0bCA9IHJhbmdlKDcwKQogICAgZXZlbnQgPSBhd2FpdCBlZGl0X29yX3JlcGx5KGV2ZW50LCAi2KfYrdio2YMiKQogICAgYW5pbWF0aW9uX2NoYXJzID0gWwogICAgICAgICLwn5iAIiwKICAgICAgICAi8J+RqeKAjfCfjqgiLAogICAgICAgICLwn5iBIiwKICAgICAgICAi8J+YgiIsCiAgICAgICAgIvCfpKMiLAogICAgICAgICLwn5iDIiwKICAgICAgICAi8J+YhCIsCiAgICAgICAgIvCfmIUiLAogICAgICAgICLwn5iKIiwKICAgICAgICAi4pi6IiwKICAgICAgICAi8J+ZgiIsCiAgICAgICAgIvCfpJQiLAogICAgICAgICLwn6SoIiwKICAgICAgICAi8J+YkCIsCiAgICAgICAgIvCfmJEiLAogICAgICAgICLwn5i2IiwKICAgICAgICAi8J+YoyIsCiAgICAgICAgIvCfmKUiLAogICAgICAgICLwn5iuIiwKICAgICAgICAi8J+kkCIsCiAgICAgICAgIvCfmK8iLAogICAgICAgICLwn5i0IiwKICAgICAgICAi8J+YlCIsCiAgICAgICAgIvCfmJUiLAogICAgICAgICLimLkiLAogICAgICAgICLwn5mBIiwKICAgICAgICAi8J+YliIsCiAgICAgICAgIvCfmJ4iLAogICAgICAgICLwn5ifIiwKICAgICAgICAi8J+YoiIsCiAgICAgICAgIvCfmK0iLAogICAgICAgICLwn6SvIiwKICAgICAgICAi8J+SlCIsCiAgICAgICAgIuKdpCIsCiAgICAgICAgItin2K3YqNmDIOKdpCIsCiAgICBdCiAgICBmb3IgaSBpbiBhbmltYXRpb25fdHRsOgogICAgICAgIGF3YWl0IGFzeW5jaW8uc2xlZXAoYW5pbWF0aW9uX2ludGVydmFsKQogICAgICAgIGF3YWl0IGV2ZW50LmVkaXQoYW5pbWF0aW9uX2NoYXJzW2kgJSAzNV0pCgoKQGptdGhvbi5hcl9jbWQoCiAgICBwYXR0ZXJuPSLYt9in2KbYsdmHJCIsCiAgICBjb21tYW5kPSgi2LfYp9im2LHZhyIsIHBsdWdpbl9jYXRlZ29yeSksCiAgICBpbmZvPXsKICAgICAgICAi2KfZhNin2YXYsSI6ICIqKtin2YXYsSDYqtiz2YTZitmHINmC2YUg2KjYp9mE2KrYrNix2KjZhyDYqNmG2YHYs9mDKioiLAogICAgICAgICLYp9mE2KfYs9iq2K7Yr9in2YUiOiAie3Ryfdi32KfYptix2YciLAogICAgfSwKKQphc3luYyBkZWYgXyhldmVudCk6CiAgICAiYW5pbWF0aW9uIGNvbW1hbmQiCiAgICBldmVudCA9IGF3YWl0IGVkaXRfb3JfcmVwbHkoZXZlbnQsICLYp9mG2KrYuNixINin2YTYt9in2KbYsdmHLi4uIikKICAgIGF3YWl0IGV2ZW50LmVkaXQoIuKciC0tLS0tLS0tLS0tLS0iKQogICAgYXdhaXQgZXZlbnQuZWRpdCgiLeKciC0tLS0tLS0tLS0tLSIpCiAgICBhd2FpdCBldmVudC5lZGl0KCItLeKciC0tLS0tLS0tLS0tIikKICAgIGF3YWl0IGV2ZW50LmVkaXQoIi0tLeKciC0tLS0tLS0tLS0iKQogICAgYXdhaXQgZXZlbnQuZWRpdCgiLS0tLeKciC0tLS0tLS0tLSIpCiAgICBhd2FpdCBldmVudC5lZGl0KCItLS0tLeKciC0tLS0tLS0tIikKICAgIGF3YWl0IGV2ZW50LmVkaXQoIi0tLS0tLeKciC0tLS0tLS0iKQogICAgYXdhaXQgZXZlbnQuZWRpdCgiLS0tLS0tLeKciC0tLS0tLSIpCiAgICBhd2FpdCBldmVudC5lZGl0KCItLS0tLS0tLeKciC0tLS0tIikKICAgIGF3YWl0IGV2ZW50LmVkaXQoIi0tLS0tLS0tLeKciC0tLS0iKQogICAgYXdhaXQgZXZlbnQuZWRpdCgiLS0tLS0tLS0tLeKciC0tLSIpCiAgICBhd2FpdCBldmVudC5lZGl0KCItLS0tLS0tLS0tLeKciC0tIikKICAgIGF3YWl0IGV2ZW50LmVkaXQoIi0tLS0tLS0tLS0tLeKciC0iKQogICAgYXdhaXQgZXZlbnQuZWRpdCgiLS0tLS0tLS0tLS0tLeKciCIpCiAgICBhd2FpdCBhc3luY2lvLnNsZWVwKDMpCgoKQGptdGhvbi5hcl9jbWQoCiAgICBwYXR0ZXJuPSLYtNix2LfZhyQiLAogICAgY29tbWFuZD0oIti02LHYt9mHIiwgcGx1Z2luX2NhdGVnb3J5KSwKICAgIGluZm89ewogICAgICAgICLYp9mE2KfZhdixIjogIioq2KfZhdixINiq2LPZhNmK2Ycg2YLZhSDYqNin2YTYqtis2LHYqNmHINio2YbZgdiz2YMqKiIsCiAgICAgICAgItin2YTYp9iz2KrYrtiv2KfZhSI6ICJ7dHJ92LTYsdi32YciLAogICAgfSwKKQphc3luYyBkZWYgXyhldmVudCk6CiAgICAiYW5pbWF0aW9uIGNvbW1hbmQiCiAgICBhbmltYXRpb25faW50ZXJ2YWwgPSAwLjMKICAgIGFuaW1hdGlvbl90dGwgPSByYW5nZSgxMikKICAgIGV2ZW50ID0gYXdhaXQgZWRpdF9vcl9yZXBseShldmVudCwgIti02LHYt9mHIikKICAgIGFuaW1hdGlvbl9jaGFycyA9IFsKICAgICAgICAi8J+UtPCflLTwn5S04qyc4qyc4qyc8J+UtfCflLXwn5S1XG7wn5S08J+UtPCflLTirJzirJzirJzwn5S18J+UtfCflLVcbvCflLTwn5S08J+UtOKsnOKsnOKsnPCflLXwn5S18J+UtSIsCiAgICAgICAgIvCflLXwn5S18J+UteKsnOKsnOKsnPCflLTwn5S08J+UtFxu8J+UtfCflLXwn5S14qyc4qyc4qyc8J+UtPCflLTwn5S0XG7wn5S18J+UtfCflLXirJzirJzirJzwn5S08J+UtPCflLQiLAogICAgICAgICLwn5S08J+UtPCflLTirJzirJzirJzwn5S18J+UtfCflLVcbvCflLTwn5S08J+UtOKsnOKsnOKsnPCflLXwn5S18J+UtVxu8J+UtPCflLTwn5S04qyc4qyc4qyc8J+UtfCflLXwn5S1IiwKICAgICAgICAi8J+UtfCflLXwn5S14qyc4qyc4qyc8J+UtPCflLTwn5S0XG7wn5S18J+UtfCflLXirJzirJzirJzwn5S08J+UtPCflLRcbvCflLXwn5S18J+UteKsnOKsnOKsnPCflLTwn5S08J+UtCIsCiAgICAgICAgIvCflLTwn5S08J+UtOKsnOKsnOKsnPCflLXwn5S18J+UtVxu8J+UtPCflLTwn5S04qyc4qyc4qyc8J+UtfCflLXwn5S1XG7wn5S08J+UtPCflLTirJzirJzirJzwn5S18J+UtfCflLUiLAogICAgICAgICLwn5S18J+UtfCflLXirJzirJzirJzwn5S08J+UtPCflLRcbvCflLXwn5S18J+UteKsnOKsnOKsnPCflLTwn5S08J+UtFxu8J+UtfCflLXwn5S14qyc4qyc4qyc8J+UtPCflLTwn5S0IiwKICAgICAgICAi8J+UtPCflLTwn5S04qyc4qyc4qyc8J+UtfCflLXwn5S1XG7wn5S08J+UtPCflLTirJzirJzirJzwn5S18J+UtfCflLVcbvCflLTwn5S08J+UtOKsnOKsnOKsnPCflLXwn5S18J+UtSIsCiAgICAgICAgIvCflLXwn5S18J+UteKsnOKsnOKsnPCflLTwn5S08J+UtFxu8J+UtfCflLXwn5S14qyc4qyc4qyc8J+UtPCflLTwn5S0XG7wn5S18J+UtfCflLXirJzirJzirJzwn5S08J+UtPCflLQiLAogICAgICAgICLwn5S08J+UtPCflLTirJzirJzirJzwn5S18J+UtfCflLVcbvCflLTwn5S08J+UtOKsnOKsnOKsnPCflLXwn5S18J+UtVxu8J+UtPCflLTwn5S04qyc4qyc4qyc8J+UtfCflLXwn5S1IiwKICAgICAgICAi8J+UtfCflLXwn5S14qyc4qyc4qyc8J+UtPCflLTwn5S0XG7wn5S18J+UtfCflLXirJzirJzirJzwn5S08J+UtPCflLRcbvCflLXwn5S18J+UteKsnOKsnOKsnPCflLTwn5S08J+UtCIsCiAgICAgICAgIvCflLTwn5S08J+UtOKsnOKsnOKsnPCflLXwn5S18J+UtVxu8J+UtPCflLTwn5S04qyc4qyc4qyc8J+UtfCflLXwn5S1XG7wn5S08J+UtPCflLTirJzirJzirJzwn5S18J+UtfCflLUiLAogICAgICAgIGYie21lbnRpb259ICoqUG9saWNlIGl6IEhlcmUqKiIsCiAgICBdCiAgICBmb3IgaSBpbiBhbmltYXRpb25fdHRsOgogICAgICAgIGF3YWl0IGFzeW5jaW8uc2xlZXAoYW5pbWF0aW9uX2ludGVydmFsKQogICAgICAgIGF3YWl0IGV2ZW50LmVkaXQoYW5pbWF0aW9uX2NoYXJzW2kgJSAxMl0pCgoKQGptdGhvbi5hcl9jbWQoCiAgICBwYXR0ZXJuPSJqaW8kIiwKICAgIGNvbW1hbmQ9KCJqaW8iLCBwbHVnaW5fY2F0ZWdvcnkpLAogICAgaW5mbz17CiAgICAgICAgItin2YTYp9mF2LEiOiAiKirYp9mF2LEg2KrYs9mE2YrZhyDZgtmFINio2KfZhNiq2KzYsdio2Ycg2KjZhtmB2LPZgyoqIiwKICAgICAgICAi2KfZhNin2LPYqtiu2K/Yp9mFIjogInt0cn1qaW8iLAogICAgfSwKKQphc3luYyBkZWYgXyhldmVudCk6CiAgICAiYW5pbWF0aW9uIGNvbW1hbmQiCiAgICBhbmltYXRpb25faW50ZXJ2YWwgPSAxCiAgICBhbmltYXRpb25fdHRsID0gcmFuZ2UoMTkpCiAgICBldmVudCA9IGF3YWl0IGVkaXRfb3JfcmVwbHkoZXZlbnQsICJqaW8gbmV0d29yayBib29zdGluZy4uLiIpCiAgICBhbmltYXRpb25fY2hhcnMgPSBbCiAgICAgICAgImBDb25uZWN0aW5nIFRvIEpJTyBORVRXT1JLIC4uLi5gIiwKICAgICAgICAiYOKWiCDilocg4paGIOKWhSDiloQg4paCIOKWgWAiLAogICAgICAgICJg4paSIOKWhyDiloYg4paFIOKWhCDiloIg4paBYCIsCiAgICAgICAgImDilpIg4paSIOKWhiDiloUg4paEIOKWgiDiloFgIiwKICAgICAgICAiYOKWkiDilpIg4paSIOKWhSDiloQg4paCIOKWgWAiLAogICAgICAgICJg4paSIOKWkiDilpIg4paSIOKWhCDiloIg4paBYCIsCiAgICAgICAgImDilpIg4paSIOKWkiDilpIg4paSIOKWgiDiloFgIiwKICAgICAgICAiYOKWkiDilpIg4paSIOKWkiDilpIg4paSIOKWgWAiLAogICAgICAgICJg4paSIOKWkiDilpIg4paSIOKWkiDilpIg4paSYCIsCiAgICAgICAgIipPcHRpbWlzaW5nIEpJTyBORVRXT1JLLi4uKiIsCiAgICAgICAgImDilpIg4paSIOKWkiDilpIg4paSIOKWkiDilpJgIiwKICAgICAgICAiYOKWgSDilpIg4paSIOKWkiDilpIg4paSIOKWkmAiLAogICAgICAgICJg4paBIOKWgiDilpIg4paSIOKWkiDilpIg4paSYCIsCiAgICAgICAgImDiloEg4paCIOKWhCDilpIg4paSIOKWkiDilpJgIiwKICAgICAgICAiYOKWgSDiloIg4paEIOKWhSDilpIg4paSIOKWkmAiLAogICAgICAgICJg4paBIOKWgiDiloQg4paFIOKWhiDilpIg4paSYCIsCiAgICAgICAgImDiloEg4paCIOKWhCDiloUg4paGIOKWhyDilpJgIiwKICAgICAgICAiYOKWgSDiloIg4paEIOKWhSDiloYg4paHIOKWiGAiLAogICAgICAgICIqKkpJTyBORVRXT1JLIEJvb3N0ZWQuLi4uKioiLAogICAgXQogICAgZm9yIGkgaW4gYW5pbWF0aW9uX3R0bDoKICAgICAgICBhd2FpdCBhc3luY2lvLnNsZWVwKGFuaW1hdGlvbl9pbnRlcnZhbCkKICAgICAgICBhd2FpdCBldmVudC5lZGl0KGFuaW1hdGlvbl9jaGFyc1tpICUgMTldKQoKCkBqbXRob24uYXJfY21kKAogICAgcGF0dGVybj0i2KfZhNmG2LbYp9mFINin2YTYtNmF2LPZiiQiLAogICAgY29tbWFuZD0oItin2YTZhti22KfZhSDYp9mE2LTZhdiz2YoiLCBwbHVnaW5fY2F0ZWdvcnkpLAogICAgaW5mbz17CiAgICAgICAgItin2YTYp9mF2LEiOiAiKirYp9mF2LEg2KrYs9mE2YrZhyDZgtmFINio2KfZhNiq2KzYsdio2Ycg2KjZhtmB2LPZgyoqIiwKICAgICAgICAi2KfZhNin2LPYqtiu2K/Yp9mFIjogInt0cn3Yp9mE2YbYttin2YUg2KfZhNi02YXYs9mKIiwKICAgIH0sCikKYXN5bmMgZGVmIF8oZXZlbnQpOgogICAgImFuaW1hdGlvbiBjb21tYW5kIgogICAgYW5pbWF0aW9uX2ludGVydmFsID0gMC4xCiAgICBhbmltYXRpb25fdHRsID0gcmFuZ2UoODApCiAgICBldmVudCA9IGF3YWl0IGVkaXRfb3JfcmVwbHkoZXZlbnQsICLYp9mE2YbYttin2YUg2KfZhNi02YXYs9mKIikKICAgIGFuaW1hdGlvbl9jaGFycyA9IFsKICAgICAgICAiYOKXvO+4j+KXvO+4j+KXvO+4j+KXvO+4j+KXvO+4j1xu4pe877iP4pe877iP4pe877iP4pe877iP4piAXG7il7zvuI/il7zvuI/wn4yO4pe877iP4pe877iPXG7wn4yV4pe877iP4pe877iP4pe877iP4pe877iPXG7il7zvuI/il7zvuI/il7zvuI/il7zvuI/il7zvuI9gIiwKICAgICAgICAiYOKXvO+4j+KXvO+4j+KXvO+4j+KXvO+4j+KXvO+4j1xu8J+MleKXvO+4j+KXvO+4j+KXvO+4j+KXvO+4j1xu4pe877iP4pe877iP8J+MjuKXvO+4j+KXvO+4j1xu4pe877iP4pe877iP4pe877iP4pe877iP4piAXG7il7zvuI/il7zvuI/il7zvuI/il7zvuI/il7zvuI9gIiwKICAgICAgICAiYOKXvO+4j/CfjJXil7zvuI/il7zvuI/il7zvuI9cbuKXvO+4j+KXvO+4j+KXvO+4j+KXvO+4j+KXvO+4j1xu4pe877iP4pe877iP8J+MjuKXvO+4j+KXvO+4j1xu4pe877iP4pe877iP4pe877iP4pe877iP4pe877iPXG7il7zvuI/il7zvuI/il7zvuI/imIDil7zvuI9gIiwKICAgICAgICAiYOKXvO+4j+KXvO+4j+KXvO+4j/CfjJXil7zvuI9cbuKXvO+4j+KXvO+4j+KXvO+4j+KXvO+4j+KXvO+4j1xu4pe877iP4pe877iP8J+MjuKXvO+4j+KXvO+4j1xu4pe877iP4pe877iP4pe877iP4pe877iP4pe877iPXG7il7zvuI/imIDil7zvuI/il7zvuI/il7zvuI9gIiwKICAgICAgICAiYOKXvO+4j+KXvO+4j+KXvO+4j+KXvO+4j+KXvO+4j1xu4pe877iP4pe877iP4pe877iP4pe877iP8J+MlVxu4pe877iP4pe877iP8J+MjuKXvO+4j+KXvO+4j1xu4piA4pe877iP4pe877iP4pe877iP4pe877iPXG7il7zvuI/il7zvuI/il7zvuI/il7zvuI/il7zvuI9gIiwKICAgICAgICAiYOKXvO+4j+KXvO+4j+KXvO+4j+KXvO+4j+KXvO+4j1xu4piA4pe877iP4pe877iP4pe877iP4pe877iPXG7il7zvuI/il7zvuI/wn4yO4pe877iP4pe877iPXG7il7zvuI/il7zvuI/il7zvuI/il7zvuI/wn4yVXG7il7zvuI/il7zvuI/il7zvuI/il7zvuI/il7zvuI9gIiwKICAgICAgICAiYOKXvO+4j+KYgOKXvO+4j+KXvO+4j+KXvO+4j1xu4pe877iP4pe877iP4pe877iP4pe877iP4pe877iPXG7il7zvuI/il7zvuI/wn4yO4pe877iP4pe877iPXG7il7zvuI/il7zvuI/il7zvuI/il7zvuI/il7zvuI9cbuKXvO+4j+KXvO+4j+KXvO+4j/CfjJXil7zvuI9gIiwKICAgICAgICAiYOKXvO+4j+KXvO+4j+KXvO+4j+KYgOKXvO+4j1xu4pe877iP4pe877iP4pe877iP4pe877iP4pe877iPXG7il7zvuI/il7zvuI/wn4yO4pe877iP4pe877iPXG7il7zvuI/il7zvuI/il7zvuI/il7zvuI/il7zvuI9cbuKXvO+4j/CfjJXil7zvuI/il7zvuI/il7zvuI9gIiwKICAgIF0KICAgIGZvciBpIGluIGFuaW1hdGlvbl90dGw6CiAgICAgICAgYXdhaXQgYXN5bmNpby5zbGVlcChhbmltYXRpb25faW50ZXJ2YWwpCiAgICAgICAgYXdhaXQgZXZlbnQuZWRpdChhbmltYXRpb25fY2hhcnNbaSAlIDhdKQo='))
+import asyncio
+from collections import deque
+
+from . import edit_delete, edit_or_reply, jmthon, mention
+
+plugin_category = "fun"
+
+
+@jmthon.ar_cmd(
+    pattern="نجمه$",
+    command=("نجمه", plugin_category),
+    info={
+        "الامر": "**امر تسليه قم بالتجربه بنفسك**",
+        "الاستخدام": "{tr}نجمه",
+    },
+)
+async def _(event):
+    "animation command"
+    event = await edit_or_reply(event, "`نجمه.....`")
+    deq = deque(list("🦋✨🦋✨🦋✨🦋✨"))
+    for _ in range(48):
+        await asyncio.sleep(0.3)
+        await event.edit("".join(deq))
+        deq.rotate(1)
+
+ 
+
+@jmthon.ar_cmd(
+    pattern="مكعبات$",
+    command=("مكعبات", plugin_category),
+    info={
+        "الامر": "**امر تسليه قم بالتجربه بنفسك**",
+        "الاستخدام": "{tr}مكعبات",
+    },
+)
+async def _(event):
+    "animation command"
+    event = await edit_or_reply(event, "`مكعبات...`")
+    deq = deque(list("🟥🟧🟨🟩🟦🟪🟫⬛⬜"))
+    for _ in range(999):
+        await asyncio.sleep(0.3)
+        await event.edit("".join(deq))
+        deq.rotate(1)
+
+
+@jmthon.ar_cmd(
+    pattern="مطوري$",
+    command=("مطوري", plugin_category),
+    info={
+        "الامر": "**امر تسليه قم بالتجربه بنفسك**",
+        "الاستخدام": "{tr}مطوري",
+    },
+)
+async def _(event):
+    "animation command"
+    event = await edit_or_reply(event, "`...مطوري`")
+    deq = deque(list("༒♰༒@rekhso༒♰༒♰"))
+    for _ in range(999):
+        await asyncio.sleep(0.3)
+        await event.edit("".join(deq))
+        deq.rotate(1)
+
+@jmthon.ar_cmd(
+    pattern="جسمه$",
+    command=("جسمه", plugin_category),
+    info={
+        "الامر": "**امر تسليه قم بالتجربه بنفسك**",
+        "الاستخدام": "{tr}.جسمه",
+    },
+)
+async def _(event):
+    "animation command"
+    event = await edit_or_reply(event, "**ببالي كلمه بس**")
+    deq = deque(list("🗿 فشلة من صادق 🗿"))
+    for _ in range(999):
+        await asyncio.sleep(1.8)
+        await event.edit("".join(deq))
+        deq.rotate(1)
+
+
+@jmthon.ar_cmd(
+    pattern="مطر$",
+    command=("مطر", plugin_category),
+    info={
+        "الامر": "**امر تسليه قم بالتجربه بنفسك**",
+        "الاستخدام": "{tr}مطر",
+    },
+)
+async def _(event):
+    "animation command"
+    event = await edit_or_reply(event, "`مطر.......`")
+    deq = deque(list("🌬☁️🌩🌨🌧🌦🌥⛅🌤"))
+    for _ in range(48):
+        await asyncio.sleep(0.3)
+        await event.edit("".join(deq))
+        deq.rotate(1)
+
+
+@jmthon.ar_cmd(
+    pattern="لوج$",
+    command=("لوج", plugin_category),
+    info={
+        "الامر": "**امر تسليه قم بالتجربه بنفسك**",
+        "الاستخدام": "{tr}لوج",
+    },
+)
+async def _(event):
+    "animation command"
+    animation_interval = 3
+    animation_ttl = range(12)
+    event = await edit_or_reply(event, "`جار تحديث سورس ديو انتظر قليلاً`")
+    animation_chars = [
+        "**Heroku Connecting To Latest Github Build **",
+        f"**Build started by user** {mention}",
+        f"**Deploy** `535a74f0` **by user** {mention}",
+        "**Restarting Heroku Server...**",
+        "**State changed from up to starting**",
+        "**Stopping all processes with SIGTERM**",
+        "**Process exited with** `status 143`",
+        "**Starting process with command** `python3 -m userbot`",
+        "**State changed from starting to up**",
+        "__INFO:Userbot:Logged in as 557667062__",
+        "__INFO:Userbot:Successfully loaded all plugins__",
+        "**تم تحديث سورس ديو بنجاح\n قناة السورس @DEOOUS**",
+    ]
+    for i in animation_ttl:
+        await asyncio.sleep(animation_interval)
+        await event.edit(animation_chars[i % 12])
+
+
+@jmthon.ar_cmd(
+    pattern="تفريغ(?: |$)(.*)",
+    command=("تفريغ", plugin_category),
+    info={
+        "الامر": "**امر تسليه قم بالتجربه بنفسك**",
+        "الاستخدام": "{tr}تفريغ <ثلاث سمايلات>",
+        "examples": ["{tr}تفريغ", "{tr}تفريغ 🍰🍎🐓"],
+    },
+)
+async def _(event):
+    "Animation Command"
+    try:
+        obj = event.pattern_match.group(1)
+        if len(obj) != 3:
+            return await edit_delete(event, "`Input length must be 3 or empty`")
+        inp = " ".join(obj)
+    except IndexError:
+        inp = "🥞 🎂 🍫"
+    event = await edit_or_reply(event, "`تفريغ....`")
+    u, t, g, o, s, n = inp.split(), "🗑", "<(^_^ <)", "(> ^_^)>", "⠀ ", "\n"
+    h = [(u[0], u[1], u[2]), (u[0], u[1], ""), (u[0], "", "")]
+    for something in reversed(
+        [
+            y
+            for y in (
+                [
+                    "".join(x)
+                    for x in (
+                        f + (s, g, s + s * f.count(""), t),
+                        f + (g, s * 2 + s * f.count(""), t),
+                        f[:i] + (o, f[i], s * 2 + s * f.count(""), t),
+                        f[:i] + (s + s * f.count(""), o, f[i], s, t),
+                        f[:i] + (s * 2 + s * f.count(""), o, f[i], t),
+                        f[:i] + (s * 3 + s * f.count(""), o, t),
+                        f[:i] + (s * 3 + s * f.count(""), g, t),
+                    )
+                ]
+                for i, f in enumerate(reversed(h))
+            )
+        ]
+    ):
+        for something_else in something:
+            await asyncio.sleep(0.3)
+            await event.edit(something_else)
+
+
+@jmthon.ar_cmd(
+    pattern="فليم$",
+    command=("فليم", plugin_category),
+    info={
+        "الامر": "**امر تسليه قم بالتجربه بنفسك**",
+        "الاستخدام": "{tr}فليم",
+    },
+)
+async def _(event):
+    "animation command"
+    animation_interval = 1
+    animation_ttl = range(10)
+    animation_chars = [
+        "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
+        "⬛⬛⬛\n⬛🔄⬛\n⬛⬛⬛",
+        "⬛⬆️⬛\n⬛🔄⬛\n⬛⬛⬛",
+        "⬛⬆️↗️\n⬛🔄⬛\n⬛⬛⬛",
+        "⬛⬆️↗️\n⬛🔄➡️\n⬛⬛⬛",
+        "⬛⬆️↗️\n⬛🔄➡️\n⬛⬛↘️",
+        "⬛⬆️↗️\n⬛🔄➡️\n⬛⬇️↘️",
+        "⬛⬆️↗️\n⬛🔄➡️\n↙️⬇️↘️",
+        "⬛⬆️↗️\n⬅️🔄➡️\n↙️⬇️↘️",
+        "↖️⬆️↗️\n⬅️🔄➡️\n↙️⬇️↘️",
+    ]
+    event = await edit_or_reply(event, "فليم....")
+    await asyncio.sleep(2)
+    for i in animation_ttl:
+        await asyncio.sleep(animation_interval)
+        await event.edit(animation_chars[i % 10])
+
+
+@jmthon.ar_cmd(
+    pattern="احبك$",
+    command=("احبك", plugin_category),
+    info={
+        "الامر": "**امر تسليه قم بالتجربه بنفسك**",
+        "الاستخدام": "{tr}احبك",
+    },
+)
+async def _(event):
+    "animation command"
+    animation_interval = 0.5
+    animation_ttl = range(70)
+    event = await edit_or_reply(event, "احبك")
+    animation_chars = [
+        "😀",
+        "👩‍🎨",
+        "😁",
+        "😂",
+        "🤣",
+        "😃",
+        "😄",
+        "😅",
+        "😊",
+        "☺",
+        "🙂",
+        "🤔",
+        "🤨",
+        "😐",
+        "😑",
+        "😶",
+        "😣",
+        "😥",
+        "😮",
+        "🤐",
+        "😯",
+        "😴",
+        "😔",
+        "😕",
+        "☹",
+        "🙁",
+        "😖",
+        "😞",
+        "😟",
+        "😢",
+        "😭",
+        "🤯",
+        "💔",
+        "❤",
+        "احبك ❤",
+    ]
+    for i in animation_ttl:
+        await asyncio.sleep(animation_interval)
+        await event.edit(animation_chars[i % 35])
+
+
+@jmthon.ar_cmd(
+    pattern="طائره$",
+    command=("طائره", plugin_category),
+    info={
+        "الامر": "**امر تسليه قم بالتجربه بنفسك**",
+        "الاستخدام": "{tr}طائره",
+    },
+)
+async def _(event):
+    "animation command"
+    event = await edit_or_reply(event, "انتظر الطائره...")
+    await event.edit("✈-------------")
+    await event.edit("-✈------------")
+    await event.edit("--✈-----------")
+    await event.edit("---✈----------")
+    await event.edit("----✈---------")
+    await event.edit("-----✈--------")
+    await event.edit("------✈-------")
+    await event.edit("-------✈------")
+    await event.edit("--------✈-----")
+    await event.edit("---------✈----")
+    await event.edit("----------✈---")
+    await event.edit("-----------✈--")
+    await event.edit("------------✈-")
+    await event.edit("-------------✈")
+    await asyncio.sleep(3)
+
+
+@jmthon.ar_cmd(
+    pattern="شرطه$",
+    command=("شرطه", plugin_category),
+    info={
+        "الامر": "**امر تسليه قم بالتجربه بنفسك**",
+        "الاستخدام": "{tr}شرطه",
+    },
+)
+async def _(event):
+    "animation command"
+    animation_interval = 0.3
+    animation_ttl = range(12)
+    event = await edit_or_reply(event, "شرطه")
+    animation_chars = [
+        "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
+        "🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴",
+        "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
+        "🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴",
+        "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
+        "🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴",
+        "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
+        "🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴",
+        "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
+        "🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴",
+        "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
+        f"{mention} **Police iz Here**",
+    ]
+    for i in animation_ttl:
+        await asyncio.sleep(animation_interval)
+        await event.edit(animation_chars[i % 12])
+
+
+@jmthon.ar_cmd(
+    pattern="jio$",
+    command=("jio", plugin_category),
+    info={
+        "الامر": "**امر تسليه قم بالتجربه بنفسك**",
+        "الاستخدام": "{tr}jio",
+    },
+)
+async def _(event):
+    "animation command"
+    animation_interval = 1
+    animation_ttl = range(19)
+    event = await edit_or_reply(event, "jio network boosting...")
+    animation_chars = [
+        "`Connecting To JIO NETWORK ....`",
+        "`█ ▇ ▆ ▅ ▄ ▂ ▁`",
+        "`▒ ▇ ▆ ▅ ▄ ▂ ▁`",
+        "`▒ ▒ ▆ ▅ ▄ ▂ ▁`",
+        "`▒ ▒ ▒ ▅ ▄ ▂ ▁`",
+        "`▒ ▒ ▒ ▒ ▄ ▂ ▁`",
+        "`▒ ▒ ▒ ▒ ▒ ▂ ▁`",
+        "`▒ ▒ ▒ ▒ ▒ ▒ ▁`",
+        "`▒ ▒ ▒ ▒ ▒ ▒ ▒`",
+        "*Optimising JIO NETWORK...*",
+        "`▒ ▒ ▒ ▒ ▒ ▒ ▒`",
+        "`▁ ▒ ▒ ▒ ▒ ▒ ▒`",
+        "`▁ ▂ ▒ ▒ ▒ ▒ ▒`",
+        "`▁ ▂ ▄ ▒ ▒ ▒ ▒`",
+        "`▁ ▂ ▄ ▅ ▒ ▒ ▒`",
+        "`▁ ▂ ▄ ▅ ▆ ▒ ▒`",
+        "`▁ ▂ ▄ ▅ ▆ ▇ ▒`",
+        "`▁ ▂ ▄ ▅ ▆ ▇ █`",
+        "**JIO NETWORK Boosted....**",
+    ]
+    for i in animation_ttl:
+        await asyncio.sleep(animation_interval)
+        await event.edit(animation_chars[i % 19])
+
+
+@jmthon.ar_cmd(
+    pattern="النضام الشمسي$",
+    command=("النضام الشمسي", plugin_category),
+    info={
+        "الامر": "**امر تسليه قم بالتجربه بنفسك**",
+        "الاستخدام": "{tr}النضام الشمسي",
+    },
+)
+async def _(event):
+    "animation command"
+    animation_interval = 0.1
+    animation_ttl = range(80)
+    event = await edit_or_reply(event, "النضام الشمسي")
+    animation_chars = [
+        "`◼️◼️◼️◼️◼️\n◼️◼️◼️◼️☀\n◼️◼️🌎◼️◼️\n🌕◼️◼️◼️◼️\n◼️◼️◼️◼️◼️`",
+        "`◼️◼️◼️◼️◼️\n🌕◼️◼️◼️◼️\n◼️◼️🌎◼️◼️\n◼️◼️◼️◼️☀\n◼️◼️◼️◼️◼️`",
+        "`◼️🌕◼️◼️◼️\n◼️◼️◼️◼️◼️\n◼️◼️🌎◼️◼️\n◼️◼️◼️◼️◼️\n◼️◼️◼️☀◼️`",
+        "`◼️◼️◼️🌕◼️\n◼️◼️◼️◼️◼️\n◼️◼️🌎◼️◼️\n◼️◼️◼️◼️◼️\n◼️☀◼️◼️◼️`",
+        "`◼️◼️◼️◼️◼️\n◼️◼️◼️◼️🌕\n◼️◼️🌎◼️◼️\n☀◼️◼️◼️◼️\n◼️◼️◼️◼️◼️`",
+        "`◼️◼️◼️◼️◼️\n☀◼️◼️◼️◼️\n◼️◼️🌎◼️◼️\n◼️◼️◼️◼️🌕\n◼️◼️◼️◼️◼️`",
+        "`◼️☀◼️◼️◼️\n◼️◼️◼️◼️◼️\n◼️◼️🌎◼️◼️\n◼️◼️◼️◼️◼️\n◼️◼️◼️🌕◼️`",
+        "`◼️◼️◼️☀◼️\n◼️◼️◼️◼️◼️\n◼️◼️🌎◼️◼️\n◼️◼️◼️◼️◼️\n◼️🌕◼️◼️◼️`",
+    ]
+    for i in animation_ttl:
+        await asyncio.sleep(animation_interval)
+        await event.edit(animation_chars[i % 8])
