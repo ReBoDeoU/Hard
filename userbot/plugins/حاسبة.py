@@ -1,5 +1,5 @@
-# Copyright (C) 2021 FFIIX TEAM
-# FILES WRITTEN BY  @RR7PP
+# Copyright (C) 2021 DEOOUS TEAM
+# FILES WRITTEN BY  @DEOOUS
 
 import io
 import sys
@@ -45,8 +45,8 @@ async def calculator(event):
     elif stdout:
         evaluation = stdout
     else:
-        evaluation = "⌯︙عـذرا لأ اسـتطيع ايجـاد حـل لهـكذا معـادلات"
-    final_output = "⌯︙السـؤال: `{}` \n\n ⌯︙الـحل: \n`{}` \n".format(cmd, evaluation)
+        evaluation = "♰︙عـذرا لأ اسـتطيع ايجـاد حـل لهـكذا معـادلات"
+    final_output = "♰︙السـؤال: `{}` \n\n ♰︙الـحل: \n`{}` \n".format(cmd, evaluation)
     await event.edit(final_output)
 
 
