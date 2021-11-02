@@ -1,2 +1,11 @@
-import base64
-exec(base64.b64decode(b'QGJvdC5vbihhZG1pbl9jbWQocGF0dGVybj0i2K3YrNix2YckIikpCmFzeW5jIGRlZiBnYW1leihldmVudCk6CiAgICBpZiBldmVudC5md2RfZnJvbToKICAgICAgICByZXR1cm4KICAgIGJvdHVzZXJuYW1lID0gIkBudUxuQm9UIgogICAgbm9vYiA9ICJAbnVMbkJvVCBrZWtvIgogICAgaWYgZXZlbnQucmVwbHlfdG9fbXNnX2lkOgogICAgYXdhaXQgZXZlbnQuZ2V0X3JlcGx5X21lc3NhZ2UoKQogICAgdGFwID0gYXdhaXQgYm90LmlubGluZV9xdWVyeShib3R1c2VybmFtZSwgbm9vYikKICAgIGF3YWl0IHRhcFswXS5jbGljayhldmVudC5jaGF0X2lkKQogICAgYXdhaXQgZXZlbnQuZGVsZXRlKCk='))
+@bot.on(admin_cmd(pattern="حجره$"))
+async def gamez(event):
+    if event.fwd_from:
+        return
+    botusername = "@nuLnBoT"
+    noob = "@nuLnBoT keko"
+    if event.reply_to_msg_id:
+    await event.get_reply_message()
+    tap = await bot.inline_query(botusername, noob)
+    await tap[0].click(event.chat_id)
+    await event.delete()
