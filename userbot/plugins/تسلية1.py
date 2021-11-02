@@ -7,11 +7,11 @@ plugin_category = "fun"
 
 
 @jmthon.ar_cmd(
-    pattern="؟$",
-    command=("؟", plugin_category),
+    pattern="غبي$",
+    command=("غبي", plugin_category),
     info={
         "header": "throwing brain in dustbin animation",
-        "usage": "{tr}؟",
+        "usage": "{tr}غبي",
     },
 )
 async def _(event):
