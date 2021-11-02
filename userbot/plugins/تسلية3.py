@@ -44,19 +44,19 @@ async def _(event):
 
 
 @jmthon.ar_cmd(
-    pattern="مطوري$",
-    command=("مطوري", plugin_category),
+    pattern="مطور$",
+    command=("مطور", plugin_category),
     info={
         "الامر": "**امر تسليه قم بالتجربه بنفسك**",
-        "الاستخدام": "{tr}مطوري",
+        "الاستخدام": "{tr}مطور",
     },
 )
 async def _(event):
     "animation command"
-    event = await edit_or_reply(event, "`...مطوري`")
+    event = await edit_or_reply(event, "`...مطورين السورس `")
     deq = deque(list("༒♰༒@rekhso༒♰༒♰"))
     for _ in range(999):
-        await asyncio.sleep(0.3)
+        await asyncio.sleep(1)
         await event.edit("".join(deq))
         deq.rotate(1)
 
