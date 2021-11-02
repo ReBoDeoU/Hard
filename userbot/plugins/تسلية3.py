@@ -97,11 +97,11 @@ async def _(event):
 
 
 @jmthon.ar_cmd(
-    pattern="deploy$",
-    command=("deploy", plugin_category),
+    pattern="محد هنا$",
+    command=("محد هنا", plugin_category),
     info={
         "الامر": "**امر تسليه قم بالتجربه بنفسك**",
-        "الاستخدام": "{tr}deploy",
+        "الاستخدام": "{tr}محد هنا",
     },
 )
 async def _(event):
