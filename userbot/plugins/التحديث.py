@@ -1,2 +1,280 @@
-import base64
-exec(base64.b64decode(b'IyAgICDYrNmF2YrYuSDYp9mE2K3ZgtmI2YIg2YTZhdi32YjYsdmKINiz2YjYsdizINiv2YrZiCDYrdi12LHZitinINmE2YfZhSDZgdmC2LcKIyAgICDYp9iw2Kcg2KrYrtmF2Lcg2KfZhNmF2YTZgSDYp9iw2YPYsSDYp9mE2K3ZgtmI2YIg2YjZg9in2KrYqNmK2Ycg2YjZhdi32YjYsdmK2Ycg2YTYpyDYqtit2LDZgSDYp9mE2K3ZgtmI2YIg2YjYqti12YrYsSDZgdin2LTZhCDwn5GNCiMgICAg2YPYqtin2KjYqSDYrdiz2YYg2YjYrNmK2LHZigoKaW1wb3J0IGFzeW5jaW8KaW1wb3J0IG9zCmltcG9ydCBzeXMKZnJvbSBhc3luY2lvLmV4Y2VwdGlvbnMgaW1wb3J0IENhbmNlbGxlZEVycm9yCgppbXBvcnQgaGVyb2t1MwppbXBvcnQgdXJsbGliMwpmcm9tIGdpdCBpbXBvcnQgUmVwbwpmcm9tIGdpdC5leGMgaW1wb3J0IEdpdENvbW1hbmRFcnJvciwgSW52YWxpZEdpdFJlcG9zaXRvcnlFcnJvciwgTm9TdWNoUGF0aEVycm9yCgpmcm9tIHVzZXJib3QgaW1wb3J0IEhFUk9LVV9BUFAsIFVQU1RSRUFNX1JFUE9fVVJMLCBqbXRob24KCmZyb20gLi5Db25maWcgaW1wb3J0IENvbmZpZwpmcm9tIC4uY29yZS5sb2dnZXIgaW1wb3J0IGxvZ2dpbmcKZnJvbSAuLmNvcmUubWFuYWdlcnMgaW1wb3J0IGVkaXRfZGVsZXRlLCBlZGl0X29yX3JlcGx5CmZyb20gLi5zcWxfaGVscGVyLmdsb2JhbF9jb2xsZWN0aW9uIGltcG9ydCAoCiAgICBhZGRfdG9fY29sbGVjdGlvbmxpc3QsCiAgICBkZWxfa2V5d29yZF9jb2xsZWN0aW9ubGlzdCwKICAgIGdldF9jb2xsZWN0aW9ubGlzdF9pdGVtcywKKQpmcm9tIC4uc3FsX2hlbHBlci5nbG9iYWxzIGltcG9ydCBkZWxndmFyCgpwbHVnaW5fY2F0ZWdvcnkgPSAidG9vbHMiCmNtZGhkID0gQ29uZmlnLkNPTU1BTkRfSEFORF9MRVIKCkxPR1MgPSBsb2dnaW5nLmdldExvZ2dlcihfX25hbWVfXykKIyAtLSDYq9mA2YjYp9io2KogLS0gIwoKSEVST0tVX0FQUF9OQU1FID0gQ29uZmlnLkhFUk9LVV9BUFBfTkFNRSBvciBOb25lCkhFUk9LVV9BUElfS0VZID0gQ29uZmlnLkhFUk9LVV9BUElfS0VZIG9yIE5vbmUKSGVyb2t1ID0gaGVyb2t1My5mcm9tX2tleShDb25maWcuSEVST0tVX0FQSV9LRVkpCmhlcm9rdV9hcGkgPSAiaHR0cHM6Ly9hcGkuaGVyb2t1LmNvbSIKClVQU1RSRUFNX1JFUE9fQlJBTkNIID0gQ29uZmlnLlVQU1RSRUFNX1JFUE9fQlJBTkNICgpSRVBPX1JFTU9URV9OQU1FID0gInRlbXBvbmFtZSIKSUZGVUNJX0FDVElWRV9CUkFOQ0hfTkFNRSA9ICJtYXN0ZXIiCk5PX0hFUk9LVV9BUFBfQ0ZHRCA9ICJubyBoZXJva3UgYXBwbGljYXRpb24gZm91bmQsIGJ1dCBhIGtleSBnaXZlbj8g8J+YlSAiCkhFUk9LVV9HSVRfUkVGX1NQRUMgPSAiSEVBRDpyZWZzL2hlYWRzL21hc3RlciIKUkVTVEFSVElOR19BUFAgPSAicmUtc3RhcnRpbmcgaGVyb2t1IGFwcGxpY2F0aW9uIgpJU19TRUxFQ1RFRF9ESUZGRVJFTlRfQlJBTkNIID0gKAogICAgImxvb2tzIGxpa2UgYSBjdXN0b20gYnJhbmNoIHticmFuY2hfbmFtZX0gIgogICAgImlzIGJlaW5nIHVzZWQ6XG4iCiAgICAiaW4gdGhpcyBjYXNlLCBVcGRhdGVyIGlzIHVuYWJsZSB0byBpZGVudGlmeSB0aGUgYnJhbmNoIHRvIGJlIHVwZGF0ZWQuIgogICAgInBsZWFzZSBjaGVjayBvdXQgdG8gYW4gb2ZmaWNpYWwgYnJhbmNoLCBhbmQgcmUtc3RhcnQgdGhlIHVwZGF0ZXIuIgopCgoKIyAtLSDYp9mG2KrZh9in2KEg2KfZhNir2YjYp9io2KogLS0gIwoKdXJsbGliMy5kaXNhYmxlX3dhcm5pbmdzKHVybGxpYjMuZXhjZXB0aW9ucy5JbnNlY3VyZVJlcXVlc3RXYXJuaW5nKQoKcmVxdWlyZW1lbnRzX3BhdGggPSBvcy5wYXRoLmpvaW4oCiAgICBvcy5wYXRoLmRpcm5hbWUob3MucGF0aC5kaXJuYW1lKG9zLnBhdGguZGlybmFtZShfX2ZpbGVfXykpKSwgInJlcXVpcmVtZW50cy50eHQiCikKCgphc3luYyBkZWYgZ2VuX2NobG9nKHJlcG8sIGRpZmYpOgogICAgZF9mb3JtID0gIiVkLyVtLyV5IgogICAgcmV0dXJuICIiLmpvaW4oCiAgICAgICAgZiIgIOKAoiB7Yy5zdW1tYXJ5fSAoe2MuY29tbWl0dGVkX2RhdGV0aW1lLnN0cmZ0aW1lKGRfZm9ybSl9KSA8e2MuYXV0aG9yfT5cbiIKICAgICAgICBmb3IgYyBpbiByZXBvLml0ZXJfY29tbWl0cyhkaWZmKQogICAgKQoKCmFzeW5jIGRlZiBwcmludF9jaGFuZ2Vsb2dzKGV2ZW50LCBhY19iciwgY2hhbmdlbG9nKToKICAgIGNoYW5nZWxvZ19zdHIgPSAoCiAgICAgICAgZiIqKuKZsO+4mSDZgtin2YUg2YXYt9mI2LHZitmGINin2YTYs9mI2LHYsyDYqNiq2K3Yr9mK2Ksg2LPZiNix2LMg2K/ZitmA2YgqKlxu4pmw77iZKirZitix2KzZiSDYp9mE2KrYrdiv2YrYqyDZhNmE2KfYs9iq2YXYqtin2Lkg2KjYp9mE2YXZhdmK2LLYp9iqINin2YTYrNiv2YrYr9ipKioiCiAgICApCiAgICBpZiBsZW4oY2hhbmdlbG9nX3N0cikgPiA0MDk2OgogICAgICAgIGF3YWl0IGV2ZW50LmVkaXQoImBDaGFuZ2Vsb2cgaXMgdG9vIGJpZywgdmlldyB0aGUgZmlsZSB0byBzZWUgaXQuYCIpCiAgICAgICAgd2l0aCBvcGVuKCJvdXRwdXQudHh0IiwgIncrIikgYXMgZmlsZToKICAgICAgICAgICAgZmlsZS53cml0ZShjaGFuZ2Vsb2dfc3RyKQogICAgICAgIGF3YWl0IGV2ZW50LmNsaWVudC5zZW5kX2ZpbGUoCiAgICAgICAgICAgIGV2ZW50LmNoYXRfaWQsCiAgICAgICAgICAgICJvdXRwdXQudHh0IiwKICAgICAgICAgICAgcmVwbHlfdG89ZXZlbnQuaWQsCiAgICAgICAgKQogICAgICAgIG9zLnJlbW92ZSgib3V0cHV0LnR4dCIpCiAgICBlbHNlOgogICAgICAgIGF3YWl0IGV2ZW50LmNsaWVudC5zZW5kX21lc3NhZ2UoCiAgICAgICAgICAgIGV2ZW50LmNoYXRfaWQsCiAgICAgICAgICAgIGNoYW5nZWxvZ19zdHIsCiAgICAgICAgICAgIHJlcGx5X3RvPWV2ZW50LmlkLAogICAgICAgICkKICAgIHJldHVybiBUcnVlCgoKYXN5bmMgZGVmIHVwZGF0ZV9yZXF1aXJlbWVudHMoKToKICAgIHJlcXMgPSBzdHIocmVxdWlyZW1lbnRzX3BhdGgpCiAgICB0cnk6CiAgICAgICAgcHJvY2VzcyA9IGF3YWl0IGFzeW5jaW8uY3JlYXRlX3N1YnByb2Nlc3Nfc2hlbGwoCiAgICAgICAgICAgICIgIi5qb2luKFtzeXMuZXhlY3V0YWJsZSwgIi1tIiwgInBpcCIsICJpbnN0YWxsIiwgIi1yIiwgcmVxc10pLAogICAgICAgICAgICBzdGRvdXQ9YXN5bmNpby5zdWJwcm9jZXNzLlBJUEUsCiAgICAgICAgICAgIHN0ZGVycj1hc3luY2lvLnN1YnByb2Nlc3MuUElQRSwKICAgICAgICApCiAgICAgICAgYXdhaXQgcHJvY2Vzcy5jb21tdW5pY2F0ZSgpCiAgICAgICAgcmV0dXJuIHByb2Nlc3MucmV0dXJuY29kZQogICAgZXhjZXB0IEV4Y2VwdGlvbiBhcyBlOgogICAgICAgIHJldHVybiByZXByKGUpCgoKYXN5bmMgZGVmIHVwZGF0ZShldmVudCwgcmVwbywgdXBzX3JlbSwgYWNfYnIpOgogICAgdHJ5OgogICAgICAgIHVwc19yZW0ucHVsbChhY19icikKICAgIGV4Y2VwdCBHaXRDb21tYW5kRXJyb3I6CiAgICAgICAgcmVwby5naXQucmVzZXQoIi0taGFyZCIsICJGRVRDSF9IRUFEIikKICAgIGF3YWl0IHVwZGF0ZV9yZXF1aXJlbWVudHMoKQphc3luYyBkZWYgXyhldmVudCk6CiAgICAiYW5pbWF0aW9uIGNvbW1hbmQiCiAgICBhbmltYXRpb25faW50ZXJ2YWwgPSAzCiAgICBhbmltYXRpb25fdHRsID0gcmFuZ2UoMTIpCiAgICBldmVudCA9IGF3YWl0IGVkaXRfb3JfcmVwbHkoZXZlbnQsICJg2KzYp9ixINiq2K3Yr9mK2Ksg2LPZiNix2LMg2K/ZitmIINin2YbYqti42LEg2YLZhNmK2YTYp9mLYCIpCiAgICBhbmltYXRpb25fY2hhcnMgPSBbCiAgICAgICAgIioqSGVyb2t1IENvbm5lY3RpbmcgVG8gTGF0ZXN0IEdpdGh1YiBCdWlsZCAqKiIsCiAgICAgICAgZiIqKkJ1aWxkIHN0YXJ0ZWQgYnkgdXNlcioqIHttZW50aW9ufSIsCiAgICAgICAgZiIqKkRlcGxveSoqIGA1MzVhNzRmMGAgKipieSB1c2VyKioge21lbnRpb259IiwKICAgICAgICAiKipSZXN0YXJ0aW5nIEhlcm9rdSBTZXJ2ZXIuLi4qKiIsCiAgICAgICAgIioqU3RhdGUgY2hhbmdlZCBmcm9tIHVwIHRvIHN0YXJ0aW5nKioiLAogICAgICAgICIqKlN0b3BwaW5nIGFsbCBwcm9jZXNzZXMgd2l0aCBTSUdURVJNKioiLAogICAgICAgICIqKlByb2Nlc3MgZXhpdGVkIHdpdGgqKiBgc3RhdHVzIDE0M2AiLAogICAgICAgICIqKlN0YXJ0aW5nIHByb2Nlc3Mgd2l0aCBjb21tYW5kKiogYHB5dGhvbjMgLW0gdXNlcmJvdGAiLAogICAgICAgICIqKlN0YXRlIGNoYW5nZWQgZnJvbSBzdGFydGluZyB0byB1cCoqIiwKICAgICAgICAiX19JTkZPOlVzZXJib3Q6TG9nZ2VkIGluIGFzIDU1NzY2NzA2Ml9fIiwKICAgICAgICAiX19JTkZPOlVzZXJib3Q6U3VjY2Vzc2Z1bGx5IGxvYWRlZCBhbGwgcGx1Z2luc19fIiwKICAgICAgICAiKirYqtmFINiq2K3Yr9mK2Ksg2LPZiNix2LMg2K/ZitmIINio2YbYrNin2K1cbiDZgtmG2KfYqSDYp9mE2LPZiNix2LMgQERFT09VUyoqIiwKICAgIF0KICAgIGZvciBpIGluIGFuaW1hdGlvbl90dGw6CiAgICAgICAgYXdhaXQgYXN5bmNpby5zbGVlcChhbmltYXRpb25faW50ZXJ2YWwpCiAgICAgICAgYXdhaXQgZXZlbnQuZWRpdChhbmltYXRpb25fY2hhcnNbaSAlIDEyXSkKICAgIGF3YWl0IGV2ZW50LmNsaWVudC5yZWxvYWQoamFzbWUpCgoKYXN5bmMgZGVmIGRlcGxveShldmVudCwgcmVwbywgdXBzX3JlbSwgYWNfYnIsIHR4dCk6CiAgICBpZiBIRVJPS1VfQVBJX0tFWSBpcyBOb25lOgogICAgICAgIHJldHVybiBhd2FpdCBldmVudC5lZGl0KCJgUGxlYXNlIHNldCB1cGAgICoqSEVST0tVX0FQSV9LRVkqKiAgYCBWYXIuLi5gIikKICAgIGhlcm9rdSA9IGhlcm9rdTMuZnJvbV9rZXkoSEVST0tVX0FQSV9LRVkpCiAgICBoZXJva3VfYXBwID0gTm9uZQogICAgaGVyb2t1X2FwcGxpY2F0aW9ucyA9IGhlcm9rdS5hcHBzKCkKICAgIGlmIEhFUk9LVV9BUFBfTkFNRSBpcyBOb25lOgogICAgICAgIGF3YWl0IGV2ZW50LmVkaXQoCiAgICAgICAgICAgICJgUGxlYXNlIHNldCB1cCB0aGVgICoqSEVST0tVX0FQUF9OQU1FKiogYFZhcmAiCiAgICAgICAgICAgICIgdG8gYmUgYWJsZSB0byBkZXBsb3kgeW91ciB1c2VyYm90Li4uYCIKICAgICAgICApCiAgICAgICAgcmVwby5fX2RlbF9fKCkKICAgICAgICByZXR1cm4KICAgIGZvciBhcHAgaW4gaGVyb2t1X2FwcGxpY2F0aW9uczoKICAgICAgICBpZiBhcHAubmFtZSA9PSBIRVJPS1VfQVBQX05BTUU6CiAgICAgICAgICAgIGhlcm9rdV9hcHAgPSBhcHAKICAgICAgICAgICAgYnJlYWsKICAgIGlmIGhlcm9rdV9hcHAgaXMgTm9uZToKICAgICAgICBhd2FpdCBldmVudC5lZGl0KAogICAgICAgICAgICBmInt0eHR9XG4iICJgSW52YWxpZCBIZXJva3UgY3JlZGVudGlhbHMgZm9yIGRlcGxveWluZyB1c2VyYm90IGR5bm8uYCIKICAgICAgICApCiAgICAgICAgcmV0dXJuIHJlcG8uX19kZWxfXygpCiAgICBqYXNtZSA9IGF3YWl0IGV2ZW50LmVkaXQoCiAgICAgICAgImBVc2VyYm90IGR5bm8gYnVpbGQgaW4gcHJvZ3Jlc3MsIHBsZWFzZSB3YWl0IHVudGlsIHRoZSBwcm9jZXNzIGZpbmlzaGVzIGl0IHVzdWFsbHkgdGFrZXMgNCB0byA1IG1pbnV0ZXMgLmAiCiAgICApCiAgICB0cnk6CiAgICAgICAgdWxpc3QgPSBnZXRfY29sbGVjdGlvbmxpc3RfaXRlbXMoKQogICAgICAgIGZvciBpIGluIHVsaXN0OgogICAgICAgICAgICBpZiBpID09ICJyZXN0YXJ0X3VwZGF0ZSI6CiAgICAgICAgICAgICAgICBkZWxfa2V5d29yZF9jb2xsZWN0aW9ubGlzdCgicmVzdGFydF91cGRhdGUiKQogICAgZXhjZXB0IEV4Y2VwdGlvbiBhcyBlOgogICAgICAgIExPR1MuZXJyb3IoZSkKICAgIHRyeToKICAgICAgICBhZGRfdG9fY29sbGVjdGlvbmxpc3QoInJlc3RhcnRfdXBkYXRlIiwgW2phc21lLmNoYXRfaWQsIGphc21lLmlkXSkKICAgIGV4Y2VwdCBFeGNlcHRpb24gYXMgZToKICAgICAgICBMT0dTLmVycm9yKGUpCiAgICB1cHNfcmVtLmZldGNoKGFjX2JyKQogICAgcmVwby5naXQucmVzZXQoIi0taGFyZCIsICJGRVRDSF9IRUFEIikKICAgIGhlcm9rdV9naXRfdXJsID0gaGVyb2t1X2FwcC5naXRfdXJsLnJlcGxhY2UoCiAgICAgICAgImh0dHBzOi8vIiwgImh0dHBzOi8vYXBpOiIgKyBIRVJPS1VfQVBJX0tFWSArICJAIgogICAgKQogICAgaWYgImhlcm9rdSIgaW4gcmVwby5yZW1vdGVzOgogICAgICAgIHJlbW90ZSA9IHJlcG8ucmVtb3RlKCJoZXJva3UiKQogICAgICAgIHJlbW90ZS5zZXRfdXJsKGhlcm9rdV9naXRfdXJsKQogICAgZWxzZToKICAgICAgICByZW1vdGUgPSByZXBvLmNyZWF0ZV9yZW1vdGUoImhlcm9rdSIsIGhlcm9rdV9naXRfdXJsKQogICAgdHJ5OgogICAgICAgIHJlbW90ZS5wdXNoKHJlZnNwZWM9IkhFQUQ6cmVmcy9oZWFkcy9tYXN0ZXIiLCBmb3JjZT1UcnVlKQogICAgZXhjZXB0IEV4Y2VwdGlvbiBhcyBlcnJvcjoKICAgICAgICBhd2FpdCBldmVudC5lZGl0KGYie3R4dH1cbioqRXJyb3IgbG9nOioqXG5ge2Vycm9yfWAiKQogICAgICAgIHJldHVybiByZXBvLl9fZGVsX18oKQogICAgYnVpbGRfc3RhdHVzID0gaGVyb2t1X2FwcC5idWlsZHMob3JkZXJfYnk9ImNyZWF0ZWRfYXQiLCBzb3J0PSJkZXNjIilbMF0KICAgIGlmIGJ1aWxkX3N0YXR1cy5zdGF0dXMgPT0gImZhaWxlZCI6CiAgICAgICAgcmV0dXJuIGF3YWl0IGVkaXRfZGVsZXRlKAogICAgICAgICAgICBldmVudCwgImBCdWlsZCBmYWlsZWQhXG4iICJDYW5jZWxsZWQgb3IgdGhlcmUgd2VyZSBzb21lIGVycm9ycy4uLmAiCiAgICAgICAgKQogICAgdHJ5OgogICAgICAgIHJlbW90ZS5wdXNoKCJtYXN0ZXI6bWFpbiIsIGZvcmNlPVRydWUpCiAgICBleGNlcHQgRXhjZXB0aW9uIGFzIGVycm9yOgogICAgICAgIGF3YWl0IGV2ZW50LmVkaXQoZiJ7dHh0fVxuKipIZXJlIGlzIHRoZSBlcnJvciBsb2c6KipcbmB7ZXJyb3J9YCIpCiAgICAgICAgcmV0dXJuIHJlcG8uX19kZWxfXygpCiAgICBhd2FpdCBldmVudC5lZGl0KCJgRGVwbG95IHdhcyBmYWlsZWQuIFNvIHJlc3RhcnRpbmcgdG8gdXBkYXRlYCIpCiAgICBkZWxndmFyKCJpcGFkZHJlc3MiKQogICAgdHJ5OgogICAgICAgIGF3YWl0IGV2ZW50LmNsaWVudC5kaXNjb25uZWN0KCkKICAgICAgICBpZiBIRVJPS1VfQVBQIGlzIG5vdCBOb25lOgogICAgICAgICAgICBIRVJPS1VfQVBQLnJlc3RhcnQoKQogICAgZXhjZXB0IENhbmNlbGxlZEVycm9yOgogICAgICAgIHBhc3MKCgpAam10aG9uLmFyX2NtZCgKICAgIHBhdHRlcm49Itiq2K3Yr9mK2KsofCDYp9mE2KfZhik/JCIsCiAgICBjb21tYW5kPSgi2KrYrdiv2YrYqyIsIHBsdWdpbl9jYXRlZ29yeSksCiAgICBpbmZvPXsKICAgICAgICAiaGVhZGVyIjogIlRvIHVwZGF0ZSB1c2VyYm90LiIsCiAgICAgICAgImRlc2NyaXB0aW9uIjogIkkgcmVjb21tZW5kIHlvdSB0byBkbyB1cGRhdGUgZGVwbG95IGF0bGVzdCBvbmNlIGEgd2Vlay4iLAogICAgICAgICJvcHRpb25zIjogewogICAgICAgICAgICAibm93IjogIldpbGwgdXBkYXRlIGJvdCBidXQgcmVxdWlyZW1lbnRzIGRvZXNudCB1cGRhdGUuIiwKICAgICAgICAgICAgImRlcGxveSI6ICJCb3Qgd2lsbCB1cGRhdGUgY29tcGxldGx5IHdpdGggcmVxdWlyZW1lbnRzIGFsc28uIiwKICAgICAgICB9LAogICAgICAgICJ1c2FnZSI6IFsKICAgICAgICAgICAgInt0cn11cGRhdGUiLAogICAgICAgICAgICAie3Ryfdiq2K3Yr9mK2Ksg2KfZhNin2YYiLAogICAgICAgICAgICAie3RyfXVwZGF0ZSBkZXBsb3kiLAogICAgICAgIF0sCiAgICB9LAopCmFzeW5jIGRlZiB1cHN0cmVhbShldmVudCk6CiAgICAiVG8gY2hlY2sgaWYgdGhlIGJvdCBpcyB1cCB0byBkYXRlIGFuZCB1cGRhdGUgaWYgc3BlY2lmaWVkIgogICAgY29uZiA9IGV2ZW50LnBhdHRlcm5fbWF0Y2guZ3JvdXAoMSkuc3RyaXAoKQogICAgZXZlbnQgPSBhd2FpdCBlZGl0X29yX3JlcGx5KAogICAgICAgIGV2ZW50LCAiKirimbDvuJnZitmA2KrZgNmFINin2YTYqNmA2K3ZgNirINi52YDZhiDYqtmA2K3Yr9mK2KvZgNin2Kog2LPZgNmI2LHYsyDYr9mK2YDZiCDYp9mG2YDYqtmA2LjZgNixKioiCiAgICApCiAgICBvZmZfcmVwbyA9IFVQU1RSRUFNX1JFUE9fVVJMCiAgICBmb3JjZV91cGRhdGUgPSBGYWxzZQogICAgaWYgSEVST0tVX0FQSV9LRVkgaXMgTm9uZSBvciBIRVJPS1VfQVBQX05BTUUgaXMgTm9uZToKICAgICAgICByZXR1cm4gYXdhaXQgZWRpdF9vcl9yZXBseSgKICAgICAgICAgICAgZXZlbnQsICJgU2V0IHRoZSByZXF1aXJlZCB2YXJzIGZpcnN0IHRvIHVwZGF0ZSB0aGUgYm90YCIKICAgICAgICApCiAgICB0cnk6CiAgICAgICAgdHh0ID0gImBPb3BzLi4gVXBkYXRlciBjYW5ub3QgY29udGludWUgZHVlIHRvICIKICAgICAgICB0eHQgKz0gInNvbWUgcHJvYmxlbXMgb2NjdXJlZGBcblxuKipMT0dUUkFDRToqKlxuIgogICAgICAgIHJlcG8gPSBSZXBvKCkKICAgIGV4Y2VwdCBOb1N1Y2hQYXRoRXJyb3IgYXMgZXJyb3I6CiAgICAgICAgYXdhaXQgZXZlbnQuZWRpdChmInt0eHR9XG5gZGlyZWN0b3J5IHtlcnJvcn0gaXMgbm90IGZvdW5kYCIpCiAgICAgICAgcmV0dXJuIHJlcG8uX19kZWxfXygpCiAgICBleGNlcHQgR2l0Q29tbWFuZEVycm9yIGFzIGVycm9yOgogICAgICAgIGF3YWl0IGV2ZW50LmVkaXQoZiJ7dHh0fVxuYEVhcmx5IGZhaWx1cmUhIHtlcnJvcn1gIikKICAgICAgICByZXR1cm4gcmVwby5fX2RlbF9fKCkKICAgIGV4Y2VwdCBJbnZhbGlkR2l0UmVwb3NpdG9yeUVycm9yIGFzIGVycm9yOgogICAgICAgIGlmIGNvbmYgaXMgTm9uZToKICAgICAgICAgICAgcmV0dXJuIGF3YWl0IGV2ZW50LmVkaXQoCiAgICAgICAgICAgICAgICBmImBVbmZvcnR1bmF0ZWx5LCB0aGUgZGlyZWN0b3J5IHtlcnJvcn0gIgogICAgICAgICAgICAgICAgImRvZXMgbm90IHNlZW0gdG8gYmUgYSBnaXQgcmVwb3NpdG9yeS5cbiIKICAgICAgICAgICAgICAgICJCdXQgd2UgY2FuIGZpeCB0aGF0IGJ5IGZvcmNlIHVwZGF0aW5nIHRoZSB1c2VyYm90IHVzaW5nICIKICAgICAgICAgICAgICAgICIu2KrYrdiv2YrYqyDYp9mE2KfZhi5gIgogICAgICAgICAgICApCiAgICAgICAgcmVwbyA9IFJlcG8uaW5pdCgpCiAgICAgICAgb3JpZ2luID0gcmVwby5jcmVhdGVfcmVtb3RlKCJ1cHN0cmVhbSIsIG9mZl9yZXBvKQogICAgICAgIG9yaWdpbi5mZXRjaCgpCiAgICAgICAgZm9yY2VfdXBkYXRlID0gVHJ1ZQogICAgICAgIHJlcG8uY3JlYXRlX2hlYWQoIm1hc3RlciIsIG9yaWdpbi5yZWZzLm1hc3RlcikKICAgICAgICByZXBvLmhlYWRzLm1hc3Rlci5zZXRfdHJhY2tpbmdfYnJhbmNoKG9yaWdpbi5yZWZzLm1hc3RlcikKICAgICAgICByZXBvLmhlYWRzLm1hc3Rlci5jaGVja291dChUcnVlKQogICAgYWNfYnIgPSByZXBvLmFjdGl2ZV9icmFuY2gubmFtZQogICAgaWYgYWNfYnIgIT0gVVBTVFJFQU1fUkVQT19CUkFOQ0g6CiAgICAgICAgYXdhaXQgZXZlbnQuZWRpdCgKICAgICAgICAgICAgIioqW1VQREFURVJdOioqXG4iCiAgICAgICAgICAgIGYiYExvb2tzIGxpa2UgeW91IGFyZSB1c2luZyB5b3VyIG93biBjdXN0b20gYnJhbmNoICh7YWNfYnJ9KS4gIgogICAgICAgICAgICAiaW4gdGhhdCBjYXNlLCBVcGRhdGVyIGlzIHVuYWJsZSB0byBpZGVudGlmeSAiCiAgICAgICAgICAgICJ3aGljaCBicmFuY2ggaXMgdG8gYmUgbWVyZ2VkLiAiCiAgICAgICAgICAgICJwbGVhc2UgY2hlY2tvdXQgdG8gYW55IG9mZmljaWFsIGJyYW5jaGAiCiAgICAgICAgKQogICAgICAgIHJldHVybiByZXBvLl9fZGVsX18oKQogICAgdHJ5OgogICAgICAgIHJlcG8uY3JlYXRlX3JlbW90ZSgidXBzdHJlYW0iLCBvZmZfcmVwbykKICAgIGV4Y2VwdCBCYXNlRXhjZXB0aW9uOgogICAgICAgIHBhc3MKICAgIHVwc19yZW0gPSByZXBvLnJlbW90ZSgidXBzdHJlYW0iKQogICAgdXBzX3JlbS5mZXRjaChhY19icikKICAgIGNoYW5nZWxvZyA9IGF3YWl0IGdlbl9jaGxvZyhyZXBvLCBmIkhFQUQuLnVwc3RyZWFtL3thY19icn0iKQogICAgIyBTcGVjaWFsIGNhc2UgZm9yIGRlcGxveQogICAgaWYgY2hhbmdlbG9nID09ICIiIGFuZCBub3QgZm9yY2VfdXBkYXRlOgogICAgICAgIGF3YWl0IGV2ZW50LmVkaXQoCiAgICAgICAgICAgICIqKuKZsO+4mdiz2YjYsdizINiv2YrZgNmIINmF2K3Yr9irINin2YTZiSDYp9iu2LEg2KfYtdiv2KfYsSAqKlxuIgogICAgICAgICAgICBmIioq2YLZgNmG2YDYp9ipINiz2YDZiNix2LMg2K/ZitmA2YgqKiA6IEBERU9PVVMiCiAgICAgICAgKQogICAgICAgIHJldHVybiByZXBvLl9fZGVsX18oKQogICAgaWYgY29uZiA9PSAiIiBhbmQgbm90IGZvcmNlX3VwZGF0ZToKICAgICAgICBhd2FpdCBwcmludF9jaGFuZ2Vsb2dzKGV2ZW50LCBhY19iciwgY2hhbmdlbG9nKQogICAgICAgIGF3YWl0IGV2ZW50LmRlbGV0ZSgpCiAgICAgICAgcmV0dXJuIGF3YWl0IGV2ZW50LnJlc3BvbmQoZiLimbDvuJkgINmE2KrYrdiv2YrYqyDYs9mI2LHYsyDYr9mK2YDZiCDYp9ix2LPZhCA6IGAu2KrYrdiv2YrYqyDYp9mE2KfZhmAgIikKCiAgICBpZiBmb3JjZV91cGRhdGU6CiAgICAgICAgYXdhaXQgZXZlbnQuZWRpdCgKICAgICAgICAgICAgImBGb3JjZS1TeW5jaW5nIHRvIGxhdGVzdCBzdGFibGUgdXNlcmJvdCBjb2RlLCBwbGVhc2Ugd2FpdC4uLmAiCiAgICAgICAgKQogICAgaWYgY29uZiA9PSAi2KfZhNin2YYiOgogICAgICAgIGF3YWl0IGV2ZW50LmVkaXQoIioqIOKZsO+4mdis2KfYsSDYqtit2YDYr9mK2YDYqyDYs9mA2YjYsdizINiv2YrZgNmIINin2YbZgNiq2YDYuNmA2LEg2YLZgNmE2YrZgNmE2Kcg8J+UqCoqIikKICAgICAgICBhd2FpdCB1cGRhdGUoZXZlbnQsIHJlcG8sIHVwc19yZW0sIGFjX2JyKQogICAgcmV0dXJuCg=='))
+#    جميع الحقوق لمطوري سورس ديو حصريا لهم فقط
+#    اذا تخمط الملف اذكر الحقوق وكاتبيه ومطوريه لا تحذف الحقوق وتصير فاشل 👍
+#    كتابة حسن وجيري
+
+import asyncio
+import os
+import sys
+from asyncio.exceptions import CancelledError
+
+import heroku3
+import urllib3
+from git import Repo
+from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
+
+from userbot import HEROKU_APP, UPSTREAM_REPO_URL, jmthon
+
+from ..Config import Config
+from ..core.logger import logging
+from ..core.managers import edit_delete, edit_or_reply
+from ..sql_helper.global_collection import (
+    add_to_collectionlist,
+    del_keyword_collectionlist,
+    get_collectionlist_items,
+)
+from ..sql_helper.globals import delgvar
+
+plugin_category = "tools"
+cmdhd = Config.COMMAND_HAND_LER
+
+LOGS = logging.getLogger(__name__)
+# -- ثـوابت -- #
+
+HEROKU_APP_NAME = Config.HEROKU_APP_NAME or None
+HEROKU_API_KEY = Config.HEROKU_API_KEY or None
+Heroku = heroku3.from_key(Config.HEROKU_API_KEY)
+heroku_api = "https://api.heroku.com"
+
+UPSTREAM_REPO_BRANCH = Config.UPSTREAM_REPO_BRANCH
+
+REPO_REMOTE_NAME = "temponame"
+IFFUCI_ACTIVE_BRANCH_NAME = "master"
+NO_HEROKU_APP_CFGD = "no heroku application found, but a key given? 😕 "
+HEROKU_GIT_REF_SPEC = "HEAD:refs/heads/master"
+RESTARTING_APP = "re-starting heroku application"
+IS_SELECTED_DIFFERENT_BRANCH = (
+    "looks like a custom branch {branch_name} "
+    "is being used:\n"
+    "in this case, Updater is unable to identify the branch to be updated."
+    "please check out to an official branch, and re-start the updater."
+)
+
+
+# -- انتهاء الثوابت -- #
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+requirements_path = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "requirements.txt"
+)
+
+
+async def gen_chlog(repo, diff):
+    d_form = "%d/%m/%y"
+    return "".join(
+        f"  • {c.summary} ({c.committed_datetime.strftime(d_form)}) <{c.author}>\n"
+        for c in repo.iter_commits(diff)
+    )
+
+
+async def print_changelogs(event, ac_br, changelog):
+    changelog_str = (
+        f"**♰︙ قام مطورين السورس بتحديث سورس ديـو**\n♰︙**يرجى التحديث للاستمتاع بالمميزات الجديدة**"
+    )
+    if len(changelog_str) > 4096:
+        await event.edit("`Changelog is too big, view the file to see it.`")
+        with open("output.txt", "w+") as file:
+            file.write(changelog_str)
+        await event.client.send_file(
+            event.chat_id,
+            "output.txt",
+            reply_to=event.id,
+        )
+        os.remove("output.txt")
+    else:
+        await event.client.send_message(
+            event.chat_id,
+            changelog_str,
+            reply_to=event.id,
+        )
+    return True
+
+
+async def update_requirements():
+    reqs = str(requirements_path)
+    try:
+        process = await asyncio.create_subprocess_shell(
+            " ".join([sys.executable, "-m", "pip", "install", "-r", reqs]),
+            stdout=asyncio.subprocess.PIPE,
+            stderr=asyncio.subprocess.PIPE,
+        )
+        await process.communicate()
+        return process.returncode
+    except Exception as e:
+        return repr(e)
+
+
+async def update(event, repo, ups_rem, ac_br):
+    try:
+        ups_rem.pull(ac_br)
+    except GitCommandError:
+        repo.git.reset("--hard", "FETCH_HEAD")
+    await update_requirements()
+    jasme = await event.edit(
+        "** ♰︙جـاري تحديـث سورس ديـو انتظر قليلا سوف نخبرك بعد اعادة التشغيل !**"
+    )
+    await event.client.reload(jasme)
+
+
+async def deploy(event, repo, ups_rem, ac_br, txt):
+    if HEROKU_API_KEY is None:
+        return await event.edit("`Please set up`  **HEROKU_API_KEY**  ` Var...`")
+    heroku = heroku3.from_key(HEROKU_API_KEY)
+    heroku_app = None
+    heroku_applications = heroku.apps()
+    if HEROKU_APP_NAME is None:
+        await event.edit(
+            "`Please set up the` **HEROKU_APP_NAME** `Var`"
+            " to be able to deploy your userbot...`"
+        )
+        repo.__del__()
+        return
+    for app in heroku_applications:
+        if app.name == HEROKU_APP_NAME:
+            heroku_app = app
+            break
+    if heroku_app is None:
+        await event.edit(
+            f"{txt}\n" "`Invalid Heroku credentials for deploying userbot dyno.`"
+        )
+        return repo.__del__()
+    jasme = await event.edit(
+        "`Userbot dyno build in progress, please wait until the process finishes it usually takes 4 to 5 minutes .`"
+    )
+    try:
+        ulist = get_collectionlist_items()
+        for i in ulist:
+            if i == "restart_update":
+                del_keyword_collectionlist("restart_update")
+    except Exception as e:
+        LOGS.error(e)
+    try:
+        add_to_collectionlist("restart_update", [jasme.chat_id, jasme.id])
+    except Exception as e:
+        LOGS.error(e)
+    ups_rem.fetch(ac_br)
+    repo.git.reset("--hard", "FETCH_HEAD")
+    heroku_git_url = heroku_app.git_url.replace(
+        "https://", "https://api:" + HEROKU_API_KEY + "@"
+    )
+    if "heroku" in repo.remotes:
+        remote = repo.remote("heroku")
+        remote.set_url(heroku_git_url)
+    else:
+        remote = repo.create_remote("heroku", heroku_git_url)
+    try:
+        remote.push(refspec="HEAD:refs/heads/master", force=True)
+    except Exception as error:
+        await event.edit(f"{txt}\n**Error log:**\n`{error}`")
+        return repo.__del__()
+    build_status = heroku_app.builds(order_by="created_at", sort="desc")[0]
+    if build_status.status == "failed":
+        return await edit_delete(
+            event, "`Build failed!\n" "Cancelled or there were some errors...`"
+        )
+    try:
+        remote.push("master:main", force=True)
+    except Exception as error:
+        await event.edit(f"{txt}\n**Here is the error log:**\n`{error}`")
+        return repo.__del__()
+    await event.edit("`Deploy was failed. So restarting to update`")
+    delgvar("ipaddress")
+    try:
+        await event.client.disconnect()
+        if HEROKU_APP is not None:
+            HEROKU_APP.restart()
+    except CancelledError:
+        pass
+
+
+@jmthon.ar_cmd(
+    pattern="تحديث(| الان)?$",
+    command=("تحديث", plugin_category),
+    info={
+        "header": "To update userbot.",
+        "description": "I recommend you to do update deploy atlest once a week.",
+        "options": {
+            "now": "Will update bot but requirements doesnt update.",
+            "deploy": "Bot will update completly with requirements also.",
+        },
+        "usage": [
+            "{tr}update",
+            "{tr}تحديث الان",
+            "{tr}update deploy",
+        ],
+    },
+)
+async def upstream(event):
+    "To check if the bot is up to date and update if specified"
+    conf = event.pattern_match.group(1).strip()
+    event = await edit_or_reply(
+        event, "**♰︙يـتـم البـحـث عـن تـحديثـات سـورس ديـو انـتـظـر**"
+    )
+    off_repo = UPSTREAM_REPO_URL
+    force_update = False
+    if HEROKU_API_KEY is None or HEROKU_APP_NAME is None:
+        return await edit_or_reply(
+            event, "`Set the required vars first to update the bot`"
+        )
+    try:
+        txt = "`Oops.. Updater cannot continue due to "
+        txt += "some problems occured`\n\n**LOGTRACE:**\n"
+        repo = Repo()
+    except NoSuchPathError as error:
+        await event.edit(f"{txt}\n`directory {error} is not found`")
+        return repo.__del__()
+    except GitCommandError as error:
+        await event.edit(f"{txt}\n`Early failure! {error}`")
+        return repo.__del__()
+    except InvalidGitRepositoryError as error:
+        if conf is None:
+            return await event.edit(
+                f"`Unfortunately, the directory {error} "
+                "does not seem to be a git repository.\n"
+                "But we can fix that by force updating the userbot using "
+                ".تحديث الان.`"
+            )
+        repo = Repo.init()
+        origin = repo.create_remote("upstream", off_repo)
+        origin.fetch()
+        force_update = True
+        repo.create_head("master", origin.refs.master)
+        repo.heads.master.set_tracking_branch(origin.refs.master)
+        repo.heads.master.checkout(True)
+    ac_br = repo.active_branch.name
+    if ac_br != UPSTREAM_REPO_BRANCH:
+        await event.edit(
+            "**[UPDATER]:**\n"
+            f"`Looks like you are using your own custom branch ({ac_br}). "
+            "in that case, Updater is unable to identify "
+            "which branch is to be merged. "
+            "please checkout to any official branch`"
+        )
+        return repo.__del__()
+    try:
+        repo.create_remote("upstream", off_repo)
+    except BaseException:
+        pass
+    ups_rem = repo.remote("upstream")
+    ups_rem.fetch(ac_br)
+    changelog = await gen_chlog(repo, f"HEAD..upstream/{ac_br}")
+    # Special case for deploy
+    if changelog == "" and not force_update:
+        await event.edit(
+            "**♰︙سورس ديـو محدث الى اخر اصدار **\n"
+            f"**قـنـاة سـورس ديـو** : @DEOOUS"
+        )
+        return repo.__del__()
+    if conf == "" and not force_update:
+        await print_changelogs(event, ac_br, changelog)
+        await event.delete()
+        return await event.respond(f"♰︙  لتحديث سورس ديـو ارسل : `.تحديث الان` ")
+
+    if force_update:
+        await event.edit(
+            "`Force-Syncing to latest stable userbot code, please wait...`"
+        )
+    if conf == "الان":
+        await event.edit("** ♰︙جار تحـديـث سـورس ديـو انـتـظـر قـليـلا 🔨**")
+        await update(event, repo, ups_rem, ac_br)
+    return
