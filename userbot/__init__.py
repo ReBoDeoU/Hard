@@ -7,7 +7,7 @@ from .core.logger import logging
 from .core.session import jmthon
 from .sql_helper.globals import addgvar, delgvar, gvarstatus
 
-__version__ = "4.0.0"
+__version__ = "7.0.3"
 __license__ = "كـتابة وتـعديل فريـق ديـو"
 __author__ = "ديـو <https://T.ME/REKHSO>"
 __copyright__ = "DEOOUS TEAM (C) 2020 - 2021  " + __author__
@@ -18,7 +18,7 @@ LOGS = logging.getLogger("ديـو")
 bot = jmthon
 
 StartTime = time.time()
-JMVERSION = "4.0.0"
+JMVERSION = "5.0.2"
 
 LEO = "668571162"
 RAZAN = "1397042354"
