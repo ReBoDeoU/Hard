@@ -14,7 +14,7 @@ __copyright__ = "DEOOUS TEAM (C) 2020 - 2021  " + __author__
 
 jmthon.version = __version__
 jmthon.tgbot.version = __version__
-LOGS = logging.getLogger("ديـو")
+LOGS = logging.getLogger("ها يمطييييي")
 bot = jmthon
 
 StartTime = time.time()
