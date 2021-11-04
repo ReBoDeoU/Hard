@@ -1,0 +1,3 @@
+#https://t.me/nnnuu
+import base64
+exec(base64.b64decode(b'ZnJvbSAuIGltcG9ydCBNYgpmcm9tIC4udG9zaCBpbXBvcnQgVEJPVAoKQGljc3Nib3Qub24oCiAgICBpY3NzX2NtZCgKICAgICAgIHBhdHRlcm49Itio2YjYqtmKIiwgb3V0Z29pbmc9VHJ1ZQogICAgKQopCmFzeW5jIGRlZiBteWJvdChrKToKICAgIGF3YWl0IGVvcihrLCBNYi5mb3JtYXQoVEJPVCkpCg=='))
