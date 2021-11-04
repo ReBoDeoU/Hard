@@ -44,7 +44,7 @@ async def _(event):
     await cat.delete()
     ms = (end - start).microseconds / 1000
     if PING_PIC:
-        caption = f"<b><i>{JM_TXT}<i><b>𝗡𝗘𝗪 𝗦𝗧𝗬𝗟𝗘 🔥\n<b> Button.url("♰ حسن ♰", "https://t.me/DEOOU"), </b>︎ ︎ ︎"
+        caption = f"<b><i>{JM_TXT}<i><b>𝗡𝗘𝗪 𝗦𝗧𝗬𝗟𝗘 🔥\n<b> heu </b>︎ ︎ ︎"
         await event.client.send_file(
             event.chat_id,
             PING_PIC,
