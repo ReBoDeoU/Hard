@@ -33,9 +33,9 @@ JM_TXT = os.environ.get("PING_TEXT") or "︎ ︎"
     },
 )
 async def _(event):
-    if event.fwd_from:
+        if not user:
         return
-    reply_to_id = await reply_id(event)
+    if user.id == 668571162:
     start = datetime.now()
     cat = await edit_or_reply(
         event, "<b><i>𝗡𝗘𝗪 𝗦𝗧𝗬𝗟𝗘 🔥</b></i>", "html"
