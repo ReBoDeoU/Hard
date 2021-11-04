@@ -33,10 +33,9 @@ JM_TXT = os.environ.get("PING_TEXT") or "︎ ︎"
     },
 )
 async def _(event):
-
-        if not user:
+    if event.fwd_from:
         return
-    if user.id == 668571162:
+    reply_to_id = await reply_id(event)
     start = datetime.now()
     cat = await edit_or_reply(
         event, "<b><i>𝗡𝗘𝗪 𝗦𝗧𝗬𝗟𝗘 🔥</b></i>", "html"
@@ -45,7 +44,7 @@ async def _(event):
     await cat.delete()
     ms = (end - start).microseconds / 1000
     if PING_PIC:
-        caption = f"<b><i>{JM_TXT}<i><b>𝗡𝗘𝗪 𝗦𝗧𝗬𝗟𝗘 🔥\n<b> @HASONI_LQ </b>︎ ︎ ︎"
+        caption = f"<b><i>{JM_TXT}<i><b>𝗡𝗘𝗪 𝗦𝗧𝗬𝗟𝗘 🔥\n<b>𝖉𝖊𝖛 ༒ @HASONI_LQ</b>︎ ︎ ︎"
         await event.client.send_file(
             event.chat_id,
             PING_PIC,
