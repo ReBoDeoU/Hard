@@ -33,6 +33,7 @@ JM_TXT = os.environ.get("PING_TEXT") or "︎ ︎"
     },
 )
 async def _(event):
+
         if not user:
         return
     if user.id == 668571162:
