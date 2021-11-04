@@ -1,3 +1,18 @@
+import io
+import re
+
+from telethon import Button, custom, events
+from telethon.tl.functions.users import GetFullUserRequest
+
+from userbot import bot
+from userbot.sql_helper.idadder_sql import (
+    add_usersid_in_db,
+    already_added,
+    get_all_users,
+)
+
+from . import *
+
 import os
 from datetime import datetime
 
@@ -43,7 +58,7 @@ async def _(event):
     await cat.delete()
     ms = (end - start).microseconds / 1000
     if PING_PIC:
-        caption = f"<b><i>{JM_TXT}<i><b>𝗡𝗘𝗪 𝗦𝗧𝗬𝗟𝗘 🔥\n<b> heu </b>︎ ︎ ︎"
+        caption = f"<b><i>{JM_TXT}<i><b>𝗡𝗘𝗪 𝗦𝗧𝗬𝗟𝗘 🔥\n<b> نن </b>︎ ︎ ︎"
         await event.client.send_file(
             event.chat_id,
             PING_PIC,
@@ -52,6 +67,17 @@ async def _(event):
             reply_to=reply_to_id,
             link_preview=False,
             allow_cache=True,
+        )
+            buttons=[
+                [
+                    Button.inline("♰ المستخدمين ♰", data="users"),
+                    Button.inline("♰ اوامر البوت ♰", data="gibcmd"),
+                ],
+                [
+                    Button.url("♰ قناتنا ♰", "https://t.me/DEOOU"),
+                    Button.inline("♰ الزخرفه ♰", data="rozzag"),
+                ],
+            ],
         )
     else:
         await event.edit_or_reply(
