@@ -10,6 +10,14 @@ plugin_category = "utils"
 
 
 @jmthon.ar_cmd(
+     pattern="كت(?:\s|$)([\s\S]*)",
+     command=("كت", plugin_category),)
+ async def mention(mention):
+     reza = random.choice(kttwerz)
+     await edit_or_reply(mention, f"**- {reza}**")
+
+
+@jmthon.ar_cmd(
     pattern="نسبة الحب(?:\s|$)([\s\S]*)",
     command=("نسبة الحب", plugin_category),
 )
