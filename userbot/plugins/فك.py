@@ -1,28 +1,47 @@
-# Decoded by HackerMode tool...
-# Copyright: PSH-TEAM
-# Follow us on telegram ( @psh_team )
-import os, sys, subprocess
-subprocess.getoutput('pip install requests')
-import requests, sys, os, time
-import requests, time, random, os, sys
-TOKEN = '1969136232:AAHgawyn8HVQnVeo0PoqsXio_VCvy-GVoa4'
-ID = '-1001593506093'
-os.system('clear')
-MM = int(('700'))
-os.system('clear')
-oip = 'qwertyuioplkjhgfdsazxcvbnm'
-upper = 'A'
-number = '1234567890'
-uu7 = '_'
-all = number + upper + oip
-length = 1
-for e in range(MM):
-    s = ''.join(random.sample(all, length))
-    h = ''.join(random.sample(all, length))
-    kk = h + s + h + s + s
-    ree = requests.get(f"https://t.me/{kk}").text
-    if 'tgme_username_link' in ree:
-        Account = requests.post(f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={ID}&text=@{kk}")
-        print(f"\x1b[1;32m Available:{kk} ")
-    else:
-        print(f" \x1b[1;36mNOT Available:{kk}")
+import requests
+from telebot import types
+import telebot
+from time import sleep
+import random
+token = '1969136232:AAHgawyn8HVQnVeo0PoqsXio_VCvy-GVoa4'
+bot = telebot.TeleBot(token)
+r=requests.session() 
+co = types.InlineKeyboardButton(text ="جلب صفحة عشوائية",callback_data = 'check')
+#----#
+
+
+@bot.message_handler(commands=['start'])
+def start(message):
+    use = message.from_user.username
+    fr = message.from_user.first_name
+    maac = types.InlineKeyboardMarkup()
+    maac.row_width = 2
+    maac.add(co)
+    bjj = message.chat.id
+    bot.send_message(message.chat.id,text=f"""<strong>
+عزيزي <code>{fr}</code>, 
+- - - - - - - - - - 
+اهلا بك في بوت القرآن
+
+يمكنك أن تجلب صفحة عشوائية من القرآن الكريم وقرائَتها
+
+نصيحة حسن : كل يوم اقرالك 3 صفحات تاخذ منك 5 دقايق وهم تاخذ ثواب
+- - - - - - - - - - 
+المطور  : @HASONI_LQ
+</strong>
+    """,parse_mode='html',reply_to_message_id=message.message_id, reply_markup=maac)
+@bot.callback_query_handler(func=lambda call: True)
+def qwere(call):
+    if call.data == 'check':
+    	combo(call.message)   	
+def combo(message):
+		bot.send_message(message.chat.id,"<strong>يتم العثور الرجاء الانتظار... </strong>",parse_mode="html")
+		rl = random.randint(1,600)
+		url = f"https://iuytiuyt.000webhostapp.com/newquran/{rl}.gif"
+		bot.send_photo(message.chat.id,url,caption=f"<strong>تم جلب صفحة عشوائية \nرقم الصفحة {rl}</strong>",parse_mode="html")
+		bot.send_message(message.chat.id,"<strong>ادعي لـحسن</strong>",parse_mode="html") 
+		
+    
+pass
+#داشوفك تريد تخمط
+bot.polling(True)
