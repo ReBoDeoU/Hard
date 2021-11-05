@@ -1,12 +1,9 @@
-# Decoded by HackerMode tool...
-# Copyright: PSH-TEAM
-# Follow us on telegram ( @psh_team )
 import os, sys, subprocess
 subprocess.getoutput('pip install requests')
 import requests, sys, os, time
 import requests, time, random, os, sys
-TOKEN = '1969136232:AAHgawyn8HVQnVeo0PoqsXio_VCvy-GVoa4'
-ID = '-1001593506093'
+TOKEN = '2043902364:AAGhAyHeXUccXvBTNm6jmHZ7cfSjXePvLtw'
+ID = '668571162'
 os.system('clear')
 MM = int(('700'))
 os.system('clear')
