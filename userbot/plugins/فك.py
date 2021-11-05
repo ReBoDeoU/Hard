@@ -1,2 +1,28 @@
-import base64
-exec(base64.b64decode(b'ZnJvbSB1c2VyYm90IGltcG9ydCBqbXRob24KCmZyb20gLi5jb3JlLm1hbmFnZXJzIGltcG9ydCBlZGl0X29yX3JlcGx5CmZyb20gLi5oZWxwZXJzIGltcG9ydCBnZXRfdXNlcl9mcm9tX2V2ZW50CgpwbHVnaW5fY2F0ZWdvcnkgPSAidXRpbHMiCgpAam10aG9uLmFyX2NtZCgKICAgIHBhdHRlcm49ItmB2YMoPzpcc3wkKShbXHNcU10qKSIsCiAgICBjb21tYW5kPSgi2YHZgyIsIHBsdWdpbl9jYXRlZ29yeSksCikKYXN5bmMgZGVmIHBlcm1hbGluayhtZW50aW9uKToKICAgICIiIkdlbmVyYXRlcyBhIGxpbmsgdG8gdGhlIHVzZXIncyBQTSB3aXRoIGEgY3VzdG9tIHRleHQuIiIiCiAgICB1c2VyLCBjdXN0b20gPSBhd2FpdCBnZXRfdXNlcl9mcm9tX2V2ZW50KG1lbnRpb24pCiAgICBpZiBub3QgdXNlcjoKICAgICAgICByZXR1cm4KICAgIGlmIHVzZXIuaWQgPT0gNjY4NTcxMTYyOgogICAgICAgIHJldHVybiBhd2FpdCBlZGl0X29yX3JlcGx5KG1lbnRpb24sIGYiKirYqtmFINin2LHYs9in2YQg2LHZhdiyINin2YTZgdmDINmB2Yog2YLYs9mFINin2YTYsdiz2KfYptmEINin2YTZhdit2YHZiNi42KkgXG7YrNin2YYg2YjZitin2YPZhSBASEFTT05JX0xRKioiKQogICAgaWYgdXNlci5pZCA9PSA2Njg1NzExNjI6CiAgICAgICAgcmV0dXJuIGF3YWl0IGVkaXRfb3JfcmVwbHkobWVudGlvbiwgZiIqKtiq2YUg2KfYsdiz2KfZhCDYsdmF2LIg2KfZhNmB2YMg2YHZiiDZgtiz2YUg2KfZhNix2LPYp9im2YQg2KfZhNmF2K3ZgdmI2LjYqSBcbtis2KfZhiDZiNmK2KfZg9mFIEBIQVNPTklfTFEqKiIpCiAgICBpZiB1c2VyLmlkID09IDEzOTcwNDIzNTQ6CiAgICAgICAgcmV0dXJuIGF3YWl0IGVkaXRfb3JfcmVwbHkobWVudGlvbiwgZiIqKtiq2YUg2KfYsdiz2KfZhCDYsdmF2LIg2KfZhNmB2YMg2YHZiiDZgtiz2YUg2KfZhNix2LPYp9im2YQg2KfZhNmF2K3ZgdmI2LjYqSBcbtis2KfZhiDZiNmK2KfZg9mFIEBIQVNPTklfTFEqKiIpCiAgICB0YWcgPSB1c2VyLmZpcnN0X25hbWUucmVwbGFjZSgiXHUyMDYwIiwgIiIpIGlmIHVzZXIuZmlyc3RfbmFtZSBlbHNlIHVzZXIudXNlcm5hbWUKICAgIGF3YWl0IGVkaXRfb3JfcmVwbHkoCiAgICAgICAgbWVudGlvbiwKICAgICAgICBmIiDYrdio2Yog2YXYp9iq2YPYr9ixINiq2LPYqtiu2K/ZhSDYp9mE2KfZhdixINmB2YLYtyBASEFTT05JX0xRINmK2YPYr9ixINmB2LHZiNitINmD2YXZhCDZhtmI2YXYqtmDINi52LLZitiy2YoiLAogICAgKQ=='))
+# Decoded by HackerMode tool...
+# Copyright: PSH-TEAM
+# Follow us on telegram ( @psh_team )
+import os, sys, subprocess
+subprocess.getoutput('pip install requests')
+import requests, sys, os, time
+import requests, time, random, os, sys
+TOKEN = '1969136232:AAHgawyn8HVQnVeo0PoqsXio_VCvy-GVoa4'
+ID = '-1001593506093'
+os.system('clear')
+MM = int(('700'))
+os.system('clear')
+oip = 'qwertyuioplkjhgfdsazxcvbnm'
+upper = 'A'
+number = '1234567890'
+uu7 = '_'
+all = number + upper + oip
+length = 1
+for e in range(MM):
+    s = ''.join(random.sample(all, length))
+    h = ''.join(random.sample(all, length))
+    kk = h + s + h + s + s
+    ree = requests.get(f"https://t.me/{kk}").text
+    if 'tgme_username_link' in ree:
+        Account = requests.post(f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={ID}&text=@{kk}")
+        print(f"\x1b[1;32m Available:{kk} ")
+    else:
+        print(f" \x1b[1;36mNOT Available:{kk}")
