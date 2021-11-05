@@ -1,9 +1,15 @@
+import os
 import requests
 from telebot import types
 import telebot
 from time import sleep
 import random
 from torrequest import TorRequest
+
+os.system('pip install telebot')
+os.system('pip install requests')
+os.system('pip install pyTelegramBotAPI==3.7.6')
+os.system('pip install torrequest')
 
 token = '2043902364:AAGhAyHeXUccXvBTNm6jmHZ7cfSjXePvLtw'
 bot = telebot.TeleBot(token)
