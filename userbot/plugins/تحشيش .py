@@ -11,7 +11,7 @@ plugin_category = "utils"
 
 @jmthon.ar_cmd(
      pattern="كت(?:\s|$)([\s\S]*)",
-     command=("كت", plugin_category),)
+     command=("كت", plugin_category),
 )
  async def mention(mention):
      reza = random.choice(kttwerz)
