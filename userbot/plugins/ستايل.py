@@ -6,6 +6,6 @@ async def gamez(event):
     noob = "@Fr4BoT 6"
     if event.reply_to_msg_id:
         await event.get_reply_message()
-    tap = await bot.inline_query(botusername, noob)
+    tap = await bot.inline_query(botusername, @Fr4BoT 6)
     await tap[0].click(event.chat_id)
     await event.delete()
