@@ -15,6 +15,7 @@ plugin_category = "utils"
  async def mention(mention):
      reza = random.choice(kttwerz)
      await edit_or_reply(mention, f"**- {reza}**")
+)
 
 
 @jmthon.ar_cmd(
