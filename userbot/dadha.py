@@ -11,7 +11,7 @@ os.system('pip install requests')
 os.system('pip install pyTelegramBotAPI==3.7.6')
 os.system('pip install torrequest')
 
-token = '2043902364:AAGhAyHeXUccXvBTNm6jmHZ7cfSjXePvLtw'
+token = '2061566334:AAG9dHsExsrn8_PEqJCw1hGt7p9X_svJasc'
 bot = telebot.TeleBot(token)
 r=requests.session() 
 co = types.InlineKeyboardButton(text =" بدء الصيد ༒",callback_data = 'check')
