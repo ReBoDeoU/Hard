@@ -62,3 +62,165 @@ foreach($apimessage as $key => $val){
 $idi = json_decode(file_get_contents("data/now.json"),true);
 
 if($data == "new"){
+
+$idi['ids'][$data1] = ["mail"=>$mail,"id_mail"=>$id_mail];
+
+file_put_contents("data/now.json", json_encode($idi));
+
+}
+
+$idi1 = json_decode(file_get_contents("data/now.json"),true);
+
+if($data == "delete"){
+
+$idi1['ids'][$data1] = ["mail"=>"لا يوجد بريد إلكتروني","id_mail"=>"error"];
+
+file_put_contents("data/now.json", json_encode($idi1));
+
+}
+
+$viue = $idi['ids'][$data1]['mail'];
+$sudo = 1397042354;
+//تعديلاتي @Sufi900 
+if($text == "/start" and $from_id !=$sudo and !in_array($id, $m)){
+bot('sendmessage',[
+'chat_id'=>$chat_id,
+'text'=>"
+• *مرحبا بك في بوت الايميل الوهمي* 
+• *يمكنك الان انشاء جميع مواقع التواصل*
+• *سريع في  استلام جميع الرسائل*  
+• *يمكنك انشاء حسابات فيسبوك+انستا وآلخ*
+⠀",
+'parse_mode'=>"MarkDown",
+'reply_markup'=>json_encode([
+'inline_keyboard'=>[
+[['text'=>'انشاء اميل 📨','callback_data'=>'new']],
+[['text'=>'عرض الايميل 📧','callback_data'=>'viue'],['text'=>'حذف الايميل 🗃️','callback_data'=>'delete']],
+[['text'=>'الرسائل 📩','callback_data'=>'msgs']],
+[['text'=>'مطور البوت 👨🏾‍💻','url'=>'t.me/Sufi900'], ['text'=>'قناه البوت 📡','url'=>'t.me/alsh_3k']]
+]
+])
+]);
+}
+if($data == "ba" and $from_id !=$sudo){
+bot('editmessagetext',[
+'chat_id'=>$data1,
+'message_id'=>$data2,
+'text'=>"
+• *مرحبا بك في بوت الايميل الوهمي* 
+• *يمكنك الان انشاء جميع مواقع التواصل*
+• *سريع في  استلام جميع الرسائل*  
+• *يمكنك انشاء حسابات فيسبوك+انستا وآلخ*
+⠀",
+'parse_mode'=>"MarkDown",
+'reply_markup'=>json_encode([
+'inline_keyboard'=>[
+[['text'=>'تغير الايميل 📨️','callback_data'=>'new']],
+[['text'=>'عرض الايميل 📧','callback_data'=>'viue'],['text'=>'حذف الايميل 🗃️','callback_data'=>'delete']],
+[['text'=>'الرسائل 📩','callback_data'=>'msgs']],
+[['text'=>'مطور البوت 👨🏾‍💻','url'=>'t.me/Sufi900'], ['text'=>'قناه البوت 📡','url'=>'t.me/alsh_3k']]
+]
+])
+]);
+}
+
+
+if($data == "new" and !in_array($from_id, $now['ids'])){
+file_put_contents("data/now.json", json_encode($idi));
+bot('editmessagetext',[
+'chat_id'=>$data1,
+'message_id'=>$data2,
+'text'=>" 
+
+الاميل الخاص بك : 
+" . $api['result']['mail'] . " 
+
+✔️⠀",
+'reply_to_message_id'=>$message->message_id,
+'reply_markup'=>json_encode([
+'inline_keyboard'=>[
+[['text'=>'رجوع','callback_data'=>'ba']],
+]
+])
+]);
+}
+
+
+
+
+if($data == "msgs" and !in_array($apimessage["error"], $apimessage)  and !in_array($apimessage["result"], $apimessage) ){
+bot('editmessagetext',[
+'chat_id'=>$data1,
+'message_id'=>$data2,
+'text'=>"🆔 iD : $id 
+   - - - - - - - - - - - - - - -
+   🔖 From : $from 
+   - - - - - - - - - - - - - - -
+   🖇 To : $mail 
+   - - - - - - - - - - - - - - -
+   📨 Subject : $subject
+   - - - - - - - - - - - - - - -
+   ✉️ Message : $body
+   - - - - - - - - - - - - - - -
+",
+'reply_to_message_id'=>$message->message_id,
+'reply_markup'=>json_encode([
+'inline_keyboard'=>[
+[['text'=>'رجوع','callback_data'=>'ba']],
+]
+])
+]);
+}else 
+
+if($data == "msgs" and !in_array($apimessage["result"], $apimessage) ){
+bot('answercallbackquery',[
+        'callback_query_id'=>$update->callback_query->id,
+        'text'=>"
+‎ • » لا يوجد رسائل حاليا « •
+        ",
+        'show_alert'=>true,
+]);
+}else 
+
+if($data == "msgs"){
+bot('answercallbackquery',[
+        'callback_query_id'=>$update->callback_query->id,
+        'text'=>"
+‎ • » لايوجد ايميل حاليا« •
+        ",
+        'show_alert'=>true,
+]);
+}
+
+
+
+if($data == "viue"){
+bot('editmessagetext',[
+'chat_id'=>$data1,
+'message_id'=>$data2,
+'text'=>"الاميل الخاص بك : 
+" . $viue,
+'reply_markup'=>json_encode([
+'inline_keyboard'=>[
+[['text'=>'رجوع','callback_data'=>'ba']],
+]
+])
+]);
+}
+
+$mo = $apidelete['result'];
+
+print_r($apidelete);
+
+if($data == "delete"){
+file_put_contents("data/now.json", json_encode($idi1));
+bot('answercallbackquery',[
+        'callback_query_id'=>$update->callback_query->id,
+        'text'=>"
+‎ • » $mo « •
+        ",
+        'show_alert'=>true,
+]);
+}
+//اذكر المصدر ل صوفي// 
+//©️ @PHP_APl 👨🏾‍💻 @Sufi900 //
