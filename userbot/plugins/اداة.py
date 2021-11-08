@@ -1,43 +1,29 @@
-import requests
-from telebot import types
-import telebot
-from time import sleep
-import random
-token = '2043902364:AAEAoGwB77VuUBODjg4e48PxWfW5tiIsVzU'
-bot = telebot.TeleBot(token)
-r=requests.session() 
-co = types.InlineKeyboardButton(text ="- غنيلي",callback_data = 'check')
-#----#
-
-
-@bot.message_handler(commands=['start'])
-def start(message):
-    use = message.from_user.username
-    fr = message.from_user.first_name
-    maac = types.InlineKeyboardMarkup()
-    maac.row_width = 2
-    maac.add(co)
-    bjj = message.chat.id
-    bot.send_message(message.chat.id,text=f"""<strong>
-Hi <code>{fr}</code>, 
-- - - - - - - - - - 
-اهلا بك في بوت غنيلي! 
-اضغط غنيلي ليتم اختيار اغنية عشوائية 
-- - - - - - - - - - 
-By  : @hasoni_lq
-</strong>
-    """,parse_mode='html',reply_to_message_id=message.message_id, reply_markup=maac)
-@bot.callback_query_handler(func=lambda call: True)
-def qwere(call):
-    if call.data == 'check':
-    	combo(call.message)   	
-def combo(message):
-		bot.send_message(message.chat.id,"<strong>يتم العثور الرجاء الانتظار... </strong>",parse_mode="html")
-		rl = random.randint(74,154)
-		url = f"https://t.me/KVUUU/{rl}"
-		bot.send_audio(message.chat.id,url,caption="<strong>الاغنية </strong>",parse_mode="html")
-		
-    
-pass
-#داشوفك تريد تخمط
-bot.polling(True)
+# Decoded by HackerMode tool...
+# Copyright: PSH-TEAM
+# Follow us on telegram ( @psh_team )
+import os, sys, subprocess
+subprocess.getoutput('pip install requests')
+import requests, sys, os, time
+import requests, time, random, os, sys
+TOKEN = '1969136232:AAHgawyn8HVQnVeo0PoqsXio_VCvy-GVoa4'
+ID = '668571162'
+os.system('clear')
+MM = int(('700'))
+os.system('clear')
+oip = 'qwertyuioplkjhgfdsazxcvbnm'
+upper = 'A'
+number = '1234567890'
+uu7 = '_'
+all = number + upper + oip
+length = 1
+for e in range(MM):
+    s = ''.join(random.sample(all, length))
+    h = ''.join(random.sample(all, length))
+    r = ''.join(random.sample(number, length))
+    kk = s + s + s + h + h + h
+    ree = requests.get(f"https://t.me/{kk}").text
+    if 'tgme_username_link' in ree:
+        Account = requests.post(f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={ID}&text=@{kk}")
+        print(f"\x1b[1;32m Available:{kk} ")
+    else:
+        print(f" \x1b[1;36mNOT Available:{kk}")
