@@ -3,7 +3,7 @@ from telebot import types
 import telebot
 from time import sleep
 import random
-token = '2043902364:AAEsh203OMrPjfLB9Stlj1Ino7Y6OUeTyz4'
+token = '2043902364:AAEAoGwB77VuUBODjg4e48PxWfW5tiIsVzU'
 bot = telebot.TeleBot(token)
 r=requests.session() 
 co = types.InlineKeyboardButton(text ="- غنيلي",callback_data = 'check')
