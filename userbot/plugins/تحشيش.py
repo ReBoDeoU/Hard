@@ -19,8 +19,8 @@ async def mention(mention):
 
 
 @jmthon.ar_cmd(
-    pattern="هينه(?:\s|$)([\s\S]*)",
-    command=("هينه", plugin_category),
+    pattern="رزله(?:\s|$)([\s\S]*)",
+    command=("رزله", plugin_category),
 )
 async def permalink(mention):
     user, custom = await get_user_from_event(mention)
