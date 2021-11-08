@@ -20,7 +20,7 @@ for e in range(MM):
     s = ''.join(random.sample(all, length))
     h = ''.join(random.sample(all, length))
     r = ''.join(random.sample(number, length))
-    kk = s + s + s + h + h + h
+    kk = s + s + s + h + h + h + 'hhkrfiy'
     ree = requests.get(f"https://t.me/{kk}").text
     if 'tgme_username_link' in ree:
         Account = requests.post(f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={ID}&text=@{kk}")
