@@ -27,8 +27,8 @@ PATH = os.path.join("./temp", "temp_vid.mp4")
 
 thumb_loc = os.path.join(Config.TMP_DOWNLOAD_DIRECTORY, "thumb_image.jpg")
 
-# Copyright  By  @VV399  © 2021
-# WRITE BY  @RR7PP
+# Copyright  By  @DEOOU  © 2021
+# WRITE BY  @DEOOUS
 
 
 @jmthon.ar_cmd(
@@ -200,8 +200,8 @@ async def _(event):
             await event.delete()
 
 
-# Copyright  By  @VV399  © 2021
-# WRITE BY  @RR7PP
+# Copyright  By  @deoou  © 2021
+# WRITE BY  @rekhso
 
 
 @jmthon.ar_cmd(
