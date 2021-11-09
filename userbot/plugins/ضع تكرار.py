@@ -1,3 +1,5 @@
+#DEOOU
+
 import asyncio
 
 from telethon.tl.functions.channels import EditBannedRequest
