@@ -459,3 +459,4 @@ async def fetch_info(chat, event):  # sourcery no-metrics
     if description:
         caption += f"⌔︙الوصـف  : \n<code>{description}</code>\n"
     return caption
+#DEOOU
