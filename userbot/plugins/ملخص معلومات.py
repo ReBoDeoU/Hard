@@ -1,3 +1,5 @@
+#DEOOU
+
 import time
 
 from prettytable import PrettyTable
