@@ -40,5 +40,5 @@ async def _(event):
             await event.client.send_message(event.chat_id, response.message)
 
 
-# Copyright (C) 2021 FFIIX TEAM
-# FILES WRITTEN BY  @RR7PP
+# Copyright (C) 2021 deou TEAM
+# FILES WRITTEN BY  @rekhso
