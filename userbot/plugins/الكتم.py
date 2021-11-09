@@ -35,19 +35,19 @@ async def startgmute(event):
             return
         if user.id == jmthon.uid:
             return await edit_or_reply(
-                event, "*♰... . لمـاذا تࢪيـد كتم نفسـك؟  ..♰**"
+                event, "**♰... . لمـاذا تࢪيـد كتم نفسـك؟  ..♰**"
             )
         userid = user.id
     try:
         user = (await event.client(GetFullUserRequest(userid))).user
     except Exception:
         return await edit_or_reply(
-            event, "*♰... غيـر قـادر عـلى جـلب مـعلومات الـشخص ..♰**"
+            event, "**♰... غيـر قـادر عـلى جـلب مـعلومات الـشخص ..♰**"
         )
     if is_muted(userid, "gmute"):
         return await edit_or_reply(
             event,
-            f"*♰... هـذا الشـخص مكـتوم بـنجاح ..♰**",
+            f"**♰... هـذا الشـخص مكـتوم بـنجاح ..♰**",
         )
     try:
         mute(userid, "gmute")
