@@ -76,3 +76,4 @@ async def _(event):
     await catevent.edit(string_to_show)
     # now, remove the temporary file
     os.remove(required_file_name)
+#DEOOU
