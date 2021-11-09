@@ -150,3 +150,4 @@ async def _(event):
             await edit_delete(catevent, "`unblock `@tgscanrobot` and then try`")
         await conv.get_response()
         await event.client.send_read_ackno
+#DEOOU
