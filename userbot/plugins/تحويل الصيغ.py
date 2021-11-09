@@ -1,5 +1,5 @@
-# Copyright  By  @VV399  © 2021
-# WRITE BY  @RR9R7 - @GGGNE
+# Copyright  By  @DEOOUS  © 2021
+# WRITE BY  @REKHSO - @DEOOU
 
 import asyncio
 import logging
