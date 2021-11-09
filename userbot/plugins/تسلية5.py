@@ -1,3 +1,5 @@
+#DEOOUS
+
 import asyncio
 
 from . import edit_or_reply, jmthon
