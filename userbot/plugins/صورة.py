@@ -1,4 +1,4 @@
-# ترجمه فريق ماتركـس على التيلكرام
+# ترجمه فريق ديو على التيلكرام
 from userbot import jmthon
 
 from ..core.managers import edit_delete, edit_or_reply
