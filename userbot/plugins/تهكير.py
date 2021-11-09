@@ -1,5 +1,5 @@
-# Copyright (C) 2021 FFIIX TEAM
-# FILES WRITTEN BY  @RR7PP
+# Copyright (C) 2021 REKHSO TEAM
+# FILES WRITTEN BY  @DEOOUS
 
 import asyncio
 
