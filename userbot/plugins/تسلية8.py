@@ -1,4 +1,4 @@
-# WRITED BY - @VUUZZ - @RR7PP
+# WRITED BY - @rekhso - @deoou
 
 import io
 import os
@@ -228,4 +228,4 @@ async def glax(event):
     await hide_inlinebot(
         event.client, bot_name, text, event.chat_id, reply_to_id, c_lick=c_lick
     )
-    # WRITED BY - @VUUZZ - @RR7PP
+    # WRITED BY - @rekhso - @deoou
