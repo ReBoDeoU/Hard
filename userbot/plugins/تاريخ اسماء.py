@@ -1,5 +1,5 @@
-# Copyright (C) 2021 FFIIX TEAM
-# FILES WRITTEN BY  @RR7PP
+# Copyright (C) 2021 deoou TEAM
+# FILES WRITTEN BY  @rekhso
 import asyncio
 
 from telethon.errors.rpcerrorlist import YouBlockedUserError
