@@ -1,5 +1,5 @@
 # ======================================================================================================================================
-# ping -> edited ping with pic by  @RR7PP
+# ping -> edited ping with pic by  @HASONI_LQ
 # كتابة الملف لسورس ماتركـس فقط ممنوع نسبه لنفسك
 # تخمط دليل فشلك اخمط وكول اني مطور 😂😂
 
@@ -19,7 +19,7 @@ except:
 plugin_category = "tools"
 
 PING_PIC = os.environ.get("PING_PIC") or (
-    "https://telegra.ph/file/088f9384c0e1aa505ab8e.mp4"
+    "https://telegra.ph/file/a2a03e7302ef6b2ceae14.mp4"
 )
 
 JM_TXT = os.environ.get("PING_TEXT") or "𝗡𝗘𝗪 𝗦𝗧𝗬𝗟𝗘 🔥"
