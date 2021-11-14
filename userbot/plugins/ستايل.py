@@ -21,8 +21,8 @@ JM_TXT = os.environ.get("PING_TEXT") or "𝗡𝗘𝗪 𝗦𝗧𝗬𝗟𝗘 🔥"
 
 
 @jmthon.ar_cmd(
-    pattern="؟$",
-    command=("؟", plugin_category),
+    pattern="؟",
+    command=("؟",
     info={
         "header": "امر تجربه البوت اذا يشتغل ارسل  .بنك متطور فقط",
         "option": "امر بنك المتطور كتابة  @DEOOUS",
