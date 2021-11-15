@@ -13,8 +13,8 @@ plugin_category = "utils"
 
 
 @jmthon.ar_cmd(
-    pattern="كوكل بلي ([\s\S]*)",
-    command=("كوكل بلي", plugin_category),
+    pattern="تطبيق ([\s\S]*)",
+    command=("تطبيق", plugin_category),
     info={
         "header": "To search any app in playstore",
         "description": "Searches the app in the playstore and provides the link to the app in playstore and fetchs app details",
