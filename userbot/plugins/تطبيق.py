@@ -78,11 +78,11 @@ async def app_search(event):
             "five", "5"
         )
         app_details += (
-            "\n<code>رابط التـطبيق على كــوكل بلــي ♰</code> <a href='"
+            "\n<code>رابط التـطبيق على كــوكل بلــي </code> <a href='"
             + app_link
             + "'>♰ .الرابط. ♰</a>"
         )
-        app_details += f"\n\n===> {ALIVE_NAME} <==="
+        app_details += f"\n\nقناة الســورس ♰ @DEOOUS"
         await event.edit(app_details, link_preview=True, parse_mode="HTML")
     except IndexError:
         await event.edit("لم أجــد المــطلوب ** ♰ اكــتب اسم التطبـيق بصـورة جيده**")
