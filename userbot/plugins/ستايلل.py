@@ -23,20 +23,20 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
             ]
             if ROZ_PIC and ROZ_PIC.endswith((".mp4")):
                 result = builder.photo(
-                    ROZ_PIC, text=ROZ, buttons=buttons, link_preview=False
+                    ROZ_PIC, text=PING_PIC, buttons=buttons, link_preview=False
                 )
             elif ROZ_PIC:
                 result = builder.document(
                     ROZ_PIC,
                     title="REKHSO - USERBOT",
-                    text=ROZ,
+                    text=PING_PIC,
                     buttons=buttons,
                     link_preview=False,
                 )
             else:
                 result = builder.article(
                     title="REKHSO - USERBOT",
-                    text=ROZ,
+                    text=PING_PIC,
                     buttons=buttons,
                     link_preview=False,
                 )
