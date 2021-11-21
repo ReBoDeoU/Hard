@@ -14,7 +14,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
         result = None
         query = event.text
         await bot.get_me()
-        if query.startswith("السورس") and event.query.user_id == bot.uid:
+        if query.startswith("!") and event.query.user_id == bot.uid:
             buttons = [
                 [
                     Button.url("♰ قناتنا ♰", "https://t.me/DEOOUS"),
