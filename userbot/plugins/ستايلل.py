@@ -4,7 +4,14 @@ from Jmthon.razan.resources.mybot import *
 
 from ..Config import Config
 
-ROZ_PIC = "https://telegra.ph/file/6884f2b0ceaebad7eddf6.mp4"
+"""
+try:
+    from . import PING_PIC, PING_TEXT
+except:
+    pass
+"""
+
+PING_PIC = "https://telegra.ph/file/6884f2b0ceaebad7eddf6.mp4"
 
 if Config.TG_BOT_USERNAME is not None and tgbot is not None:
 
@@ -23,11 +30,11 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
             ]
             if ROZ_PIC and ROZ_PIC.endswith((".jpg", ".png", "gif", "mp4")):
                 result = builder.photo(
-                    ROZ_PIC, text=ROZ, buttons=buttons, link_preview=False
+                    PING_PIC, text="ت", buttons=buttons, link_preview=False
                 )
-            elif ROZ_PIC:
+            elif PING_PIC:
                 result = builder.document(
-                    ROZ_PIC,
+                    PING_PIC,
                     title="REKHSO - USERBOT",
                     text="هلو",
                     buttons=buttons,
