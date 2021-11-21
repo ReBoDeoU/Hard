@@ -12,4 +12,3 @@ ROZ = (
     f"**   - المستخدم :♰ {mention}\n"
 )
 # for alive command
-ROZADM = "**@HASONI_LQ"
