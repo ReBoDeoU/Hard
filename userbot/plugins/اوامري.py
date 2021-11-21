@@ -22,35 +22,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
         await bot.get_me()
         if query.startswith("اوامري") and event.query.user_id == bot.uid:
             buttons = [
-                [Button.inline("♰ اوامر الادمن ♰", data="jmthon0")],
-                [
-                    Button.inline("♰ اوامر البوت ♰", data="rozbot"),
-                    Button.inline("♰ الحساب ♰", data="Jmrz"),
-                    Button.inline("♰ المجموعات ♰", data="gro"),
-                ],
-                [
-                    Button.inline("♰ الصيغ و الجهات ♰", data="sejrz"),
-                    Button.inline("♰ الحماية و تلكراف ♰", data="grrz"),
-                ],
-                [
-                    Button.inline("♰ اوامر التسلية ♰", data="tslrzj"),
-                    Button.inline("♰ الترحيبات والردود ♰", data="r7brz"),
-                ],
-                [
-                    Button.inline("♰ التكرار والتنظيف ♰", data="krrznd"),
-                    Button.inline("♰ الملصقات وصور ♰", data="jrzst"),
-                ],
-                [
-                    Button.inline("♰ التكرار والتنظيف ♰", data="krrznd"),
-                    Button.inline("♰ الترفيه ♰", data="rfhrz"),
-                ],
-                [
-                    Button.inline("♰ التكرار والتنظيف ♰", data="iiers"),
-                    Button.inline("♰ الملصقات وصور ♰", data="jrzst"),
-                ],
-                [
-                    Button.inline("♰ الأكستـرا ♰", data="iiers"),
-                    Button.inline("♰ الانتحال والتقليد ♰", data="uscuxrz"),
+                    Button.inline(" 𝒉𝒂𝒔𝒐𝒏𝒊 𝒂𝒍𝒏𝒂𝒋𝒂𝒓 ", data="ROZADM"),
                 ],
             ]
             if ROZ_IC and ROZ_IC.endswith((".jpg", ".png", "gif", "mp4")):
@@ -75,14 +47,14 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
             await event.answer([result] if result else None)
 
 
-@bot.on(admin_cmd(outgoing=True, pattern="اوامري"))
+@bot.on(admin_cmd(outgoing=True, pattern="!"))
 async def repo(event):
     if event.fwd_from:
         return
     RR7PP = Config.TG_BOT_USERNAME
     if event.reply_to_msg_id:
         await event.get_reply_message()
-    response = await bot.inline_query(RR7PP, "اوامري")
+    response = await bot.inline_query(RR7PP, "!")
     await response[0].click(event.chat_id)
     await event.delete()
 
@@ -90,63 +62,3 @@ async def repo(event):
 @jmthon.tgbot.on(CallbackQuery(data=re.compile(rb"jmthon0")))
 async def _(event):
     await event.edit(ROZADM)
-
-
-@jmthon.tgbot.on(CallbackQuery(data=re.compile(rb"jrzst")))
-async def _(event):
-    await event.edit(GRTSTI)
-
-
-@jmthon.tgbot.on(CallbackQuery(data=re.compile(rb"tslrzj")))
-async def _(event):
-    await event.edit(JMAN)
-
-
-@jmthon.tgbot.on(CallbackQuery(data=re.compile(rb"krrznd")))
-async def _(event):
-    await event.edit(TKPRZ)
-
-
-@jmthon.tgbot.on(CallbackQuery(data=re.compile(rb"rozbot")))
-async def _(event):
-    await event.edit(ROZBOT)
-
-
-@jmthon.tgbot.on(CallbackQuery(data=re.compile(rb"Jmrz")))
-async def _(event):
-    await event.edit(JROZT)
-
-
-@jmthon.tgbot.on(CallbackQuery(data=re.compile(rb"r7brz")))
-async def _(event):
-    await event.edit(JMTRD)
-
-
-@jmthon.tgbot.on(CallbackQuery(data=re.compile(rb"sejrz")))
-async def _(event):
-    await event.edit(ROZSEG)
-
-
-@jmthon.tgbot.on(CallbackQuery(data=re.compile(rb"gro")))
-async def _(event):
-    await event.edit(JMGR1)
-
-
-@jmthon.tgbot.on(CallbackQuery(data=re.compile(rb"grrz")))
-async def _(event):
-    await event.edit(ROZPRV)
-
-
-@jmthon.tgbot.on(CallbackQuery(data=re.compile(rb"iiers")))
-async def _(event):
-    await event.edit(HERP)
-
-
-@jmthon.tgbot.on(CallbackQuery(data=re.compile(rb"rfhrz")))
-async def _(event):
-    await event.edit(T7SHIZ)
-
-
-@jmthon.tgbot.on(CallbackQuery(data=re.compile(rb"uscuxrz")))
-async def _(event):
-    await event.edit(CLORN)
