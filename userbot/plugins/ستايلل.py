@@ -4,14 +4,7 @@ from Jmthon.razan.resources.mybot import *
 
 from ..Config import Config
 
-"""
-try:
-    from . import PING_PIC, PING_TEXT
-except:
-    pass
-"""
-
-PING_PIC = "https://telegra.ph/file/6884f2b0ceaebad7eddf6.mp4"
+ROZ_PIC = "https://telegra.ph/file/734639485f00e79f5e6e9.mp4"
 
 if Config.TG_BOT_USERNAME is not None and tgbot is not None:
 
@@ -21,29 +14,29 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
         result = None
         query = event.text
         await bot.get_me()
-        if query.startswith("!") and event.query.user_id == bot.uid:
+        if query.startswith("السورس") and event.query.user_id == bot.uid:
             buttons = [
                 [
                     Button.url("♰ قناتنا ♰", "https://t.me/DEOOUS"),
                     Button.url("♰ مطورين ♰", "https://t.me/REKHSO"),
                 ]
             ]
-            if ROZ_PIC and ROZ_PIC.endswith((".jpg", ".png", "gif", "mp4")):
+            if ROZ_PIC and ROZ_PIC.endswith(("mp4")):
                 result = builder.photo(
-                    PING_PIC, text="ت", buttons=buttons, link_preview=False
+                    ROZ_PIC, text=ROZ, buttons=buttons, link_preview=False
                 )
-            elif PING_PIC:
+            elif ROZ_PIC:
                 result = builder.document(
-                    PING_PIC,
+                    ROZ_PIC,
                     title="REKHSO - USERBOT",
-                    text="هلو",
+                    text=ROZ,
                     buttons=buttons,
                     link_preview=False,
                 )
             else:
                 result = builder.article(
                     title="REKHSO - USERBOT",
-                    text="هلو",
+                    text=ROZ,
                     buttons=buttons,
                     link_preview=False,
                 )
@@ -60,3 +53,6 @@ async def repo(event):
     response = await bot.inline_query(RR7PP, "!")
     await response[0].click(event.chat_id)
     await event.delete()
+
+
+# edit by ~ @RR9R7
