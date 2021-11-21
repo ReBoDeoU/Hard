@@ -29,14 +29,14 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
                 result = builder.document(
                     ROZ_PIC,
                     title="REKHSO - USERBOT",
-                    text=ROZ,
+                    text="هلو",
                     buttons=buttons,
                     link_preview=False,
                 )
             else:
                 result = builder.article(
                     title="REKHSO - USERBOT",
-                    text=ROZ,
+                    text="هلو",
                     buttons=buttons,
                     link_preview=False,
                 )
