@@ -21,7 +21,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
                     Button.url("♰ مطورين ♰", "https://t.me/REKHSO"),
                 ]
             ]
-            if ROZ_PIC and ROZ_PIC.endswith(("mp4")):
+            if ROZ_PIC and ROZ_PIC.endswith((".mp4")):
                 result = builder.photo(
                     ROZ_PIC, text=ROZ, buttons=buttons, link_preview=False
                 )
