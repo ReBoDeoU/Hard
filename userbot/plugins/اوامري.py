@@ -20,7 +20,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
         result = None
         query = event.text
         await bot.get_me()
-        if query.startswith("!") and event.query.user_id == bot.uid:
+        if query.startswith("واو") and event.query.user_id == bot.uid:
             buttons = [
                     Button.inline(" 𝒉𝒂𝒔𝒐𝒏𝒊 𝒂𝒍𝒏𝒂𝒋𝒂𝒓 ", data="ROZADM"),
                 ],
@@ -47,14 +47,14 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
             await event.answer([result] if result else None)
 
 
-@bot.on(admin_cmd(outgoing=True, pattern="!"))
+@bot.on(admin_cmd(outgoing=True, pattern="واو"))
 async def repo(event):
     if event.fwd_from:
         return
     RR7PP = Config.TG_BOT_USERNAME
     if event.reply_to_msg_id:
         await event.get_reply_message()
-    response = await bot.inline_query(ROZADM, "!")
+    response = await bot.inline_query(RR7PP, "واو")
     await response[0].click(event.chat_id)
     await event.delete()
 
