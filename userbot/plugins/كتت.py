@@ -144,3 +144,6 @@ kettuet = [
  ]
 
 @iqthon.on(admin_cmd(pattern="كتت(?: |$)(.*)"))
+async def permalink(mention):
+    iqt = random.choice(kettuet)
+    await edit_or_reply(mention, f"**༒︙ {iqt} **")
