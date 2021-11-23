@@ -17,7 +17,7 @@ from telethon.tl.types import (
     MessageMediaPhoto,
 )
 
-from userbot import DEOOUS
+from userbot import jmthon
 
 from ..core.managers import edit_delete, edit_or_reply
 from ..helpers.tools import media_type
@@ -25,7 +25,7 @@ from ..sql_helper.globals import gvarstatus
 
 plugin_category = "fun"
 
-# modified and developed by @DEOOUS
+# modified and developed by @jmthon
 
 
 combot_stickers_url = "https://combot.org/telegram/stickers?q="
@@ -51,8 +51,8 @@ def verify_cond(catarray, text):
 
 def pack_name(userid, pack, is_anim):
     if is_anim:
-        return f"DEOOUSBOT_{userid}_{pack}_anim"
-    return f"DEOOUS_{userid}_{pack}"
+        return f"JMTHONBOT_{userid}_{pack}_anim"
+    return f"JMTHON_{userid}_{pack}"
 
 
 def char_is_emoji(character):
@@ -219,12 +219,12 @@ async def add_to_pack(
     return pack, packname
 
 
-@DEOOUS.ar_cmd(
+@jmthon.ar_cmd(
     pattern="ملصق(?:\s|$)([\s\S]*)",
     command=("ملصق", plugin_category),
 )
 async def kang(args):
-    "DEOOUS userbot"
+    "jmthon userbot"
     photo = None
     emojibypass = False
     is_anim = False
@@ -356,7 +356,7 @@ async def kang(args):
                 await edit_delete(
                     rozevent,
                     f"-  تم بنجاح اخذ الملصق لحزمة ثانيـة\
-                    \n الحزمة الخاصة بك هي  [اضغط هنا](t.me/addstickers/{packname}) و الايموجي الخاص هو {emoji}",
+                    \n الحزمة الخاصة بك هي  [اضغط هنا](t.me/addstickers/{packname}) و الايموجي الخاص هز {emoji}",
                     parse_mode="md",
                     time=10,
                 )
@@ -370,7 +370,7 @@ async def kang(args):
                 )
 
 
-@DEOOUS.ar_cmd(
+@jmthon.ar_cmd(
     pattern="حزمة(?:\s|$)([\s\S]*)",
     command=("حزمة", plugin_category),
     info={
@@ -471,7 +471,7 @@ async def pack_kang(event):  # sourcery no-metrics
                 elif len(splat) > 1:
                     return await edit_delete(
                         catevent,
-                        "**𖥻 عذرا لا يمكن استخدام لاسم المعطى للحزمة أو لا توجد حزمة بهذا الاسم**",
+                        "**𖥻 عذرا لا يمكن استخدام الاسم المعطى للحزمة أو لا توجد حزمة بهذا الاسم**",
                     )
             try:
                 cat = Get(cat)
@@ -539,7 +539,7 @@ async def pack_kang(event):  # sourcery no-metrics
     await catevent.edit(result)
 
 
-@DEOOUS.ar_cmd(
+@jmthon.ar_cmd(
     pattern="معلومات_الملصق$",
     command=("معلومات_الملصق", plugin_category),
     info={
