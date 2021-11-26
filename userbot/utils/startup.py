@@ -1,4 +1,4 @@
-import globc
+import glob
 import os
 import sys
 from asyncio.exceptions import CancelledError
