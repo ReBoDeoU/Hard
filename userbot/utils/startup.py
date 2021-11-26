@@ -23,7 +23,7 @@ from ..sql_helper.globals import addgvar, delgvar, gvarstatus
 from .pluginmanager import load_module
 from .tools import create_supergroup
 
-LOGS = logging.getLogger("JMTHON")
+LOGS = logging.getLogger("DEOOUS")
 cmdhr = Config.COMMAND_HAND_LER
 
 
@@ -66,7 +66,7 @@ async def startupmessage():
                 BOTLOG_CHATID,
                 "https://telegra.ph/file/1f32890cbb74490e646d9.jpg",
                 caption="♰︙**بــوت ديـو يـعـمـل بـنـجـاح** \n♰︙**قـنـاة الـسـورس**  :  @DEOOUS ",
-                buttons=[(Button.url("♰ مطـورين ♰", "https://t.me/GroupJmthon"),)],
+                buttons=[(Button.url("♰ مطـورين ♰", "https://t.me/REKHSO"),)],
             )
     except Exception as e:
         LOGS.error(e)
