@@ -213,6 +213,7 @@ async def _(event):
         "♰︙جـــار تطــريد العيـون . . .",
         "♰︙جـــار تطــريد العيـون .",
         "♰︙جـــار تطــريد العيـون . .",
+        "تــم تطــريد العيون بنـجاح",
     ]
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
