@@ -223,8 +223,8 @@ async def permalink(mention):
      )
 
 @jmthon.ar_cmd(
-    pattern="رفع تاج(?:\s|$)([\s\S]*)",
-    command=("رفع تاج", plugin_category),
+    pattern="جسسمه(?:\s|$)([\s\S]*)",
+    command=("جسسمه", plugin_category),
 )
 async def permalink(mention):
     """Generates a link to the user's PM with a custom text."""
@@ -237,5 +237,4 @@ async def permalink(mention):
     await edit_or_reply(
         mention,
         f"**ببالي كلمه بس**\nفشلة من 🗿[{tag}](tg://user?id={user.id})🗿 .",
-     )
     )
