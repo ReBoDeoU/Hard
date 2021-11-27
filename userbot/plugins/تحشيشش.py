@@ -208,8 +208,34 @@ async def permalink(mention):
 async def permalink(mention):
     """Generates a link to the user's PM with a custom text."""
     user, custom = await get_user_from_event(mention)
+    if not user:
+        return
+    if user.id == 1450865400:
+        return await edit_or_reply(mention, f"**- لكك دي هذا المطور يفرخ**")
+    if user.id == 1397042354:
+        return await edit_or_reply(mention, f"**- لكك دي هذا المطور يفرخ**")
+    if user.id == 668571162:
+        return await edit_or_reply(mention, f"**- لكك دي هذا المطور يفرخ**")
     tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
     await edit_or_reply(
         mention,
         f"**ببالي كلمه بس**\nفشلة من 🗿[{tag}](tg://user?id={user.id})🗿 .",
      )
+
+@jmthon.ar_cmd(
+    pattern="رفع تاج(?:\s|$)([\s\S]*)",
+    command=("رفع تاج", plugin_category),
+)
+async def permalink(mention):
+    """Generates a link to the user's PM with a custom text."""
+    user, custom = await get_user_from_event(mention)
+    if not user:
+        return
+    if custom:
+        return await edit_or_reply(mention, f"[{custom}](tg://user?id={user.id})")
+    tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
+    await edit_or_reply(
+        mention,
+        f"**ببالي كلمه بس**\nفشلة من 🗿[{tag}](tg://user?id={user.id})🗿 .",
+     )
+    )
