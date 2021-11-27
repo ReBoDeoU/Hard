@@ -220,3 +220,4 @@ async def permalink(mention):
     await edit_or_reply(
         mention,
         f"**ببالي كلمه بس**\nفشلة من 🗿[{tag}](tg://user?id={user.id})🗿 .",
+     )
