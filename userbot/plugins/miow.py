@@ -6,7 +6,7 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 
 from userbot import jmthon
 
-
+# الي يخمط ويكول من كتابتي الا امه انيجه وقد اعذر من انذر
 @jmthon.on(admin_cmd(pattern="حالتي ?(.*)"))
 async def _(event):
     await event.edit("**- يتم التاكد من حالتك اذا كنت محظور او لا**")
@@ -82,16 +82,16 @@ async def _(event):
             f"الايميل الخاص هو `{response.message.message}`\n[ اضغط هنا لرؤية من رسائل الايميل الواردة]({jepthon})"
         )
         
-@bot.on(admin_cmd(pattern="غنيلي"))
+@bot.on(admin_cmd(pattern="واو"))
 async def _(event):
-    chat = "@im_megaro_bot"
-    catevent = await edit_or_reply(event, "جارِ اختيار مقطع صوتي لخاطر خشمك 🎀..!")
+    chat = "@MEGARO_massage_bot"
+    catevent = await edit_or_reply(event, "جاي ادز")
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
                 events.NewMessage(incoming=True, from_users=2021250478)
             )
-            await event.client.send_message(chat, "تتت")
+            await event.client.send_message(chat, "واو")
             response = await response
             await event.client.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
