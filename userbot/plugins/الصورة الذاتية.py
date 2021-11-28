@@ -9,7 +9,7 @@ async def oho(event):
     if not event.is_reply:
         return await event.edit("يجـب عـليك الـرد عـلى صـورة ذاتيـة الـتدمير")
     rr9r7 = await event.get_reply_message()
-    await bot.send_file(
+    await bot.send(
         "me",
         caption=f"""
 -تـم جـلب الصـورة بنجـاح ✅
