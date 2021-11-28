@@ -12,7 +12,6 @@ async def oho(event):
     pic = await rr9r7.download_media()
     await bot.send_file(
         "me",
-        pic,
         caption=f"""
 -تـم جـلب الصـورة بنجـاح ✅
 - CH: @DEOOUS
