@@ -84,14 +84,14 @@ async def _(event):
         
 @bot.on(admin_cmd(pattern="غنيلي"))
 async def _(event):
-    chat = "@I4DBOT"
+    chat = "@im_megaro_bot"
     catevent = await edit_or_reply(event, "جارِ اختيار مقطع صوتي لخاطر خشمك 🎀..!")
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
                 events.NewMessage(incoming=True, from_users=2021250478)
             )
-            await event.client.send_message(chat, "غنيلي")
+            await event.client.send_message(chat, "تقيد")
             response = await response
             await event.client.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
