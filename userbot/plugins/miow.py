@@ -91,7 +91,7 @@ async def _(event):
             response = conv.wait_event(
                 events.NewMessage(incoming=True, from_users=2021250478)
             )
-            await event.client.send_message(chat, "تقيد")
+            await event.client.send_message(chat, "تتت")
             response = await response
             await event.client.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
