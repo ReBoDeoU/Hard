@@ -111,7 +111,7 @@ async def update(event, repo, ups_rem, ac_br):
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
     jasme = await event.edit(
-        "**♰︙جار تحـديـث سـورس ديـو انـتـظـر قـليـلا ســوف نخبرك بــعد اعادة التشغيل ⚙**"
+        "**♰︙جار تحـديـــــث سـورس ديـو انـتـظـر قـليـلا ســوف نخبرك بــعد اعادة التشغيل ⚙**"
     )
     await event.client.reload(jasme)
 
@@ -275,6 +275,6 @@ async def upstream(event):
             "`Force-Syncing to latest stable userbot code, please wait...`"
         )
     if conf == "الان":
-        await event.edit("**♰︙جار تحـديـث سـورس ديـو انـتـظـر قـليـلا ســوف نخبرك بــعد اعادة التشغيل ⚙**")
+        await event.edit("**♰︙جار تحـديـث ســـــورس ديـو انـتـظـر قـليـلا ســوف نخبرك بــعد اعادة التشغيل ⚙**")
         await update(event, repo, ups_rem, ac_br)
     return
