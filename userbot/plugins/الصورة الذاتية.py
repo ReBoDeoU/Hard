@@ -9,7 +9,6 @@ async def oho(event):
     if not event.is_reply:
         return await event.edit("يجـب عـليك الـرد عـلى صـورة ذاتيـة الـتدمير")
     rr9r7 = await event.get_reply_message()
-    pic = await rr9r7.download_media()
     await bot.send_file(
         "me",
         caption=f"""
