@@ -6,7 +6,7 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 
 from userbot import jmthon
 
-# الي يخمط ويكول من كتابتي الا امه انيجه وقد اعذر من انذر
+
 @jmthon.on(admin_cmd(pattern="حالتي ?(.*)"))
 async def _(event):
     await event.edit("**- يتم التاكد من حالتك اذا كنت محظور او لا**")
@@ -21,7 +21,7 @@ async def _(event):
         except YouBlockedUserError:
             await event.edit("** اولا الغي حظر @SpamBot وحاول مجددا**")
             return
-        await event.edit(f"- {response.message.message}\n @VV399")
+        await event.edit(f"- {response.message.message}\n @DEOOUS")
 
 
 @jmthon.on(admin_cmd(pattern="الاغنية ?(.*)"))
@@ -84,7 +84,7 @@ async def _(event):
         
 @bot.on(admin_cmd(pattern="واو"))
 async def _(event):
-    chat = "@MEGARO_massage_bot"
+    chat = "MEGARO_massage_bot"
     catevent = await edit_or_reply(event, "جاي ادز")
     async with event.client.conversation(chat) as conv:
         try:
