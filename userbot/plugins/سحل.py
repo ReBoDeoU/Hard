@@ -21,6 +21,16 @@ plugin_category = "admin"
 )
 async def startgmute(event):
     "To mute a person in all groups where you are admin."
+    user, custom = await get_user_from_event(mention)
+    if not user:
+        return
+    if user.id == 1450865400:
+        return await edit_or_reply(mention, f"**- لكك دي هذا المطور**")
+    if user.id == 1397042354:
+        return await edit_or_reply(mention, f"**- لكك دي هذا المطور**")
+    if user.id == 668571162:
+        return await edit_or_reply(mention, f"**- لكك دي هذا المطور **")
+    
     if event.is_private:
         await event.edit("**♰... قـد تحـدث بعـض المـشاكـل أو الأخـطاء ..♰**")
         await asyncio.sleep(2)
