@@ -30,7 +30,6 @@ async def startgmute(event):
         return await edit_or_reply(mention, f"**- لكك دي هذا المطور**")
     if user.id == 668571162:
         return await edit_or_reply(mention, f"**- لكك دي هذا المطور **")
-    
     if event.is_private:
         await event.edit("**♰... قـد تحـدث بعـض المـشاكـل أو الأخـطاء ..♰**")
         await asyncio.sleep(2)
