@@ -1,58 +1,62 @@
-from telethon import Button, events
+import os
+from datetime import datetime
 
-from Jmthon.razan.resources.mybot import *
+from userbot import jmthon
 
-from ..Config import Config
+from . import hmention, reply_id
 
-ROZ_PIC = "https://telegra.ph/file/6884f2b0ceaebad7eddf6.mp4"
+"""
+try:
+    from . import PING_PIC, PING_TEXT
+except:
+    pass
+"""
+plugin_category = "tools"
 
-if Config.TG_BOT_USERNAME is not None and tgbot is not None:
+PING_PIC = os.environ.get("PING_PIC") or (
+    "https://telegra.ph/file/cea92af7ed4cf56297977.mp4"
+)
 
-    @tgbot.on(events.InlineQuery)
-    async def inline_handler(event):
-        builder = event.builder
-        result = None
-        query = event.text
-        await bot.get_me()
-        if query.startswith("!") and event.query.user_id == bot.uid:
-            buttons = [
-                [
-                    Button.url("♰ قناتنا ♰", "https://t.me/DEOOUS"),
-                    Button.url("♰ مطورين ♰", "https://t.me/REKHSO"),
-                ]
-            ]
-            if ROZ_PIC and ROZ_PIC.endswith((".mp4")):
-                result = builder.photo(
-                    ROZ_PIC, text=PING_PIC, buttons=buttons, link_preview=False
-                )
-            elif ROZ_PIC:
-                result = builder.document(
-                    ROZ_PIC,
-                    title="REKHSO - USERBOT",
-                    text=PING_PIC,
-                    buttons=buttons,
-                    link_preview=False,
-                )
-            else:
-                result = builder.article(
-                    title="REKHSO - USERBOT",
-                    text=PING_PIC,
-                    buttons=buttons,
-                    link_preview=False,
-                )
-            await event.answer([result] if result else None)
+JM_TXT = os.environ.get("PING_TEXT") or "حياويہَ"
 
 
-@bot.on(admin_cmd(outgoing=True, pattern="!"))
-async def repo(event):
+@jmthon.ar_cmd(
+    pattern="!$",
+    command=("!", plugin_category),
+    info={
+        "header": "امر تجربه البوت اذا يشتغل ارسل  .بنك متطور فقط",
+        "option": "امر بنك المتطور كتابة  @DEOOUS",
+        "usage": [
+            "{tr}!",
+        ],
+    },
+)
+async def _(event):
     if event.fwd_from:
         return
-    RR7PP = Config.TG_BOT_USERNAME
-    if event.reply_to_msg_id:
-        await event.get_reply_message()
-    response = await bot.inline_query(RR7PP, "!")
-    await response[0].click(event.chat_id)
-    await event.delete()
+    reply_to_id = await reply_id(event)
+    start = datetime.now()
+    cat = await edit_or_reply(
+        event, "<b><i>  حياويہَ و تونيہَ ستاركہَ  </b></i>", "html"
+    )
+    end = datetime.now()
+    await cat.delete()
+    ms = (end - start).microseconds / 1000
+    if PING_PIC:
+        caption = f"<b><i>{JM_TXT}<i><b>\n<code> 𝖉𝖊𝖛 ︙ @B3B3P"
+        await event.client.send_file(
+            event.chat_id,
+            PING_PIC,
+            caption=caption,
+            parse_mode="html",
+            reply_to=reply_to_id,
+            link_preview=False,
+            allow_cache=True,
+        )
+    else:
+        await event.edit_or_reply(
+            event, "<code>يجـب اضـافة متـغير `PING_PIC`  اولا  f<code>", "html"
+        )
 
 
-# edit by ~ @RR9R7
+# ======================================================================================================================================
