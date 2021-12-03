@@ -14,7 +14,7 @@ except:
 plugin_category = "tools"
 
 PING_PIC = os.environ.get("PING_PIC") or (
-    "https://telegra.ph/file/8ad64541e94481f285922.mp4"
+    "https://telegra.ph/file/db750975f86bf6a886ceb.mp4"
 )
 
 JM_TXT = os.environ.get("PING_TEXT") or "𝗡𝗘𝗪 𝗦𝗧𝗬𝗟𝗘 🔥"
@@ -43,7 +43,7 @@ async def _(event):
     await cat.delete()
     ms = (end - start).microseconds / 1000
     if PING_PIC:
-        caption = f"<b><i>{JM_TXT}<i><b>\n<code> 𝖉𝖊𝖛 ︙ @HASONI_LQ"
+        caption = f"<b><i>{JM_TXT}<i><b>\n<code> 𝖉𝖊𝖛 ︙ @HssHH"
         await event.client.send_file(
             event.chat_id,
             PING_PIC,
