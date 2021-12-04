@@ -32,7 +32,7 @@ from .logger import logging
 LOGS = logging.getLogger(__name__)
 
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>)")
-CATLOGO = "https://telegra.ph/file/40032cce2fa970df0c2e4.mp4"
+CATLOGO = "https://telegra.ph/file/8288b1dcca8e93a1641ae.jpg"
 tr = Config.COMMAND_HAND_LER
 
 
