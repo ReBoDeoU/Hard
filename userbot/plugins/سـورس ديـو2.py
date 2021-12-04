@@ -1,3 +1,78 @@
-#https://t.me/nnnuu
-import base64
-exec(base64.b64decode(b'aW1wb3J0IHJhbmRvbQppbXBvcnQgdGltZQpmcm9tIGRhdGV0aW1lIGltcG9ydCBkYXRldGltZQpmcm9tIHBsYXRmb3JtIGltcG9ydCBweXRob25fdmVyc2lvbgoKZnJvbSB0ZWxldGhvbiBpbXBvcnQgdmVyc2lvbgpmcm9tIHRlbGV0aG9uLmVycm9ycy5ycGNlcnJvcmxpc3QgaW1wb3J0ICgKICAgIE1lZGlhRW1wdHlFcnJvciwKICAgIFdlYnBhZ2VDdXJsRmFpbGVkRXJyb3IsCiAgICBXZWJwYWdlTWVkaWFFbXB0eUVycm9yLAopCgpmcm9tIHVzZXJib3QgaW1wb3J0IEpNVkVSU0lPTiwgU3RhcnRUaW1lLCBqbXRob24KCmZyb20gLi5jb3JlLm1hbmFnZXJzIGltcG9ydCBlZGl0X29yX3JlcGx5CmZyb20gLi5oZWxwZXJzLmZ1bmN0aW9ucyBpbXBvcnQgY2hlY2tfZGF0YV9iYXNlX2hlYWxfdGgsIGdldF9yZWFkYWJsZV90aW1lCmZyb20gLi5oZWxwZXJzLnV0aWxzIGltcG9ydCByZXBseV9pZApmcm9tIC4uc3FsX2hlbHBlci5nbG9iYWxzIGltcG9ydCBndmFyc3RhdHVzCmZyb20gLiBpbXBvcnQgbWVudGlvbgoKcGx1Z2luX2NhdGVnb3J5ID0gInV0aWxzIgoKIyDZg9iq2YDYp9io2Kkg2YjYqti52YDYr9mK2YQ6ICBAUlI5UjcKCgpAam10aG9uLmFyX2NtZCgKICAgIHBhdHRlcm49Itin2YTYs9mI2LHYsyQiLAogICAgY29tbWFuZD0oItin2YTYs9mI2LHYsyIsIHBsdWdpbl9jYXRlZ29yeSksCikKYXN5bmMgZGVmIGFtaXJlYWxseWFsaXZlKGV2ZW50KToKICAgICLZhNmE2KrZgNij2YPYryDZhdmGINin2YYg2KfZhNio2YDZiNiqINmK2LnZgNmF2YDZhCIKICAgIHJlcGx5X3RvX2lkID0gYXdhaXQgcmVwbHlfaWQoZXZlbnQpCiAgICB1cHRpbWUgPSBhd2FpdCBnZXRfcmVhZGFibGVfdGltZSgodGltZS50aW1lKCkgLSBTdGFydFRpbWUpKQogICAgc3RhcnQgPSBkYXRldGltZS5ub3coKQogICAgYXdhaXQgZWRpdF9vcl9yZXBseShldmVudCwgIioqIOKMr++4mdmK2KrZgNmFINin2YTYqtmA2KPZg9mA2K8g2KfZhtiq2YDYuNixINmC2YTZitmE2Kcg2LHYrNin2KHYpyoqIikKICAgIGVuZCA9IGRhdGV0aW1lLm5vdygpCiAgICBtcyA9IChlbmQgLSBzdGFydCkubWljcm9zZWNvbmRzIC8gMTAwMAogICAgXywgY2hlY2tfc2duaXJ0cyA9IGNoZWNrX2RhdGFfYmFzZV9oZWFsX3RoKCkKICAgIEVNT0pJID0gZ3ZhcnN0YXR1cygiQUxJVkVfRU1PSkkiKSBvciAiICAtICIKICAgIEFMSVZFX1RFWFQgPSBndmFyc3RhdHVzKCJBTElWRV9URVhUIikgb3IgIioqINio2YDZiNiqINiv2YrZgNmIINmK2LnZgNmF2YQg2KjZhtmA2KzZgNin2K0gKioiCiAgICBSUjdfSU1HID0gZ3ZhcnN0YXR1cygiQUxJVkVfUElDIikgb3IgImh0dHBzOi8vdGVsZWdyYS5waC9maWxlLzczNDYzOTQ4NWYwMGU3OWY1ZTZlOS5tcDQiCiAgICBqbXRob25fY2FwdGlvbiA9IGd2YXJzdGF0dXMoIkFMSVZFX1RFTVBMQVRFIikgb3IgdGVtcAogICAgY2FwdGlvbiA9IGptdGhvbl9jYXB0aW9uLmZvcm1hdCgKICAgICAgICBBTElWRV9URVhUPUFMSVZFX1RFWFQsCiAgICAgICAgRU1PSkk9RU1PSkksCiAgICAgICAgbWVudGlvbj1tZW50aW9uLAogICAgICAgIHVwdGltZT11cHRpbWUsCiAgICAgICAgdGVsZXZlcj12ZXJzaW9uLl9fdmVyc2lvbl9fLAogICAgICAgIGptdmVyPUpNVkVSU0lPTiwKICAgICAgICBweXZlcj1weXRob25fdmVyc2lvbigpLAogICAgICAgIGRiaGVhbHRoPWNoZWNrX3NnbmlydHMsCiAgICAgICAgcGluZz1tcywKICAgICkKICAgIGlmIFJSN19JTUc6CiAgICAgICAgUlI3ID0gW3ggZm9yIHggaW4gUlI3X0lNRy5zcGxpdCgpXQogICAgICAgIFBJQyA9IHJhbmRvbS5jaG9pY2UoUlI3KQogICAgICAgIHRyeToKICAgICAgICAgICAgYXdhaXQgZXZlbnQuY2xpZW50LnNlbmRfZmlsZSgKICAgICAgICAgICAgICAgIGV2ZW50LmNoYXRfaWQsIFBJQywgY2FwdGlvbj1jYXB0aW9uLCByZXBseV90bz1yZXBseV90b19pZAogICAgICAgICAgICApCiAgICAgICAgICAgIGF3YWl0IGV2ZW50LmRlbGV0ZSgpCiAgICAgICAgZXhjZXB0IChXZWJwYWdlTWVkaWFFbXB0eUVycm9yLCBNZWRpYUVtcHR5RXJyb3IsIFdlYnBhZ2VDdXJsRmFpbGVkRXJyb3IpOgogICAgICAgICAgICByZXR1cm4gYXdhaXQgZWRpdF9vcl9yZXBseSgKICAgICAgICAgICAgICAgIGV2ZW50LAogICAgICAgICAgICAgICAgZiIqKtin2YTZhdmK2YDYr9mK2Kcg2K7ZgNi32KMgKipcbti62YDZitixINin2YTYsdin2KjZgNi3INio2KPYs9iq2YDYrtiv2KfZhSDYp9mE2KPZhdmA2LEgIFxuIGAu2KfYttmBX9mB2KfYsSBBTElWRV9QSUMg2LHYp9io2Lcg2LXZiNix2KrZg2BcblxuKirZhNinINmK2YXZgNmD2YYg2KfZhNit2YDYtdmI2YQg2LnZgNmE2Ykg2LXZgNmI2LHYqSDZhdmGINin2YTZgNix2KfYqNmA2LcgOi0qKiBge1BJQ31gIiwKICAgICAgICAgICAgKQogICAgZWxzZToKICAgICAgICBhd2FpdCBlZGl0X29yX3JlcGx5KAogICAgICAgICAgICBldmVudCwKICAgICAgICAgICAgY2FwdGlvbiwKICAgICAgICApCgoKdGVtcCA9ICIiIi0ge0FMSVZFX1RFWFR9Cioqe0VNT0pJfSDZgtin2LnYr9u/INin2YTYqNmK2KfZhtin2KogOuKZsCoqINiq2LnZhdmEINio2YbZgNis2KfYrQoqKntFTU9KSX0g2KPYtdmA2K/Yp9ixINin2YTYqtmA2YrZhNmK2KvZiNmGIDrimbAqKiBge3RlbGV2ZXJ9YAoqKntFTU9KSX0g2KPYtdmA2K/Yp9ixINiv2YrZgNmIIDrimbAqKiBgNy4wLjNgCioqe0VNT0pJfSDYo9i12K/Yp9ixINin2YTYqNmA2KfZitir2YjZhiA64pmwKiogYDUuMC4yYAoqKntFTU9KSX0g2KfZhNmI2YLZgNiqIDrimbAqKiBge3VwdGltZX1gCioqe0VNT0pJfSDYp9mE2YXYs9mA2KrYrtiv2YU64pmwKioge21lbnRpb259IiIiCgo='))
+import random
+import time
+from datetime import datetime
+from platform import python_version
+
+from telethon import version
+from telethon.errors.rpcerrorlist import (
+    MediaEmptyError,
+    WebpageCurlFailedError,
+    WebpageMediaEmptyError,
+)
+
+from userbot import JMVERSION, StartTime, jmthon
+
+from ..core.managers import edit_or_reply
+from ..helpers.functions import check_data_base_heal_th, get_readable_time
+from ..helpers.utils import reply_id
+from ..sql_helper.globals import gvarstatus
+from . import mention
+
+plugin_category = "utils"
+
+# كتـابة وتعـديل:  @RR9R7
+
+
+@jmthon.ar_cmd(
+    pattern="السورس$",
+    command=("السورس", plugin_category),
+)
+async def amireallyalive(event):
+    "للتـأكد من ان البـوت يعـمـل"
+    reply_to_id = await reply_id(event)
+    uptime = await get_readable_time((time.time() - StartTime))
+    start = datetime.now()
+    await edit_or_reply(event, "**♰︙جـــار جلـب معلومــات اެلسۅࢪس**")
+    end = datetime.now()
+    ms = (end - start).microseconds / 1000
+    _, check_sgnirts = check_data_base_heal_th()
+    EMOJI = gvarstatus("ALIVE_EMOJI") or "  - "
+    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "**᥉َ𝖴᥆ᖇᥴᥱ ძِᥱَ᥆َ𝖴**"
+    RR7_IMG = gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/734639485f00e79f5e6e9.mp4"
+    jmthon_caption = gvarstatus("ALIVE_TEMPLATE") or temp
+    caption = jmthon_caption.format(
+        ALIVE_TEXT=ALIVE_TEXT,
+        EMOJI=EMOJI,
+        mention=mention,
+        uptime=uptime,
+        telever=version.__version__,
+        jmver=JMVERSION,
+        pyver=python_version(),
+        dbhealth=check_sgnirts,
+        ping=ms,
+    )
+    if RR7_IMG:
+        RR7 = [x for x in RR7_IMG.split()]
+        PIC = random.choice(RR7)
+        try:
+            await event.client.send_file(
+                event.chat_id, PIC, caption=caption, reply_to=reply_to_id
+            )
+            await event.delete()
+        except (WebpageMediaEmptyError, MediaEmptyError, WebpageCurlFailedError):
+            return await edit_or_reply(
+                event,
+                f"**الميـديا خـطأ **\nغـير الرابـط بأستـخدام الأمـر  \n .اضففار ALIVEPIC رابط صورتك\n\n**لا يمـكن الحـصول عـلى صـورة من الـرابـط :-** {PIC}",
+            )
+    else:
+        await edit_or_reply(
+            event,
+            caption,
+        )
+
+
+temp = """-
+**{EMOJI} أصـدار سورس ديـو :♰** 7.0.3
+**{EMOJI} أصدار البـايثون :♰** 5.0.2
+**{EMOJI} الوقـت :♰** {uptime}
+**{EMOJI} المسـتخدم:♰** {mention}"""
