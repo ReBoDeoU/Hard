@@ -1,2 +1,55 @@
-import base64
-exec(base64.b64decode(b'ZnJvbSB0ZWxldGhvbiBpbXBvcnQgQnV0dG9uLCBldmVudHMKCmZyb20gSm10aG9uLnJhemFuLnJlc291cmNlcy5teWJvdCBpbXBvcnQgKgoKZnJvbSAuLkNvbmZpZyBpbXBvcnQgQ29uZmlnCgpST1pfUElDID0gImh0dHBzOi8vdGVsZWdyYS5waC9maWxlLzczNDYzOTQ4NWYwMGU3OWY1ZTZlOS5tcDQiCgppZiBDb25maWcuVEdfQk9UX1VTRVJOQU1FIGlzIG5vdCBOb25lIGFuZCB0Z2JvdCBpcyBub3QgTm9uZToKCiAgICBAdGdib3Qub24oZXZlbnRzLklubGluZVF1ZXJ5KQogICAgYXN5bmMgZGVmIGlubGluZV9oYW5kbGVyKGV2ZW50KToKICAgICAgICBidWlsZGVyID0gZXZlbnQuYnVpbGRlcgogICAgICAgIHJlc3VsdCA9IE5vbmUKICAgICAgICBxdWVyeSA9IGV2ZW50LnRleHQKICAgICAgICBhd2FpdCBib3QuZ2V0X21lKCkKICAgICAgICBpZiBxdWVyeS5zdGFydHN3aXRoKCLYp9mE2LPZiNix2LMiKSBhbmQgZXZlbnQucXVlcnkudXNlcl9pZCA9PSBib3QudWlkOgogICAgICAgICAgICBidXR0b25zID0gWwogICAgICAgICAgICAgICAgWwogICAgICAgICAgICAgICAgICAgIEJ1dHRvbi51cmwoIuKZsCDZgtmG2KfYqtmG2Kcg4pmwIiwgImh0dHBzOi8vdC5tZS9ERU9PVVMiKSwKICAgICAgICAgICAgICAgICAgICBCdXR0b24udXJsKCLimbAg2YXYt9mI2LHZitmGIOKZsCIsICJodHRwczovL3QubWUvUkVLSFNPIiksCiAgICAgICAgICAgICAgICBdCiAgICAgICAgICAgIF0KICAgICAgICAgICAgaWYgUk9aX1BJQyBhbmQgUk9aX1BJQy5lbmRzd2l0aCgoIi5qcGciLCAiLnBuZyIsICJnaWYiLCAibXA0IikpOgogICAgICAgICAgICAgICAgcmVzdWx0ID0gYnVpbGRlci5waG90bygKICAgICAgICAgICAgICAgICAgICBST1pfUElDLCB0ZXh0PVJPWiwgYnV0dG9ucz1idXR0b25zLCBsaW5rX3ByZXZpZXc9RmFsc2UKICAgICAgICAgICAgICAgICkKICAgICAgICAgICAgZWxpZiBST1pfUElDOgogICAgICAgICAgICAgICAgcmVzdWx0ID0gYnVpbGRlci5kb2N1bWVudCgKICAgICAgICAgICAgICAgICAgICBST1pfUElDLAogICAgICAgICAgICAgICAgICAgIHRpdGxlPSJSRUtIU08gLSBVU0VSQk9UIiwKICAgICAgICAgICAgICAgICAgICB0ZXh0PVJPWiwKICAgICAgICAgICAgICAgICAgICBidXR0b25zPWJ1dHRvbnMsCiAgICAgICAgICAgICAgICAgICAgbGlua19wcmV2aWV3PUZhbHNlLAogICAgICAgICAgICAgICAgKQogICAgICAgICAgICBlbHNlOgogICAgICAgICAgICAgICAgcmVzdWx0ID0gYnVpbGRlci5hcnRpY2xlKAogICAgICAgICAgICAgICAgICAgIHRpdGxlPSJSRUtIU08gLSBVU0VSQk9UIiwKICAgICAgICAgICAgICAgICAgICB0ZXh0PVJPWiwKICAgICAgICAgICAgICAgICAgICBidXR0b25zPWJ1dHRvbnMsCiAgICAgICAgICAgICAgICAgICAgbGlua19wcmV2aWV3PUZhbHNlLAogICAgICAgICAgICAgICAgKQogICAgICAgICAgICBhd2FpdCBldmVudC5hbnN3ZXIoW3Jlc3VsdF0gaWYgcmVzdWx0IGVsc2UgTm9uZSkKCgpAYm90Lm9uKGFkbWluX2NtZChvdXRnb2luZz1UcnVlLCBwYXR0ZXJuPSLYp9mE2LPZiNix2LMiKSkKYXN5bmMgZGVmIHJlcG8oZXZlbnQpOgogICAgaWYgZXZlbnQuZndkX2Zyb206CiAgICAgICAgcmV0dXJuCiAgICBSUjdQUCA9IENvbmZpZy5UR19CT1RfVVNFUk5BTUUKICAgIGlmIGV2ZW50LnJlcGx5X3RvX21zZ19pZDoKICAgICAgICBhd2FpdCBldmVudC5nZXRfcmVwbHlfbWVzc2FnZSgpCiAgICByZXNwb25zZSA9IGF3YWl0IGJvdC5pbmxpbmVfcXVlcnkoUlI3UFAsICLYp9mE2LPZiNix2LMiKQogICAgYXdhaXQgcmVzcG9uc2VbMF0uY2xpY2soZXZlbnQuY2hhdF9pZCkKICAgIGF3YWl0IGV2ZW50LmRlbGV0ZSgpCgoKIyBlZGl0IGJ5IH4gQFJSOVI3Cg=='))
+from telethon import Button, events
+
+from Jmthon.razan.resources.mybot import *
+
+from ..Config import Config
+
+ROZ_PIC = "https://telegra.ph/file/8288b1dcca8e93a1641ae.jpg"
+
+if Config.TG_BOT_USERNAME is not None and tgbot is not None:
+
+    @tgbot.on(events.InlineQuery)
+    async def inline_handler(event):
+        builder = event.builder
+        result = None
+        query = event.text
+        await bot.get_me()
+        if query.startswith("السورس") and event.query.user_id == bot.uid:
+            buttons = [
+                [
+                    Button.url("♰ سۅࢪس ديْــوَ ♰", "https://t.me/DEOOUS"),
+                    Button.url("♰ ﻣطوࢪين اެلسۅࢪس ♰", "https://t.me/REKHSO"),
+                ]
+            ]
+            if ROZ_PIC and ROZ_PIC.endswith((".jpg", ".png", "gif", "mp4")):
+                result = builder.photo(
+                    ROZ_PIC, text=ROZ, buttons=buttons, link_preview=False
+                )
+            elif ROZ_PIC:
+                result = builder.document(
+                    ROZ_PIC,
+                    title="REKHSO - USERBOT",
+                    text=ROZ,
+                    buttons=buttons,
+                    link_preview=False,
+                )
+            else:
+                result = builder.article(
+                    title="REKHSO - USERBOT",
+                    text=ROZ,
+                    buttons=buttons,
+                    link_preview=False,
+                )
+            await event.answer([result] if result else None)
+
+
+@bot.on(admin_cmd(outgoing=True, pattern="السورس"))
+async def repo(event):
+    if event.fwd_from:
+        return
+    RR7PP = Config.TG_BOT_USERNAME
+    if event.reply_to_msg_id:
+        await event.get_reply_message()
+    response = await bot.inline_query(RR7PP, "السورس")
+    await response[0].click(event.chat_id)
+    await event.delete()
