@@ -38,7 +38,7 @@ async def amireallyalive(event):
     _, check_sgnirts = check_data_base_heal_th()
     EMOJI = gvarstatus("ALIVE_EMOJI") or "♰︙"
     ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "**᥉َ𝖴᥆ᖇᥴᥱ ძِᥱَ᥆َ𝖴**"
-    RR7_IMG = gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/734639485f00e79f5e6e9.mp4"
+    RR7_IMG = gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/8288b1dcca8e93a1641ae.jpg"
     jmthon_caption = gvarstatus("ALIVE_TEMPLATE") or temp
     caption = jmthon_caption.format(
         ALIVE_TEXT=ALIVE_TEXT,
@@ -71,8 +71,10 @@ async def amireallyalive(event):
         )
 
 
-temp = """-
+temp = """᥉َ𝖴᥆ᖇᥴᥱ ძِᥱَ᥆َ𝖴
 **{EMOJI} أصـدار سورس ديـو :♰** 7.0.3
 **{EMOJI} أصدار البـايثون :♰** 5.0.2
 **{EMOJI} الوقـت :♰** {uptime}
-**{EMOJI} المسـتخدم:♰** {mention}"""
+**{EMOJI} المسـتخدم:♰** {mention}
+♰︙سۅࢪس ديْــوَ @DEOOUS
+♰︙ﻣطوࢪين اެلسۅࢪس @REKHSO"""
