@@ -20,7 +20,7 @@ from . import mention
 
 plugin_category = "utils"
 
-# كتـابة وتعـديل:  @RR9R7
+
 
 
 @jmthon.ar_cmd(
@@ -36,7 +36,7 @@ async def amireallyalive(event):
     end = datetime.now()
     ms = (end - start).microseconds / 1000
     _, check_sgnirts = check_data_base_heal_th()
-    EMOJI = gvarstatus("ALIVE_EMOJI") or "  - "
+    EMOJI = gvarstatus("ALIVE_EMOJI") or "♰︙"
     ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "**᥉َ𝖴᥆ᖇᥴᥱ ძِᥱَ᥆َ𝖴**"
     RR7_IMG = gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/734639485f00e79f5e6e9.mp4"
     jmthon_caption = gvarstatus("ALIVE_TEMPLATE") or temp
