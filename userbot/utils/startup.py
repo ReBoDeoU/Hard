@@ -64,9 +64,10 @@ async def startupmessage():
         if BOTLOG:
             Config.CATUBLOGO = await jmthon.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/1f32890cbb74490e646d9.jpg",
-                caption="♰︙**بــوت ديـو يـعـمـل بـنـجـاح** \n♰︙**قـنـاة الـسـورس**  :  @DEOOUS ",
-                buttons=[(Button.url("♰ مطـورين ♰", "https://t.me/REKHSO"),)],
+                "https://telegra.ph/file/8288b1dcca8e93a1641ae.jpg",
+                caption="♰︙**بــوت ديـو يـعـمـل بـنـجـاح**",
+                buttons=[(Button.url("♰ ﻣطوࢪين اެلسۅࢪس ♰", "https://t.me/REKHSO"),)],
+                buttons=[(Button.url("♰ ᥉َ𝖴᥆ᖇᥴᥱ ძِᥱَ᥆َ𝖴 ♰", "https://t.me/DEOOUS"),)],
             )
     except Exception as e:
         LOGS.error(e)
@@ -84,7 +85,7 @@ async def startupmessage():
             message = await jmthon.get_messages(msg_details[0], ids=msg_details[1])
             text = (
                 message.text
-                + "\n\n**⌯♰︙تم تشغيل بوت ديـو بنجاح **"
+                + "\n\n**♰︙تم تشغيل بوت ديـو بنجاح **"
             )
             await jmthon.edit_message(msg_details[0], msg_details[1], text)
             if gvarstatus("restartupdate") is not None:
