@@ -14,10 +14,10 @@ except:
 plugin_category = "tools"
 
 PING_PIC = os.environ.get("PING_PIC") or (
-    "https://telegra.ph/file/cea92af7ed4cf56297977.mp4"
+    "https://telegra.ph/file/475e071ac7a47f66dd939.mp4"
 )
 
-JM_TXT = os.environ.get("PING_TEXT") or "حياويہَ و تونيہَ ستاركہَ"
+JM_TXT = os.environ.get("PING_TEXT") or ""
 
 
 @jmthon.ar_cmd(
@@ -37,7 +37,7 @@ async def _(event):
     reply_to_id = await reply_id(event)
     start = datetime.now()
     cat = await edit_or_reply(
-        event, "<b><i>  حياويہَ </b></i>", "html"
+        event, "<b><i>𝗡𝗘𝗪 𝗦𝗧𝗬𝗟𝗘 🔥</b></i>", "html"
     )
     end = datetime.now()
     await cat.delete()
