@@ -67,7 +67,6 @@ async def startupmessage():
                 "https://telegra.ph/file/cdf0f0751a91e5f445deb.jpg",
                 caption="♰︙**بــوت ديـو يـعـمـل بـنـجـاح**",
                 buttons=[(Button.url("♰ مطورين ♰", "https://t.me/REKHSO"),)],
-                buttons=[(Button.url("♰ ᥉َ𝖴᥆ᖇᥴᥱ ძِᥱَ᥆َ𝖴 ♰", "https://t.me/deoous"),)],
             )
     except Exception as e:
         LOGS.error(e)
