@@ -35,7 +35,7 @@ async def _(event):
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID,
-            "**♰︙إعـادة التشغيـل ↻** \n" "**♰︙تم إعـادة تشغيـل البـوت ↻**",
+            "**♰︙إعـادة التشغيـل ↻**",
         )
     RR7PP = await edit_or_reply(
         event,
