@@ -1,5 +1,3 @@
-#حقوق ديو حبيبي
-
 import sys
 
 from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
@@ -15,7 +13,7 @@ loop = None
 if Config.STRING_SESSION:
     session = StringSession(str(Config.STRING_SESSION))
 else:
-    session = "catuserbot"
+    session = "deoous"
 
 try:
     jmthon = CatUserBotClient(
@@ -29,7 +27,7 @@ try:
         connection_retries=None,
     )
 except Exception as e:
-    print(f"♰︙كـود تـيرمـكس - {str(e)}")
+    print(f"[STRING SESSION] - {str(e)}")
     sys.exit()
 
 
