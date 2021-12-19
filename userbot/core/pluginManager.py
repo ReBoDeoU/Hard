@@ -1,5 +1,3 @@
-#حقوق ديو حبيبي
-
 import asyncio
 import os
 import re
