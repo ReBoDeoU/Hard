@@ -10,6 +10,7 @@ from telethon import Button, functions, types, utils
 from telethon.tl.functions.channels import JoinChannelRequest
 
 from userbot import BOTLOG, BOTLOG_CHATID, PM_LOGGER_GROUP_ID
+from userbot import jmthon
 
 from ..Config import Config
 from ..core.logger import logging
@@ -65,8 +66,8 @@ async def startupmessage():
             Config.CATUBLOGO = await jmthon.tgbot.send_file(
                 BOTLOG_CHATID,
                 "https://telegra.ph/file/cdf0f0751a91e5f445deb.jpg",
-                caption="♰︙**بــوت ديـو يـعـمـل بـنـجـاح**",
-                buttons=[(Button.url("♰ مطورين ♰", "https://t.me/REKHSO"),)],
+                caption="♰︙**بــوت ديو يـعـمـل بـنـجـاح**  . \n♰︙**قـنـاة الـسـورس**  :  @DEOOUS",
+                buttons=[(Button.url("مطورين", "https://t.me/rekhso"),)],
             )
     except Exception as e:
         LOGS.error(e)
@@ -84,13 +85,13 @@ async def startupmessage():
             message = await jmthon.get_messages(msg_details[0], ids=msg_details[1])
             text = (
                 message.text
-                + "\n\n**♰︙تم تشغيل بوت ديـو بنجاح **"
+                + "\n\n**♰︙اهلا وسهلا لقد قمت باعاده تشغيل بـوت ديو بنجاح**"
             )
             await jmthon.edit_message(msg_details[0], msg_details[1], text)
             if gvarstatus("restartupdate") is not None:
                 await jmthon.send_message(
                     msg_details[0],
-                    f"{cmdhr}بنك",
+                    f"الو",
                     reply_to=msg_details[1],
                     schedule=timedelta(seconds=10),
                 )
@@ -182,16 +183,16 @@ async def load_plugins(folder):
 
 async def autojo():
     try:
-        await jmthon(JoinChannelRequest("@uhfak"))
+        await jmthon(JoinChannelRequest("@DEOOUS"))
         if gvar("AUTOEO") is False:
             return
         else:
             try:
-                await jmthon(JoinChannelRequest("@uhfak"))
+                await jmthon(JoinChannelRequest("@DEOOUS"))
             except BaseException:
                 pass
             try:
-                await jmthon(JoinChannelRequest("@aauua"))
+                await jmthon(JoinChannelRequest("@DEOOU"))
             except BaseException:
                 pass
     except BaseException:
@@ -200,16 +201,16 @@ async def autojo():
 
 async def autozs():
     try:
-        await jmthon(JoinChannelRequest("@aauua"))
+        await jmthon(JoinChannelRequest("@DEOOU"))
         if gvar("AUTOZS") is False:
             return
         else:
             try:
-                await jmthon(JoinChannelRequest("@aauua"))
+                await jmthon(JoinChannelRequest("@DEOOUS"))
             except BaseException:
                 pass
             try:
-                await jmthon(JoinChannelRequest("@aauua"))
+                await jmthon(JoinChannelRequest("@DEOOU"))
             except BaseException:
                 pass
     except BaseException:
@@ -245,9 +246,10 @@ async def verifyLoggerGroup():
                 + str(e)
             )
     else:
-        descript = "♰︙لا تحذف هذه المجموعة أو تغير إلى مجموعة (إذا قمت بتغيير المجموعة ، فسيتم فقد كل شيئ .)"
+        descript = "- عزيزي المستخدم هذه هي مجموعه الاشعارات يرجى عدم حذفها  - @jmthon"
+        photobt = await jmthon.upload_file(file="Jmthon/razan/resources/start/Jmthonp.jpg")
         _, groupid = await create_supergroup(
-            "مجموعه بوت ديو الخاص بك", jmthon, Config.TG_BOT_USERNAME, descript
+            "مجموعة اشعارات ديو ", jmthon, Config.TG_BOT_USERNAME, descript, photobt
         )
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
         print("♰︙تم إنشاء مجموعة المسـاعدة بنجاح وإضافتها إلى المتغيرات.")
@@ -273,9 +275,10 @@ async def verifyLoggerGroup():
                 "♰︙حدث استثناء عند محاولة التحقق من PM_LOGGER_GROUP_ID.\n" + str(e)
             )
     else:
-        descript = "♰︙ وظيفه الكروب يحفظ رسائل الخاص اذا ما تريد الامر احذف الكروب نهائي \n  - @deoou"
+        descript = "♰︙ وظيفه الكروب يحفظ رسائل الخاص اذا ما تريد الامر احذف الكروب نهائي \n  - @JMTHON"
+        photobt = await jmthon.upload_file(file="Jmthon/razan/resources/start/Jmthonp.jpg")
         _, groupid = await create_supergroup(
-            "كـروب تخزين ديو الخاص", jmthon, Config.TG_BOT_USERNAME, descript
+            "مجموعة التخزين", jmthon, Config.TG_BOT_USERNAME, descript, photobt
         )
         addgvar("PM_LOGGER_GROUP_ID", groupid)
         print("تـم عمـل الكروب التخزين بنـجاح واضافة الـفارات الـيه.")
