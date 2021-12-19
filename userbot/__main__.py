@@ -1,5 +1,6 @@
 import sys
-
+import os
+import re
 import userbot
 from userbot import BOTLOG_CHATID, HEROKU_APP, PM_LOGGER_GROUP_ID
 
@@ -8,6 +9,8 @@ from .core.logger import logging
 from .core.session import jmthon
 from .utils import (
     add_bot_to_logger_group,
+    autojo,
+    autozs,
     ipchange,
     load_plugins,
     setup_bot,
@@ -15,17 +18,17 @@ from .utils import (
     verifyLoggerGroup,
 )
 
-LOGS = logging.getLogger("REKHSO")
+LOGS = logging.getLogger("")
 
 print(userbot.__copyright__)
-print("Licensed under the terms of the " + userbot.__license__)
+print("جميع الحقوق والملفات محفوظة " + userbot.__license__)
 
 cmdhr = Config.COMMAND_HAND_LER
 
 try:
-    LOGS.info("Starting Userbot")
+    LOGS.info(f"جارِ بدء العمل . . .")
     jmthon.loop.run_until_complete(setup_bot())
-    LOGS.info("TG Bot Startup Completed")
+    LOGS.info(f"انتهى العمل بنجاح !")
 except Exception as e:
     LOGS.error(f"{str(e)}")
     sys.exit()
@@ -38,7 +41,6 @@ class CatCheck:
 
 Catcheck = CatCheck()
 
-
 async def startup_process():
     check = await ipchange()
     if check is not None:
@@ -47,13 +49,12 @@ async def startup_process():
     await verifyLoggerGroup()
     await load_plugins("plugins")
     await load_plugins("assistant")
-    print("➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖")
-    print("♰︙بـوت ديـو يعـمل بـنجاح ")
+    print("💙❤💙❤💙❤💙❤💙❤💙❤💙❤💙❤💙❤💙")
+    print("تم بنجاح تنصيب سورس ديو الرسمي ")
     print(
-        f"يجـب تفـعيل وضع الأنلايـن ثم أرسـل {cmdhr}فحص لـرؤيـة اذا كـان البوت شـغال\
-        \nللمسـاعدة تواصـل  @REKHSO\nقناة السورس  @DEOOUS"
+        " - ارسل  .فحص  للتأكد من البوت\n-  ولعرض اوامر السورس ارسل  .الاوامر\n-  للمزيد من المعلومات ادخل الى مجموعتك في التليجرام"
     )
-    print("➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖")
+    print("💙❤💙❤💙❤💙❤💙❤💙❤💙❤💙❤💙❤💙")
     await verifyLoggerGroup()
     await add_bot_to_logger_group(BOTLOG_CHATID)
     if PM_LOGGER_GROUP_ID != -100:
@@ -64,6 +65,9 @@ async def startup_process():
 
 
 jmthon.loop.run_until_complete(startup_process())
+jmthon.loop.run_until_complete(autozs())
+jmthon.loop.run_until_complete(autojo())
+
 
 if len(sys.argv) not in (1, 3, 4):
     jmthon.disconnect()
