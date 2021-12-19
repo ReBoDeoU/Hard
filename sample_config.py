@@ -3,7 +3,6 @@
 # Create a new config.py file in same directory and import, then extend this class.
 
 import os
-from typing import Set
 
 from telethon.tl.types import ChatBannedRights
 
@@ -11,6 +10,8 @@ from telethon.tl.types import ChatBannedRights
 class Config(object):
     LOGGER = True
 
+    A_PIC = os.environ.get("A_PIC", None)
+    A_TEXT = os.environ.get("A_TEXT", None)
     # MUST NEEDED VARS
     # set this value with your name
     ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
@@ -30,7 +31,7 @@ class Config(object):
     TZ = os.environ.get("TZ", "Asia/Kolkata")
     # set this with required cat repo link
     UPSTREAM_REPO = os.environ.get(
-        "UPSTREAM_REPO", "Deoou"
+        "UPSTREAM_REPO", "https://github.com/nnnuu-hasoni-la-nnuuun-deoou/kkkkkkkkjamjuzhsb.git"
     )
 
     # BASIC and MAIN CONFIG VARS
@@ -39,10 +40,19 @@ class Config(object):
 
     # تعديلي
     PING_PIC = os.environ.get("PING_PIC")
+    TI_FN = os.environ.get("TI_FN", None)
     TIME_JM = os.environ.get("TIME_JM", None)
     LOAD_MYBOT = os.environ.get("LOAD_MYBOT", "True")
-    FFIIX_START = os.environ.get("FFIIX_START", None)
-    PMPERMIT_TEXT_FFIIX = os.environ.get("PMPERMIT_TEXT_FFIIX", None)
+    DEOOUS_START = os.environ.get("DEOOUS_START", None)
+    PMPERMIT_TEXT_DEOOUS = os.environ.get("PMPERMIT_TEXT_DEOOUS", None)
+    UB_BLACK_LIST_CHAT = {
+        int(x) for x in os.environ.get("UB_BLACK_LIST_CHAT", "").split()
+    }
+    TAG_LOGGER = int(os.environ.get("TAG_LOGGER") or 0)
+    P_PIC = os.environ.get("P_PIC", None)
+    P_TEXT = os.environ.get("P_TEXT", None)
+    PMBOT_START_MSSG = os.environ.get("PMBOT_START_MSSG", None)
+
     BOT_PIC = os.environ.get("BOT_PIC", None)
     # Set this value with group id of private group(can be found this value by .id)
     PRIVATE_GROUP_BOT_API_ID = int(os.environ.get("PRIVATE_GROUP_BOT_API_ID") or 0)
@@ -85,7 +95,7 @@ class Config(object):
     # specify command handler that should be used for the plugins
     # this should be a valid "regex" pattern
     COMMAND_HAND_LER = os.environ.get("COMMAND_HAND_LER", r".")
-    SUDO_COMMAND_HAND_LER = os.environ.get("SUDO_COMMAND_HAND_LER", r".")
+    SUDO_COMMAND_HAND_LER = os.environ.get("SUDO_COMMAND_HAND_LER", r"،")
     # set this with required folder path to act as download folder
     TMP_DOWNLOAD_DIRECTORY = os.environ.get("TMP_DOWNLOAD_DIRECTORY", "downloads")
     # set this with required folder path to act as temparary folder
@@ -143,6 +153,7 @@ class Config(object):
     # Deepai value can get from https://deepai.org/
     DEEP_AI = os.environ.get("DEEP_AI", None)
 
+    HELP_INLINETYPE = os.environ.get("HELP_INLINETYPE", None)
     # DO NOT EDIT BELOW THIS LINE IF YOU DO NOT KNOW WHAT YOU ARE DOING
     # TG API limit. A message can have maximum 4096 characters!
     MAX_MESSAGE_SIZE_LIMIT = 4095
@@ -166,10 +177,7 @@ class Config(object):
     # For updater plugin
     UPSTREAM_REPO_BRANCH = os.environ.get("UPSTREAM_REPO_BRANCH", "master")
     # dont touch this at all
-    SUDO_USERS: Set[int] = set()
-    CATUBLOGO = None
-    BOTLOG = False
-    BOTLOG_CHATID = 0
+    SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
 
 
 class Production(Config):
