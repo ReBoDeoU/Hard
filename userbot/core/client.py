@@ -140,12 +140,12 @@ class CatUserBotClient(TelegramClient):
                         pastelink = await paste_message(
                             ftext, pastetype="s", markdown=False
                         )
-                        text = "**تقرير خطا ديـو**\n\n"
+                        text = "**تقرير خطا ديو**\n\n"
                         link = "[هنا](https://t.me/rekhso)"
                         text += "إذا كنت تريد يمكنك الإبلاغ عن ذلك"
                         text += f"- فقط قم بإعادة توجيه هذه الرسالة {link}.\n"
                         text += "لا يتم تسجيل اي خطا فقط التاريخ والوقت\n\n"
-                        text += f"**⌯︙تقرير الخطأ : ** [{new['error']}]({pastelink})"
+                        text += f"**♰︙تقرير الخطأ : ** [{new['error']}]({pastelink})"
                         await check.client.send_message(
                             Config.PRIVATE_GROUP_BOT_API_ID, text, link_preview=False
                         )
@@ -255,12 +255,12 @@ class CatUserBotClient(TelegramClient):
                         pastelink = await paste_message(
                             ftext, pastetype="s", markdown=False
                         )
-                        text = "**تقرير خطا ريـك**\n\n"
+                        text = "**تقرير خطا ديو**\n\n"
                         link = "[هنا](https://t.me/rekhso)"
                         text += "إذا كنت تريد يمكنك الإبلاغ عن ذلك"
                         text += f"- فقط قم بإعادة توجيه هذه الرسالة {link}.\n"
                         text += "لا يتم تسجيل اي خطا فقط التاريخ والوقت\n\n"
-                        text += f"**⌯︙تقرير الخطأ : ** [{new['error']}]({pastelink})"
+                        text += f"**♰︙تقرير الخطأ : ** [{new['error']}]({pastelink})"
                         await check.client.send_message(
                             Config.PRIVATE_GROUP_BOT_API_ID, text, link_preview=False
                         )
