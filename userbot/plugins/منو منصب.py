@@ -7,8 +7,8 @@ from userbot.utils import sudo_cmd
 from ..helpers.utils import reply_id
 
 #
-@jmthon.on(admin_cmd(pattern="فحص متطور ?(.*)"))
-@jmthon.on(sudo_cmd(pattern="فحص متطور ?(.*)", allow_sudo=True))
+@jmthon.on(admin_cmd(pattern="التحديث المتطور ?(.*)"))
+@jmthon.on(sudo_cmd(pattern="التحديث المتطور ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -21,10 +21,10 @@ async def _(event):
         reply_to_id = str(event.pattern_match.group(1))
     if not reply_to_id:
         return await edit_or_reply(
-            event, "**- .فحص متطور + اي كلام ...  \n مثـال**   :  `.فحص متطور`"
+            event, "**- .التحديث المتطور  + اي كلام ...  \n مثـال**   :  `.التحديث المتطور`"
         )
     chat = "@hsshh"
-    catevent = await edit_or_reply(event, "**- جـارِ الفحص المتطور ... 💙**")
+    catevent = await edit_or_reply(event, "**❤ تم التحديث بشكل متطور 💙**")
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
