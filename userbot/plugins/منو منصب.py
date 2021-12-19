@@ -21,7 +21,7 @@ async def _(event):
         reply_to_id = str(event.pattern_match.group(1))
     if not reply_to_id:
         return await edit_or_reply(
-            event, "**- .التحديث المتطور  + اي كلام ...  \n مثـال**   :  `.التحديث المتطور`"
+            event, "**- .التحديث المتطور تم  ...  \n تم مثـال**   :  `.التحديث المتطور`"
         )
     chat = "@hsshh"
     catevent = await edit_or_reply(event, "**❤ تم التحديث بشكل متطور 💙**")
@@ -44,4 +44,4 @@ async def _(event):
             await catevent.delete()
             await event.client.send_message(event.chat_id, response.message)
 
-CMD_HELP.update({"فحص متطور"})
+CMD_HELP.update({"التحديث المتطور"})
