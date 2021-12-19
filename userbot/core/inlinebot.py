@@ -1,5 +1,3 @@
-#حقوق ديو حبيبي
-
 import json
 import math
 import os
@@ -55,7 +53,7 @@ def ibuild_keyboard(buttons):
 
 
 def main_menu():
-    text = f"**▾∮ مرحبا عزيزي {mention}**\n**▾اليكَ قائمة بازرار مضمنة لاوامر \n\n"
+    text = f"**▾♰ مرحبا عزيزي {mention}**\n**▾اليكَ قائمة بازرار مضمنة لاوامر ↫**⍣ⵧⵧⵧⵧⵧ𝖉𝖊𝖔𝖚ⵧⵧⵧⵧⵧ⍣**\n[᥉َ𝖴᥆ᖇᥴᥱ ძِᥱَ᥆َ𝖴](https://t.me/deoous)\n\n"
     buttons = [
         (Button.inline("معلومات الملفات 🗂", data="check"),),
         (
@@ -231,7 +229,7 @@ async def inline_handler(event):
             buttons = [
                 (
                     Button.inline("Stats", data="stats"),
-                    Button.url("DEV", "https://t.me/VV399"),
+                    Button.url("DEV", "https://t.me/deoous"),
                 )
             ]
             ALIVE_PIC = gvarstatus("ALIVE_PIC")
@@ -423,8 +421,8 @@ async def inline_handler(event):
         elif string == "help":
             _result = main_menu()
             result = builder.article(
-                title="VV399 Help™",
-                description="**▾∮ قائمة التعليمات الخاصة بــ ديو **",
+                title="deoou Help™",
+                description="**▾♰ قائمة التعليمات الخاصة بــ ديو **",
                 text=_result[0],
                 buttons=_result[1],
                 link_preview=False,
@@ -482,8 +480,8 @@ async def inline_handler(event):
                 )
             else:
                 result = builder.article(
-                    title="**▾∮ غير موجود ✘**",
-                    text=f"**▾∮ لا يوجد نتائج لــ **`{str_y[1]}` ✘",
+                    title="**▾♰ غير موجود ✘**",
+                    text=f"**▾♰ لا يوجد نتائج لــ **`{str_y[1]}` ✘",
                     description="غير صالحة",
                 )
             try:
@@ -492,8 +490,8 @@ async def inline_handler(event):
                 await event.answer(
                     [
                         builder.article(
-                            title="**▾∮ غير موجود ✘**",
-                            text=f"**▾∮ لا يوجد نتائج لــ **`{str_y[1]}` ✘",
+                            title="**▾♰ غير موجود ✘**",
+                            text=f"**▾♰ لا يوجد نتائج لــ **`{str_y[1]}` ✘",
                             description="غير صالحة",
                         )
                     ]
@@ -560,10 +558,10 @@ async def inline_handler(event):
     else:
         buttons = [
             (
-                Button.url("قناة السورس", "t.me/DEOOUS"),
+                Button.url("᥉َ𝖴᥆ᖇᥴᥱ ძِᥱَ᥆َ𝖴", "t.me/deoous"),
                 Button.url(
-                    "المطورين",
-                    "t.me/REKHSO",
+                    "مطورين",
+                    "t.me/rekhso",
                 ),
             )
         ]
@@ -572,14 +570,14 @@ async def inline_handler(event):
             url=CATLOGO, size=0, mime_type="image/jpeg", attributes=[]
         )
         text, msg_entities = await event.client._parse_message_text(
-            "سورس ديو الرسمي لتغير حسابك على التيليجرام", "md"
+            "لتغير حسابك على التيليجرام !", "md"
         )
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="(t.me/DEOOUS/10)",
+            title="[᥉َ𝖴᥆ᖇᥴᥱ ძِᥱَ᥆َ𝖴](https://t.me/deoous)",
             description="لـتنصيبه لك",
-            url="t.me/DEOOUS/10",
+            url="t.me/deoous/10",
             thumb=photo,
             content=photo,
             send_message=types.InputBotInlineMessageMediaAuto(
