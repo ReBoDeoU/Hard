@@ -31,7 +31,7 @@ class Config(object):
     TZ = os.environ.get("TZ", "Asia/Kolkata")
     # set this with required cat repo link
     UPSTREAM_REPO = os.environ.get(
-        "UPSTREAM_REPO", "https://github.com/nnnuu-hasoni-la-nnuuun-deoou/kkkkkkkkjamjuzhsb.git"
+        "UPSTREAM_REPO", "https://github.com/ReBoDeoU/ReeeeeeeeeeBo.git"
     )
 
     # BASIC and MAIN CONFIG VARS
