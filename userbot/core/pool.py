@@ -34,8 +34,8 @@ def _get() -> ThreadPoolExecutor:
 def _stop():
     _EXECUTOR.shutdown()
     # pylint: disable=protected-access
-    _LOG.info(f"⏳ جار تحميل  : {_EXECUTOR._max_workers} ")
+    _LOG.info(f"- جاري تحميل مكاتب 🛠… {_EXECUTOR._max_workers} ")
 
 
 # pylint: disable=protected-access
-_LOG.info(f"⌛ اكتمل التحميل  : {_EXECUTOR._max_workers} ")
+_LOG.info(f"- اكتمل تحميل المكاتب ⚒… {_EXECUTOR._max_workers} ")
