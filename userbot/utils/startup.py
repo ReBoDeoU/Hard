@@ -276,7 +276,7 @@ async def verifyLoggerGroup():
             )
     else:
         descript = "♰︙ وظيفه الكروب يحفظ رسائل الخاص اذا ما تريد الامر احذف الكروب نهائي \n  - @DEOOUS"
-        photobt = await jmthon.upload_file(file="ReKHso/DeOu/reK.jpg")
+        photobt = await jmthon.upload_file(file="Jmthon/razan/resources/start/Jmthonp.jpg")
         _, groupid = await create_supergroup(
             "مجموعة التخزين", jmthon, Config.TG_BOT_USERNAME, descript, photobt
         )
