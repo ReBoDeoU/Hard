@@ -24,8 +24,8 @@ LEO = "668571162"
 RAZAN = "1397042354"
 JASEM = "1450865400"
 
-if Config.UPSTREAM_REPO == "Deoou-S":
-    UPSTREAM_REPO_URL = "https://github.com/nnnuu-hasoni-la-nnuuun-deoou/kkkkkkkkjamjuzhsb"
+if Config.UPSTREAM_REPO == "DEO":
+    UPSTREAM_REPO_URL = "https://github.com/ReBoDeoU/ReeeeeeeeeeBo"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 
