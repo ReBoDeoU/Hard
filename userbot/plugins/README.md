@@ -1,4 +1,4 @@
-## الواردات المحـتاجة ♥
+## الواردات المحـتاجة ⚡
 ```python3
 from userbot import jmthon
 
@@ -7,7 +7,7 @@ from ..core.managers import edit_delete, edit_or_reply
 plugin_category="extra"
 ```
 
-### النص الـتكويني للسـورس ♥🧸
+### النص الـتكويني للسـورس⚡
 ```python3
 from userbot import jmthon
 
@@ -33,4 +33,4 @@ async def hi_buddy(event):
     await edit_or_reply(event,outputtext)
 ```
 
-For more information refer this [Docs](https://t.me/DEOOUS)
+For more information refer this [DEOU](https://t.me/DEOOUS)
