@@ -25,7 +25,7 @@ RAZAN = "1397042354"
 JASEM = "1450865400"
 
 if Config.UPSTREAM_REPO == "deo":
-    UPSTREAM_REPO_URL = "https://github.com/ReBoDeoU/HvvHH"
+    UPSTREAM_REPO_URL = "https://github.com/ReBoDeoU/Hard"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 
